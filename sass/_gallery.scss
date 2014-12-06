@@ -1,0 +1,48 @@
+.bible-gallery, .weather-gallery, .lovestories-gallery {
+	img {
+		width: 33%;
+		margin: 7.5%;
+		transition: opacity .3s ease-out;
+	}
+	img:hover {
+		opacity: 0.8;
+	}
+	padding: 5%;
+}
+
+.blur-gallery, .bookcovers-gallery {
+	img {
+		width: 40%;
+		margin: 4.5%;
+		transition: opacity .3s ease-out;
+	}
+	img:hover {
+		opacity: 0.8;
+	}
+	padding: 5%;
+}
+
+@media (min-width: 30em) {
+	.bible-gallery, .weather-gallery {
+		img {
+			width: 25%;
+			margin: 3.5%;
+		}
+	}
+}
+
+@media (min-width: 56em) {
+	.bible-gallery, .weather-gallery {
+		img {
+			width: 15%;
+			margin: 4.5%;
+		}
+	}
+
+	.blur-gallery {
+		img {
+			width: 30%;
+			margin: 1.5%;
+		}
+	}
+}

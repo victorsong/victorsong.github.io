@@ -1,0 +1,164 @@
+body, html {
+	height: 100%;
+}
+
+.clear {
+	clear: both;
+}
+
+header.mobile {
+	position: relative;
+	background-color: #000;
+	text-align: center;
+	padding: 0.5em 0;
+}
+
+header.desktop {
+	display: none;
+}
+
+.process {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+#about, .page-header {
+	height: 100%;
+	background-color: #aaa;
+	clear: both;
+	
+	.aboutwrapper {
+		width: 80%;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 1em;
+		left: 10%;
+	}
+	
+	.page-header-wrapper {
+		width: 80%;
+		margin: 0 auto;
+		position: absolute;
+		bottom: 50%;
+		left: 10%;
+	}
+}
+
+#portfolio {
+	article {
+		a {
+			padding: 2em 1em;
+			transition: padding .3s ease-out;
+		}
+		
+		a:hover {
+			padding: 4em 1em;
+		}
+	}
+}
+
+#resume {
+	background-color: #aaa;
+	padding: 5em 0;
+	
+	.resume-div {
+		width: 80%;
+		padding: 0 10%;
+		margin-bottom: 3.5em;
+	}
+}
+
+.page-header {
+	height: 50%;
+}
+
+@media (min-width: 50em) {
+	.process {
+		width: 60%;
+	}
+	
+	header.mobile {
+		display: none;
+	}
+	
+	header.desktop {
+		position: fixed;
+		overflow: auto;
+		background-color: #000;
+		width: 100%;
+		z-index: 1;
+		display: inline;
+		padding: 0.5em 0;
+	
+		h1 {
+			float: left;
+			display: inline;
+			margin-left: 1em;
+		}
+		ul {
+			li {
+				float: right;
+				margin: 0 1em;
+			}
+		}
+	}
+	
+	#portfolio {
+		article {
+			a {
+				padding: 4em 1em;
+				transition: padding .3s ease-out;
+			}
+			
+			a:hover {
+				padding: 6em 1em;
+			}
+		}
+	}
+	
+	#about, .page-header {
+		.aboutwrapper {
+			width: 25em;
+			text-align: center;
+			position: relative;
+			left: auto;
+			bottom: auto;
+			top: 45%;
+		}
+		
+		.page-header-wrapper {
+			width: 30em;
+			text-align: center;
+			position: absolute;
+			left: 50%;
+			bottom: 55%;
+			margin-left: -15em;
+		}
+	}
+}
+
+@media (min-width: 60em) {
+	#resume {
+		.resume-div{
+			width: 20em;
+			float: left;
+			padding: 0 5em;
+		}
+		overflow: auto;
+		width: 100%;
+	}
+	
+	.resume-wrapper {
+		width: 60em;
+		overflow: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+}
+
+@media (min-width: 80em) {
+	.process {
+		width: 40em;
+	}
+}

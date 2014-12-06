@@ -1,0 +1,118 @@
+#about {
+	background: url('../images/portfolio/header.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.bible {
+	background: url('../images/portfolio/bible.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	transition: opacity .3s ease-out;
+}
+
+.bible-header {
+	background: url('../images/portfolio/bible.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.bible:hover {
+	opacity: 0.7;
+}
+
+.lovestories {
+	background: url('../images/portfolio/lovestories.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	transition: opacity .3s ease-out;
+}
+
+.lovestories-header {
+	background: url('../images/portfolio/lovestories.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.lovestories:hover {
+	opacity: 0.7;
+}
+
+.bookcovers {
+	background: url('../images/portfolio/bookcovers.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	transition: opacity .3s ease-out;
+}
+
+.bookcovers-header {
+	background: url('../images/portfolio/bookcovers.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.bookcovers:hover {
+	opacity: 0.7;
+}
+
+.weather {
+	background: url('../images/portfolio/weather.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	transition: opacity .3s ease-out;
+}
+
+.weather-header {
+	background: url('../images/portfolio/weather.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.weather:hover {
+	opacity: 0.7;
+}
+
+.blur {
+	background: url('../images/portfolio/blur.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	transition: opacity .3s ease-out;
+}
+
+.blur-header {
+	background: url('../images/portfolio/blur.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+.blur:hover {
+	opacity: 0.7;
+}
+
+#resume {
+	background: url('../images/portfolio/footer.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+@media (min-width: 40em) {
+	#resume, #about, .blur-header, .irb-header, .bookcovers-header, .lovestories-header, .bible-header {
+		background-attachment: fixed;
+	}
+	
+	.blur-header, .irb-header, .bookcovers-header, .lovestories-header, .bible-header {
+		background-position: 50% 200%;
+	}
+}
