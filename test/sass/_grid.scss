@@ -1,0 +1,98 @@
+$colCount:          3;
+$gutterCount:       $colCount + 1;
+$noGutterCol:       100%/$colCount;
+$gutter:            $noGutterCol / 10; 
+$col:               $noGutterCol - $gutter;
+$baseline:          1.5rem;
+
+@mixin sectionPadding {
+    padding: 8rem $gutter;
+    
+    @media (min-width: 60em) {
+        padding: 10rem 0;
+    }
+}
+
+@mixin bgCover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    @media (min-width: 85em) {
+        .centerWrapper {
+            width: 80em;
+            margin: 0 auto;
+        }
+    }
+}
+
+.intro {
+    @include sectionPadding;
+    overflow: auto;
+}
+
+.portfolio {
+    article {
+        @include bgCover;
+        
+        a {
+            padding: 2rem $gutter;
+            display: block;
+            transition: .3s ease-out;
+            @media (min-width: 60em) {
+                padding: 4em $gutter;
+                padding-left: ($col + $gutter + $gutter);
+            }
+        }
+        
+        a:hover {
+            padding: 4rem $gutter;
+            
+            @media (min-width: 60em) {
+                padding: 6em $gutter;
+                padding-left: ($col + $gutter + $gutter);
+            }
+        }
+    }
+    
+    .bible {background: url('../bible/cover.jpg') no-repeat center center;}
+    .weather {background: url('../weather/cover.jpg') no-repeat center center;}
+    .love {background: url('../love/cover.jpg') no-repeat center center;}
+    .books {background: url('../books/cover.jpg') no-repeat center center;}
+    .blur {background: url('../blur/cover.jpg') no-repeat center center;}
+}
+
+.resume {
+    @include sectionPadding;
+    padding-bottom: 0;
+    overflow: auto;
+    
+    div {
+        margin-bottom: 3em;
+    }
+    
+    @media (min-width: 60em) {
+        padding-bottom: 8rem;
+    }
+}
+
+.colOne {
+    @media (min-width: 60em) {
+        width: $col;
+        float: left;
+        overflow: auto;
+        clear: left;
+        text-align: right;
+    }
+}
+    
+.colTwo {
+    @media (min-width: 60em) {
+        width: (2 * $col) + $gutter;
+        float: right;
+        overflow: auto;
+        clear: right;
+    }
+}

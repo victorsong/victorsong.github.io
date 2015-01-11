@@ -1,0 +1,243 @@
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 31, ../sass/_type.scss */
+p {
+  font-family: 'proxima nova';
+  font-size: 12pt;
+  line-height: 1.5em;
+}
+
+/* line 35, ../sass/_type.scss */
+a {
+  font-family: 'proxima nova';
+  font-size: 12pt;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+/* line 41, ../sass/_type.scss */
+.intro .colOne {
+  font-family: 'futura pt';
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 45, ../sass/_type.scss */
+.intro .colTwo {
+  font-family: 'proxima nova';
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* line 51, ../sass/_type.scss */
+.portfolio a {
+  font-family: 'futura pt';
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* line 58, ../sass/_type.scss */
+.resume h1 {
+  font-family: 'futura pt';
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 63, ../sass/_type.scss */
+.resume h2 {
+  font-family: 'proxima nova';
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+/* line 68, ../sass/_type.scss */
+.resume p {
+  font-family: 'proxima nova';
+  font-size: 12pt;
+  line-height: 1.5em;
+  opacity: .5;
+}
+/* line 73, ../sass/_type.scss */
+.resume a {
+  color: #000;
+}
+
+@media (min-width: 85em) {
+  /* line 24, ../sass/_grid.scss */
+  body .centerWrapper {
+    width: 80em;
+    margin: 0 auto;
+  }
+}
+
+/* line 31, ../sass/_grid.scss */
+.intro {
+  padding: 8rem 3.33333%;
+  overflow: auto;
+}
+@media (min-width: 60em) {
+  /* line 31, ../sass/_grid.scss */
+  .intro {
+    padding: 10rem 0;
+  }
+}
+
+/* line 37, ../sass/_grid.scss */
+.portfolio article {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+/* line 40, ../sass/_grid.scss */
+.portfolio article a {
+  padding: 2rem 3.33333%;
+  display: block;
+  transition: .3s ease-out;
+}
+@media (min-width: 60em) {
+  /* line 40, ../sass/_grid.scss */
+  .portfolio article a {
+    padding: 4em 3.33333%;
+    padding-left: 36.66667%;
+  }
+}
+/* line 50, ../sass/_grid.scss */
+.portfolio article a:hover {
+  padding: 4rem 3.33333%;
+}
+@media (min-width: 60em) {
+  /* line 50, ../sass/_grid.scss */
+  .portfolio article a:hover {
+    padding: 6em 3.33333%;
+    padding-left: 36.66667%;
+  }
+}
+/* line 60, ../sass/_grid.scss */
+.portfolio .bible {
+  background: url("../bible/cover.jpg") no-repeat center center;
+}
+/* line 61, ../sass/_grid.scss */
+.portfolio .weather {
+  background: url("../weather/cover.jpg") no-repeat center center;
+}
+/* line 62, ../sass/_grid.scss */
+.portfolio .love {
+  background: url("../love/cover.jpg") no-repeat center center;
+}
+/* line 63, ../sass/_grid.scss */
+.portfolio .books {
+  background: url("../books/cover.jpg") no-repeat center center;
+}
+/* line 64, ../sass/_grid.scss */
+.portfolio .blur {
+  background: url("../blur/cover.jpg") no-repeat center center;
+}
+
+/* line 67, ../sass/_grid.scss */
+.resume {
+  padding: 8rem 3.33333%;
+  padding-bottom: 0;
+  overflow: auto;
+}
+@media (min-width: 60em) {
+  /* line 67, ../sass/_grid.scss */
+  .resume {
+    padding: 10rem 0;
+  }
+}
+/* line 72, ../sass/_grid.scss */
+.resume div {
+  margin-bottom: 3em;
+}
+@media (min-width: 60em) {
+  /* line 67, ../sass/_grid.scss */
+  .resume {
+    padding-bottom: 8rem;
+  }
+}
+
+@media (min-width: 60em) {
+  /* line 81, ../sass/_grid.scss */
+  .colOne {
+    width: 30.0%;
+    float: left;
+    overflow: auto;
+    clear: left;
+    text-align: right;
+  }
+}
+
+@media (min-width: 60em) {
+  /* line 91, ../sass/_grid.scss */
+  .colTwo {
+    width: 63.33333%;
+    float: right;
+    overflow: auto;
+    clear: right;
+  }
+}
