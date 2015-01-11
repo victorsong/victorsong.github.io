@@ -1,11 +1,11 @@
 @mixin typeBody {
-	font-family: 'proxima nova';
+	font-family: 'proxima nova', proxima-nova;
 	font-size: 12pt;
 	line-height: 1.5em;
 }
 
 @mixin typeHeader {
-	font-family: 'futura pt';
+	font-family: 'futura pt', futura-pt;
 	font-size: 12pt;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -13,7 +13,7 @@
 }
 
 @mixin typeDisplay {
-	font-family: 'futura pt';
+	font-family: 'futura pt', futura-pt;
 	line-height: 1.5em;
 	font-weight: bolder;
 	font-size: 12pt;

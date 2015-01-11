@@ -58,14 +58,14 @@ table {
 
 /* line 31, ../sass/_type.scss */
 p {
-  font-family: 'proxima nova';
+  font-family: 'proxima nova', proxima-nova;
   font-size: 12pt;
   line-height: 1.5em;
 }
 
 /* line 35, ../sass/_type.scss */
 a {
-  font-family: 'proxima nova';
+  font-family: 'proxima nova', proxima-nova;
   font-size: 12pt;
   line-height: 1.5em;
   text-decoration: none;
@@ -73,7 +73,7 @@ a {
 
 /* line 41, ../sass/_type.scss */
 .intro .colOne {
-  font-family: 'futura pt';
+  font-family: 'futura pt', futura-pt;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -82,7 +82,7 @@ a {
 }
 /* line 45, ../sass/_type.scss */
 .intro .colTwo {
-  font-family: 'proxima nova';
+  font-family: 'proxima nova', proxima-nova;
   font-size: 12pt;
   line-height: 1.5em;
   margin-bottom: 1em;
@@ -90,7 +90,7 @@ a {
 
 /* line 51, ../sass/_type.scss */
 .portfolio a {
-  font-family: 'futura pt';
+  font-family: 'futura pt', futura-pt;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -101,7 +101,7 @@ a {
 
 /* line 58, ../sass/_type.scss */
 .resume h1 {
-  font-family: 'futura pt';
+  font-family: 'futura pt', futura-pt;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -110,14 +110,14 @@ a {
 }
 /* line 63, ../sass/_type.scss */
 .resume h2 {
-  font-family: 'proxima nova';
+  font-family: 'proxima nova', proxima-nova;
   font-size: 12pt;
   line-height: 1.5em;
   margin-top: 1em;
 }
 /* line 68, ../sass/_type.scss */
 .resume p {
-  font-family: 'proxima nova';
+  font-family: 'proxima nova', proxima-nova;
   font-size: 12pt;
   line-height: 1.5em;
   opacity: .5;
