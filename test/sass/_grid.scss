@@ -36,11 +36,9 @@ nav {
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.85);
     border-bottom: 1px solid #ccc;
-    position: fixed;
     width: 100%;
     padding-top: 3em;
     padding-bottom: 1em;
-    margin-bottom: 3em;
     
     ul {
         li {
@@ -85,6 +83,11 @@ nav {
         @media (min-width: 85em) {
             margin-left: 0;
         }
+    }
+    
+    @media (min-width: 50em) {
+        margin-bottom: 3em;
+        position: fixed;
     }
 }
 
