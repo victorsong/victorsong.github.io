@@ -37,6 +37,22 @@ a {
 	text-decoration: none;
 }
 
+nav {
+	a {
+		color: #000;
+		transition: .3s ease-out;
+	}
+	
+	a:hover {
+		color: #666;
+	}
+	
+	li:first-of-type {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+	}
+}
+
 .intro {
 	.colOne {
 		@include typeHeader;
@@ -54,6 +70,19 @@ a {
 	color: #000;
 }
 
+.process {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+		clear: both;
+	}
+	
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+}
+
 .resume {
 	h1 {
 		@include typeHeader;
@@ -63,6 +92,10 @@ a {
 	h2 {
 		@include typeBody;
 		margin-top: 1em;
+	}
+	
+	h2:first-of-type {
+		margin-top: 0;
 	}
 	
 	p {
