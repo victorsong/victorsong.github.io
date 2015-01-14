@@ -1,0 +1,284 @@
+@media screen {
+  /* line 13, ../sass/_reset.scss */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  /* line 23, ../sass/_reset.scss */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+  /* line 26, ../sass/_reset.scss */
+  body {
+    line-height: 1;
+  }
+
+  /* line 29, ../sass/_reset.scss */
+  ol, ul {
+    list-style: none;
+  }
+
+  /* line 32, ../sass/_reset.scss */
+  blockquote, q {
+    quotes: none;
+  }
+
+  /* line 36, ../sass/_reset.scss */
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+
+  /* line 40, ../sass/_reset.scss */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* line 2, ../sass/_type.scss */
+  .ellen p {
+    font-family: "courier new";
+    font-weight: 100;
+    font-size: 12pt;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+  }
+  /* line 10, ../sass/_type.scss */
+  .ellen .quote {
+    font-style: italic;
+  }
+
+  /* line 16, ../sass/_type.scss */
+  .phil p {
+    font-family: "cousine";
+    font-weight: 100;
+    font-size: 12pt;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+  }
+  /* line 24, ../sass/_type.scss */
+  .phil .quote {
+    font-style: italic;
+  }
+
+  /* line 30, ../sass/_type.scss */
+  .bryan p {
+    font-family: "anonymous pro";
+    font-weight: 300;
+    font-size: 12pt;
+    margin-bottom: 1em;
+    line-height: 1.5em;
+  }
+  /* line 38, ../sass/_type.scss */
+  .bryan .quote {
+    font-style: italic;
+  }
+
+  /* line 1, ../sass/_composition.scss */
+  body {
+    background-color: #fff;
+  }
+
+  /* line 5, ../sass/_composition.scss */
+  .interview {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  /* line 10, ../sass/_composition.scss */
+  img {
+    min-width: 100%;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  /* line 16, ../sass/_composition.scss */
+  .header {
+    margin-bottom: 2em;
+  }
+
+  /* line 20, ../sass/_composition.scss */
+  .reveal {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 30em) {
+  /* line 25, ../sass/_composition.scss */
+  .interview {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 70em) {
+  /* line 34, ../sass/_composition.scss */
+  .main-content {
+    width: 63em;
+    margin: 10em auto 0;
+  }
+
+  /* line 39, ../sass/_composition.scss */
+  .interview {
+    width: 21em;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-left: -1em;
+  }
+
+  /* line 46, ../sass/_composition.scss */
+  img {
+    min-width: 70%;
+    width: 70%;
+    clear: both;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-bottom: 1.5em;
+    margin-left: -3em;
+  }
+
+  /* line 56, ../sass/_composition.scss */
+  .interview-wrapper {
+    float: left;
+    margin-bottom: 30em;
+    clear: both;
+  }
+
+  /* line 62, ../sass/_composition.scss */
+  footer {
+    width: inherit;
+  }
+  /* line 65, ../sass/_composition.scss */
+  footer img {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+}
+@media print {
+  /* line 13, ../sass/_reset.scss */
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  /* line 23, ../sass/_reset.scss */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+  /* line 26, ../sass/_reset.scss */
+  body {
+    line-height: 1;
+  }
+
+  /* line 29, ../sass/_reset.scss */
+  ol, ul {
+    list-style: none;
+  }
+
+  /* line 32, ../sass/_reset.scss */
+  blockquote, q {
+    quotes: none;
+  }
+
+  /* line 36, ../sass/_reset.scss */
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+
+  /* line 40, ../sass/_reset.scss */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  @page {
+    margin: 25mm;
+}
+
+  /* line 5, ../sass/_print.scss */
+  .ellen p {
+    font-size: 10pt;
+    font-family: "courier new";
+    width: 70%;
+    margin: 0 auto 1em;
+    line-height: 1.5em;
+  }
+
+  /* line 13, ../sass/_print.scss */
+  .phil p {
+    font-size: 10pt;
+    font-family: "cousine";
+    width: 70%;
+    margin: 0 auto 1em;
+    line-height: 1.5em;
+  }
+
+  /* line 21, ../sass/_print.scss */
+  .bryan p {
+    font-size: 10pt;
+    font-family: "anonymous pro";
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto 1em;
+    line-height: 1.5em;
+  }
+
+  /* line 30, ../sass/_print.scss */
+  .quote {
+    font-style: italic;
+  }
+
+  /* line 34, ../sass/_print.scss */
+  img {
+    width: 100%;
+    margin-bottom: 1em;
+    page-break-before: always;
+  }
+
+  /* line 41, ../sass/_print.scss */
+  footer img {
+    width: 100%;
+  }
+}

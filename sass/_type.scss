@@ -1,0 +1,113 @@
+@mixin typeBody {
+	font-family: 'proxima nova', proxima-nova;
+	font-size: 12pt;
+	line-height: 1.5em;
+}
+
+@mixin typeHeader {
+	font-family: 'futura pt', futura-pt;
+	font-size: 12pt;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+}
+
+@mixin typeDisplay {
+	font-family: 'futura pt', futura-pt;
+	line-height: 1.5em;
+	font-weight: bolder;
+	font-size: 12pt;
+	letter-spacing: 0.1em;
+	
+	@media (min-width: 40em) {
+		font-size: 12pt;
+	}
+	
+	@media (min-width: 85em) {
+		font-size: 12pt;
+	}
+}
+
+p {
+	@include typeBody;
+}
+
+a {
+	@include typeBody;
+	text-decoration: none;
+}
+
+nav {
+	a {
+		color: #000;
+		transition: .3s ease-out;
+	}
+	
+	a:hover {
+		color: #666;
+	}
+	
+	li:first-of-type {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		
+		a {
+			@include typeHeader;
+		}
+	}
+}
+
+.intro {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+	}
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+}
+
+.portfolio a {
+	@include typeHeader;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.process {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+		clear: both;
+	}
+	
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+}
+
+.resume {
+	h1 {
+		@include typeHeader;
+		margin-bottom: 1em;
+	}
+	
+	h2 {
+		@include typeBody;
+		margin-top: 1em;
+	}
+	
+	h2:first-of-type {
+		margin-top: 0;
+	}
+	
+	p {
+		@include typeBody;
+		opacity: .5;
+	}
+	
+	a {
+		color: #000;
+	}
+}
