@@ -1,163 +1,113 @@
-p {
-	font-family: "proxima-nova";
-	line-height: 1.5em;
-	margin-bottom: 1em;
-	color: #000;
+@mixin typeBody {
+	font-family: 'proxima nova', proxima-nova;
 	font-size: 12pt;
+	line-height: 1.5em;
 }
 
-h2 {
-	font-family: "futura-pt";
-	font-size: 18pt;
-	margin-bottom: 1em;
-	margin-top: 1.5em;
+@mixin typeHeader {
+	font-family: 'futura pt', futura-pt;
+	font-size: 12pt;
+	text-transform: uppercase;
 	letter-spacing: 0.1em;
+	line-height: 1.5em;
+}
+
+@mixin typeDisplay {
+	font-family: 'futura pt', futura-pt;
+	line-height: 1.5em;
+	font-weight: bolder;
+	font-size: 12pt;
+	letter-spacing: 0.1em;
+	
+	@media (min-width: 40em) {
+		font-size: 12pt;
+	}
+	
+	@media (min-width: 85em) {
+		font-size: 12pt;
+	}
+}
+
+p {
+	@include typeBody;
+}
+
+a {
+	@include typeBody;
+	text-decoration: none;
+}
+
+nav {
+	a {
+		color: #000;
+		transition: .3s ease-out;
+	}
+	
+	a:hover {
+		color: #666;
+	}
+	
+	li:first-of-type {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		
+		a {
+			@include typeHeader;
+		}
+	}
+}
+
+.intro {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+	}
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+}
+
+.portfolio a {
+	@include typeHeader;
 	text-transform: uppercase;
 	color: #000;
 }
 
-header {
-	a {
-		font-family: "futura-pt";
-		font-size: 12pt;
-		color: #fff;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-decoration: none;
+.process {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+		clear: both;
+	}
+	
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
 	}
 }
 
-#about {
+.resume {
 	h1 {
-		font-family: "futura-pt";
-		font-size: 18pt;
-		margin-bottom: 1.5em;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: #fff;
+		@include typeHeader;
+		margin-bottom: 1em;
 	}
 	
-	p, a {
-		font-family: "proxima-nova";
-		line-height: 1.5em;
-		margin-bottom: 1em;
-		color: #fff;
-		font-size: 9pt;
+	h2 {
+		@include typeBody;
+		margin-top: 1em;
 	}
 	
-	a {
-		text-decoration: underline;
-	}
-}
-
-.page-header {
-	h1 {
-		font-family: "futura-pt";
-		font-size: 14pt;
-		margin-bottom: 1em;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: #000;
+	h2:first-of-type {
+		margin-top: 0;
 	}
 	
 	p {
-		font-family: "proxima-nova";
-		font-size: 8pt;
-		line-height: 1.5em;
-		margin-bottom: 1em;
-		color: #000;
-	}
-}
-
-#portfolio {
-	a {
-		text-decoration: none;
-		font-family: "futura-pt";
-		color: #000;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		font-size: 14pt;
-		text-align: center;
-		display: block;
-		line-height: 1.3em;
-	}
-}
-
-#resume {
-	.resume-div {
-		margin-bottom: 1.5em;
-	}
-	
-	a {
-		font-family: "proxima-nova";
-		color: #fff;
-		text-decoration: none;
-	}
-	
-	h1 {
-		font-family: "futura-pt";
-		font-size: 14pt;
-		letter-spacing: 0.1em;
-		text-transform: uppercase;
-		color: #fff;
-		line-height: 1.5em;
-		margin-bottom: 0.5em;
-	}
-	
-	p {
-		color: #fff;
-	}
-	
-	.resume-title {
-		font-family: "proxima-nova";
-		font-size: 12pt;
-		line-height: 1.5em;
-		color: #fff;
-		margin-bottom: 0;
-	}
-	
-	.resume-sub {
-		font-family: "proxima-nova";
-		font-size: 12pt;
-		line-height: 1.5em;
-		color: #fff;
+		@include typeBody;
 		opacity: .5;
-		margin-bottom: 0;
-	}
-}
-
-.resume-download {
-	margin-bottom: 0.3em;
-}
-
-.credit {
-	text-transform: uppercase;
-	opacity: .5;
-	font-size: 8pt;
-}
-
-@media (min-width: 40em) {
-	#about {
-		p {
-			font-size: 12pt;
-		}
-	}
-}
-
-@media (min-width: 50em) {
-	.page-header {
-		p {
-			font-size: 12pt;
-		}
 	}
 	
-	p {
-		font-size: 12pt;
-	}
-	
-	#about {
-		p {
-			font-size: 12pt;
-		}
+	a {
+		color: #000;
 	}
 }

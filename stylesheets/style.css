@@ -56,518 +56,410 @@ table {
   border-spacing: 0;
 }
 
-/* line 1, ../sass/_type.scss */
-p {
-  font-family: "proxima-nova";
-  line-height: 1.5em;
-  margin-bottom: 1em;
-  color: #000;
-  font-size: 12pt;
-}
-
-/* line 9, ../sass/_type.scss */
-h2 {
-  font-family: "futura-pt";
-  font-size: 18pt;
-  margin-bottom: 1em;
-  margin-top: 1.5em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #000;
-}
-
-/* line 20, ../sass/_type.scss */
-header a {
-  font-family: "futura-pt";
-  font-size: 12pt;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-}
-
 /* line 31, ../sass/_type.scss */
-#about h1 {
-  font-family: "futura-pt";
-  font-size: 18pt;
-  margin-bottom: 1.5em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
-}
-/* line 40, ../sass/_type.scss */
-#about p, #about a {
-  font-family: "proxima-nova";
+p {
+  font-family: 'proxima nova', proxima-nova;
+  font-size: 12pt;
   line-height: 1.5em;
-  margin-bottom: 1em;
-  color: #fff;
-  font-size: 9pt;
-}
-/* line 48, ../sass/_type.scss */
-#about a {
-  text-decoration: underline;
 }
 
+/* line 35, ../sass/_type.scss */
+a {
+  font-family: 'proxima nova', proxima-nova;
+  font-size: 12pt;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+/* line 41, ../sass/_type.scss */
+nav a {
+  color: #000;
+  transition: .3s ease-out;
+}
+/* line 46, ../sass/_type.scss */
+nav a:hover {
+  color: #666;
+}
+/* line 50, ../sass/_type.scss */
+nav li:first-of-type {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
 /* line 54, ../sass/_type.scss */
-.page-header h1 {
-  font-family: "futura-pt";
-  font-size: 14pt;
-  margin-bottom: 1em;
-  letter-spacing: 0.1em;
+nav li:first-of-type a {
+  font-family: 'futura pt', futura-pt;
+  font-size: 12pt;
   text-transform: uppercase;
-  color: #000;
-}
-/* line 63, ../sass/_type.scss */
-.page-header p {
-  font-family: "proxima-nova";
-  font-size: 8pt;
+  letter-spacing: 0.1em;
   line-height: 1.5em;
-  margin-bottom: 1em;
-  color: #000;
 }
 
-/* line 73, ../sass/_type.scss */
-#portfolio a {
-  text-decoration: none;
-  font-family: "futura-pt";
-  color: #000;
-  letter-spacing: 0.1em;
+/* line 61, ../sass/_type.scss */
+.intro .colOne {
+  font-family: 'futura pt', futura-pt;
+  font-size: 12pt;
   text-transform: uppercase;
-  font-size: 14pt;
-  text-align: center;
-  display: block;
-  line-height: 1.3em;
-}
-
-/* line 87, ../sass/_type.scss */
-#resume .resume-div {
-  margin-bottom: 1.5em;
-}
-/* line 91, ../sass/_type.scss */
-#resume a {
-  font-family: "proxima-nova";
-  color: #fff;
-  text-decoration: none;
-}
-/* line 97, ../sass/_type.scss */
-#resume h1 {
-  font-family: "futura-pt";
-  font-size: 14pt;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
   line-height: 1.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
-/* line 107, ../sass/_type.scss */
-#resume p {
-  color: #fff;
-}
-/* line 111, ../sass/_type.scss */
-#resume .resume-title {
-  font-family: "proxima-nova";
+/* line 65, ../sass/_type.scss */
+.intro .colTwo {
+  font-family: 'proxima nova', proxima-nova;
   font-size: 12pt;
   line-height: 1.5em;
-  color: #fff;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
-/* line 119, ../sass/_type.scss */
-#resume .resume-sub {
-  font-family: "proxima-nova";
+
+/* line 71, ../sass/_type.scss */
+.portfolio a {
+  font-family: 'futura pt', futura-pt;
   font-size: 12pt;
-  line-height: 1.5em;
-  color: #fff;
-  opacity: .5;
-  margin-bottom: 0;
-}
-
-/* line 129, ../sass/_type.scss */
-.resume-download {
-  margin-bottom: 0.3em;
-}
-
-/* line 133, ../sass/_type.scss */
-.credit {
   text-transform: uppercase;
-  opacity: .5;
-  font-size: 8pt;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #000;
 }
 
-@media (min-width: 40em) {
-  /* line 141, ../sass/_type.scss */
-  #about p {
-    font-size: 12pt;
-  }
-}
-@media (min-width: 50em) {
-  /* line 149, ../sass/_type.scss */
-  .page-header p {
-    font-size: 12pt;
-  }
-
-  /* line 154, ../sass/_type.scss */
-  p {
-    font-size: 12pt;
-  }
-
-  /* line 159, ../sass/_type.scss */
-  #about p {
-    font-size: 12pt;
-  }
-}
-/* line 1, ../sass/_composition.scss */
-body, html {
-  height: 100%;
-}
-
-/* line 5, ../sass/_composition.scss */
-.clear {
+/* line 78, ../sass/_type.scss */
+.process .colOne {
+  font-family: 'futura pt', futura-pt;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
   clear: both;
 }
-
-/* line 9, ../sass/_composition.scss */
-header.mobile {
-  position: relative;
-  background-color: #000;
-  text-align: center;
-  padding: 0.5em 0;
+/* line 84, ../sass/_type.scss */
+.process .colTwo {
+  font-family: 'proxima nova', proxima-nova;
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin-bottom: 1em;
 }
 
-/* line 16, ../sass/_composition.scss */
-header.desktop {
+/* line 91, ../sass/_type.scss */
+.resume h1 {
+  font-family: 'futura pt', futura-pt;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 96, ../sass/_type.scss */
+.resume h2 {
+  font-family: 'proxima nova', proxima-nova;
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin-top: 1em;
+}
+/* line 101, ../sass/_type.scss */
+.resume h2:first-of-type {
+  margin-top: 0;
+}
+/* line 105, ../sass/_type.scss */
+.resume p {
+  font-family: 'proxima nova', proxima-nova;
+  font-size: 12pt;
+  line-height: 1.5em;
+  opacity: .5;
+}
+/* line 110, ../sass/_type.scss */
+.resume a {
+  color: #000;
+}
+
+@media (min-width: 120em) {
+  /* line 31, ../sass/_grid.scss */
+  body .centerWrapper {
+    width: 110em;
+    margin: 0 auto;
+  }
+}
+
+/* line 38, ../sass/_grid.scss */
+nav {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 1em;
+}
+/* line 47, ../sass/_grid.scss */
+nav ul li {
+  margin-right: 6.66667%;
   display: none;
 }
-
-/* line 20, ../sass/_composition.scss */
-.process {
-  width: 90%;
-  margin: 0 auto;
-  padding-bottom: 2em;
-}
-
-/* line 26, ../sass/_composition.scss */
-#about, .page-header {
-  height: 100%;
-  background-color: #aaa;
-  clear: both;
-}
-/* line 31, ../sass/_composition.scss */
-#about .aboutwrapper, .page-header .aboutwrapper {
-  width: 80%;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 1em;
-  left: 10%;
-}
-/* line 39, ../sass/_composition.scss */
-#about .page-header-wrapper, .page-header .page-header-wrapper {
-  width: 80%;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 50%;
-  left: 10%;
-}
-
-/* line 50, ../sass/_composition.scss */
-#portfolio article a {
-  padding: 2em 1em;
-  transition: padding .3s ease-out;
-}
-/* line 55, ../sass/_composition.scss */
-#portfolio article a:hover {
-  padding: 4em 1em;
-}
-
-/* line 61, ../sass/_composition.scss */
-#resume {
-  background-color: #aaa;
-  padding: 5em 0;
-}
-/* line 65, ../sass/_composition.scss */
-#resume .resume-div {
-  width: 80%;
-  padding: 0 10%;
-  margin-bottom: 3.5em;
-}
-
-/* line 72, ../sass/_composition.scss */
-.page-header {
-  height: 50%;
-}
-
 @media (min-width: 50em) {
-  /* line 77, ../sass/_composition.scss */
-  .process {
-    width: 60%;
-  }
-
-  /* line 81, ../sass/_composition.scss */
-  header.mobile {
-    display: none;
-  }
-
-  /* line 85, ../sass/_composition.scss */
-  header.desktop {
-    position: fixed;
-    overflow: auto;
-    background-color: #000;
-    width: 100%;
-    z-index: 1;
+  /* line 47, ../sass/_grid.scss */
+  nav ul li {
     display: inline;
-    padding: 0.5em 0;
-  }
-  /* line 94, ../sass/_composition.scss */
-  header.desktop h1 {
-    float: left;
-    display: inline;
-    margin-left: 1em;
-  }
-  /* line 100, ../sass/_composition.scss */
-  header.desktop ul li {
-    float: right;
-    margin: 0 1em;
-  }
-
-  /* line 109, ../sass/_composition.scss */
-  #portfolio article a {
-    padding: 4em 1em;
-    transition: padding .3s ease-out;
-  }
-  /* line 114, ../sass/_composition.scss */
-  #portfolio article a:hover {
-    padding: 6em 1em;
-  }
-
-  /* line 121, ../sass/_composition.scss */
-  #about .aboutwrapper, .page-header .aboutwrapper {
-    width: 25em;
-    text-align: center;
-    position: relative;
-    left: auto;
-    bottom: auto;
-    top: 45%;
-  }
-  /* line 130, ../sass/_composition.scss */
-  #about .page-header-wrapper, .page-header .page-header-wrapper {
-    width: 30em;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    bottom: 55%;
-    margin-left: -15em;
   }
 }
-@media (min-width: 60em) {
-  /* line 142, ../sass/_composition.scss */
-  #resume {
-    overflow: auto;
-    width: 100%;
+@media (min-width: 120em) {
+  /* line 47, ../sass/_grid.scss */
+  nav ul li {
+    float: right;
+    margin-right: 3.33333%;
+    margin-left: gutter;
   }
-  /* line 143, ../sass/_composition.scss */
-  #resume .resume-div {
-    width: 20em;
+}
+/* line 61, ../sass/_grid.scss */
+nav ul li a {
+  padding-top: 3em;
+}
+/* line 66, ../sass/_grid.scss */
+nav ul li:first-of-type {
+  margin-right: 13.33333%;
+  display: inline;
+  margin-left: 3.33333%;
+}
+@media (min-width: 50em) {
+  /* line 66, ../sass/_grid.scss */
+  nav ul li:first-of-type {
+    margin-left: 0;
+  }
+}
+@media (min-width: 120em) {
+  /* line 66, ../sass/_grid.scss */
+  nav ul li:first-of-type {
     float: left;
-    padding: 0 5em;
+    margin-left: 3.33333%;
+    margin-right: 0;
   }
+}
+@media (min-width: 50em) {
+  /* line 46, ../sass/_grid.scss */
+  nav ul {
+    margin-left: 35.55556%;
+  }
+}
+@media (min-width: 120em) {
+  /* line 46, ../sass/_grid.scss */
+  nav ul {
+    margin-left: 0;
+  }
+}
+@media (min-width: 50em) {
+  /* line 38, ../sass/_grid.scss */
+  nav {
+    margin-bottom: 3em;
+    position: fixed;
+  }
+}
 
-  /* line 152, ../sass/_composition.scss */
-  .resume-wrapper {
-    width: 60em;
-    overflow: auto;
-    margin: 0 auto;
-    padding: 0;
+/* line 98, ../sass/_grid.scss */
+.intro {
+  padding: 8rem 3.33333%;
+  padding-top: 11rem;
+  overflow: auto;
+}
+@media (min-width: 50em) {
+  /* line 98, ../sass/_grid.scss */
+  .intro {
+    padding: 10rem 0;
+    padding-top: 13rem;
   }
 }
 @media (min-width: 80em) {
-  /* line 161, ../sass/_composition.scss */
+  /* line 98, ../sass/_grid.scss */
+  .intro {
+    padding: 15rem 0;
+    padding-top: 18rem;
+  }
+}
+
+/* line 115, ../sass/_grid.scss */
+.portfolio {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+/* line 118, ../sass/_grid.scss */
+.portfolio article a {
+  padding: 3rem 3.33333%;
+  display: block;
+  transition: .3s ease-out;
+}
+@media (min-width: 50em) {
+  /* line 118, ../sass/_grid.scss */
+  .portfolio article a {
+    padding: 6em 0;
+    margin-left: 35.55556%;
+  }
+}
+@media (min-width: 120em) {
+  /* line 118, ../sass/_grid.scss */
+  .portfolio article a {
+    text-align: center;
+  }
+}
+/* line 133, ../sass/_grid.scss */
+.portfolio article a:hover {
+  padding: 6rem 3.33333%;
+}
+@media (min-width: 50em) {
+  /* line 133, ../sass/_grid.scss */
+  .portfolio article a:hover {
+    padding: 9em 0;
+    margin-left: 35.55556%;
+  }
+}
+@media (min-width: 120em) {
+  /* line 133, ../sass/_grid.scss */
+  .portfolio article a:hover {
+    text-align: center;
+  }
+}
+/* line 148, ../sass/_grid.scss */
+.portfolio .bible {
+  background: url("../bible/cover.jpg") no-repeat center center;
+}
+/* line 149, ../sass/_grid.scss */
+.portfolio .weather {
+  background: url("../weather/cover.jpg") no-repeat center center;
+}
+/* line 150, ../sass/_grid.scss */
+.portfolio .love {
+  background: url("../love/cover.jpg") no-repeat center center;
+}
+/* line 151, ../sass/_grid.scss */
+.portfolio .books {
+  background: url("../books/cover.jpg") no-repeat center center;
+}
+/* line 152, ../sass/_grid.scss */
+.portfolio .blur {
+  background: url("../blur/cover.jpg") no-repeat center center;
+}
+
+/* line 155, ../sass/_grid.scss */
+.resume {
+  padding: 8rem 3.33333%;
+  padding-bottom: 0;
+  overflow: auto;
+}
+@media (min-width: 50em) {
+  /* line 155, ../sass/_grid.scss */
+  .resume {
+    padding: 10rem 0;
+  }
+}
+@media (min-width: 80em) {
+  /* line 155, ../sass/_grid.scss */
+  .resume {
+    padding: 15rem 0;
+  }
+}
+/* line 160, ../sass/_grid.scss */
+.resume div {
+  overflow: auto;
+}
+/* line 164, ../sass/_grid.scss */
+.resume .colTwo {
+  margin-bottom: 3em;
+}
+@media (min-width: 50em) {
+  /* line 155, ../sass/_grid.scss */
+  .resume {
+    padding-bottom: 8rem;
+  }
+}
+
+/* line 173, ../sass/_grid.scss */
+.process {
+  padding: 8rem 3.33333%;
+}
+@media (min-width: 50em) {
+  /* line 173, ../sass/_grid.scss */
   .process {
-    width: 40em;
+    padding: 10rem 0;
   }
 }
-/* line 1, ../sass/_images.scss */
-#about {
-  background: url("../images/portfolio/header.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-/* line 8, ../sass/_images.scss */
-.bible {
-  background: url("../images/portfolio/bible.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  transition: opacity .3s ease-out;
-}
-
-/* line 16, ../sass/_images.scss */
-.bible-header {
-  background: url("../images/portfolio/bible.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-/* line 23, ../sass/_images.scss */
-.bible:hover {
-  opacity: 0.7;
-}
-
-/* line 27, ../sass/_images.scss */
-.lovestories {
-  background: url("../images/portfolio/lovestories.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  transition: opacity .3s ease-out;
-}
-
-/* line 35, ../sass/_images.scss */
-.lovestories-header {
-  background: url("../images/portfolio/lovestories.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-/* line 42, ../sass/_images.scss */
-.lovestories:hover {
-  opacity: 0.7;
-}
-
-/* line 46, ../sass/_images.scss */
-.bookcovers {
-  background: url("../images/portfolio/bookcovers.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  transition: opacity .3s ease-out;
-}
-
-/* line 54, ../sass/_images.scss */
-.bookcovers-header {
-  background: url("../images/portfolio/bookcovers.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-/* line 61, ../sass/_images.scss */
-.bookcovers:hover {
-  opacity: 0.7;
-}
-
-/* line 65, ../sass/_images.scss */
-.weather {
-  background: url("../images/portfolio/weather.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  transition: opacity .3s ease-out;
-}
-
-/* line 73, ../sass/_images.scss */
-.weather-header {
-  background: url("../images/portfolio/weather.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-/* line 80, ../sass/_images.scss */
-.weather:hover {
-  opacity: 0.7;
-}
-
-/* line 84, ../sass/_images.scss */
-.blur {
-  background: url("../images/portfolio/blur.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  transition: opacity .3s ease-out;
-}
-
-/* line 92, ../sass/_images.scss */
-.blur-header {
-  background: url("../images/portfolio/blur.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-/* line 99, ../sass/_images.scss */
-.blur:hover {
-  opacity: 0.7;
-}
-
-/* line 103, ../sass/_images.scss */
-#resume {
-  background: url("../images/portfolio/footer.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-}
-
-@media (min-width: 40em) {
-  /* line 111, ../sass/_images.scss */
-  #resume, #about, .blur-header, .irb-header, .bookcovers-header, .lovestories-header, .bible-header {
-    background-attachment: fixed;
-  }
-
-  /* line 115, ../sass/_images.scss */
-  .blur-header, .irb-header, .bookcovers-header, .lovestories-header, .bible-header {
-    background-position: 50% 200%;
+@media (min-width: 80em) {
+  /* line 173, ../sass/_grid.scss */
+  .process {
+    padding: 15rem 0;
   }
 }
-/* line 1, ../sass/_gallery.scss */
-.bible-gallery, .weather-gallery, .lovestories-gallery {
-  padding: 5%;
-}
-/* line 2, ../sass/_gallery.scss */
-.bible-gallery img, .weather-gallery img, .lovestories-gallery img {
-  width: 33%;
-  margin: 7.5%;
-  transition: opacity .3s ease-out;
-}
-/* line 7, ../sass/_gallery.scss */
-.bible-gallery img:hover, .weather-gallery img:hover, .lovestories-gallery img:hover {
-  opacity: 0.8;
+
+@media (min-width: 50em) {
+  /* line 177, ../sass/_grid.scss */
+  .colOne {
+    width: 28.88889%;
+    float: left;
+    overflow: auto;
+    clear: left;
+    text-align: right;
+    margin-left: 3.33333%;
+  }
 }
 
-/* line 13, ../sass/_gallery.scss */
-.blur-gallery, .bookcovers-gallery {
-  padding: 5%;
-}
-/* line 14, ../sass/_gallery.scss */
-.blur-gallery img, .bookcovers-gallery img {
-  width: 40%;
-  margin: 4.5%;
-  transition: opacity .3s ease-out;
-}
-/* line 19, ../sass/_gallery.scss */
-.blur-gallery img:hover, .bookcovers-gallery img:hover {
-  opacity: 0.8;
+@media (min-width: 50em) {
+  /* line 188, ../sass/_grid.scss */
+  .colTwo {
+    width: 43.33333%;
+    margin-right: 21.11111%;
+    float: right;
+    overflow: auto;
+    clear: right;
+  }
 }
 
+/* line 198, ../sass/_grid.scss */
+.gallery {
+  padding-top: 3em;
+  clear: both;
+}
+/* line 201, ../sass/_grid.scss */
+.gallery img {
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: 3.33333%;
+}
 @media (min-width: 30em) {
-  /* line 27, ../sass/_gallery.scss */
-  .bible-gallery img, .weather-gallery img {
-    width: 25%;
-    margin: 3.5%;
+  /* line 201, ../sass/_grid.scss */
+  .gallery img {
+    width: 93.33333%;
+    margin-left: 3.33333%;
   }
 }
-@media (min-width: 56em) {
-  /* line 36, ../sass/_gallery.scss */
-  .bible-gallery img, .weather-gallery img {
-    width: 15%;
-    margin: 4.5%;
+@media (min-width: 40em) {
+  /* line 201, ../sass/_grid.scss */
+  .gallery img {
+    width: 42.5%;
+    margin-left: 5%;
   }
+}
+@media (min-width: 50em) {
+  /* line 201, ../sass/_grid.scss */
+  .gallery img {
+    width: 28.88889%;
+    margin-left: 3.33333%;
+  }
+}
 
-  /* line 43, ../sass/_gallery.scss */
-  .blur-gallery img {
-    width: 30%;
-    margin: 1.5%;
+/* line 225, ../sass/_grid.scss */
+.hero img {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 3.33333%;
+}
+@media (min-width: 30em) {
+  /* line 225, ../sass/_grid.scss */
+  .hero img {
+    width: 93.33333%;
+    margin-left: 3.33333%;
+  }
+}
+@media (min-width: 40em) {
+  /* line 225, ../sass/_grid.scss */
+  .hero img {
+    width: 28.88889%;
+    margin-left: 35.55556%;
   }
 }
