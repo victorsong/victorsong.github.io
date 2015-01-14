@@ -122,7 +122,7 @@ nav {
             
             @media (min-width: 50em) {
                 padding: 6em 0;
-                margin-left: (2 * $gutter) + $col;
+                padding-left: (2 * $gutter) + $col;
             }
             
             @media (min-width: 120em) {
@@ -135,7 +135,7 @@ nav {
             
             @media (min-width: 50em) {
                 padding: 9em 0;
-                margin-left: (2 * $gutter) + $col;
+                padding-left: (2 * $gutter) + $col;
             }
             
             @media (min-width: 120em) {

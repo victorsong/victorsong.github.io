@@ -289,7 +289,7 @@ nav ul li:first-of-type {
   /* line 118, ../sass/_grid.scss */
   .portfolio article a {
     padding: 6em 0;
-    margin-left: 35.55556%;
+    padding-left: 35.55556%;
   }
 }
 @media (min-width: 120em) {
@@ -306,7 +306,7 @@ nav ul li:first-of-type {
   /* line 133, ../sass/_grid.scss */
   .portfolio article a:hover {
     padding: 9em 0;
-    margin-left: 35.55556%;
+    padding-left: 35.55556%;
   }
 }
 @media (min-width: 120em) {
