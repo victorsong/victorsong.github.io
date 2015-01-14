@@ -442,22 +442,30 @@ nav ul li:first-of-type {
     margin-left: 3.33333%;
   }
 }
+/* line 222, ../sass/_grid.scss */
+.gallery a {
+  transition: .3s ease-out;
+}
+/* line 226, ../sass/_grid.scss */
+.gallery a:hover {
+  opacity: .5;
+}
 
-/* line 225, ../sass/_grid.scss */
+/* line 232, ../sass/_grid.scss */
 .hero img {
   width: 100%;
   max-width: 100%;
   margin-bottom: 3.33333%;
 }
 @media (min-width: 30em) {
-  /* line 225, ../sass/_grid.scss */
+  /* line 232, ../sass/_grid.scss */
   .hero img {
     width: 93.33333%;
     margin-left: 3.33333%;
   }
 }
 @media (min-width: 40em) {
-  /* line 225, ../sass/_grid.scss */
+  /* line 232, ../sass/_grid.scss */
   .hero img {
     width: 28.88889%;
     margin-left: 35.55556%;

@@ -219,6 +219,13 @@ nav {
             margin-left: $gutter;
         }
     }
+    a {
+        transition: .3s ease-out; 
+    }
+    
+    a:hover {
+        opacity: .5;
+    }
 }
 
 .hero {
