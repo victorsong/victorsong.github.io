@@ -85,6 +85,10 @@ nav {
 		@include typeBody;
 		margin-bottom: 1em;
 	}
+	
+	.quote {
+		font-style: italic;
+	}
 }
 
 .resume {

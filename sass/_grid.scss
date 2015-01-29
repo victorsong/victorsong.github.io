@@ -152,6 +152,7 @@ nav {
     .love {background: url('../love/cover.jpg') no-repeat center center;}
     .books {background: url('../books/cover.jpg') no-repeat center center;}
     .blur {background: url('../blur/cover.jpg') no-repeat center center;}
+    .lg {background: url('../lg/cover.jpg') no-repeat center center;}
 }
 
 .resume {
@@ -231,7 +232,7 @@ nav {
 }
 
 .hero {
-    img {
+    img, video {
         width: 100%;
         max-width: 100%;
         margin-bottom: $gutter;
