@@ -59,14 +59,14 @@ table {
 /* line 31, ../sass/_type.scss */
 p {
   font-family: '.tk-ingra', ingra;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5em;
 }
 
 /* line 35, ../sass/_type.scss */
 a {
   font-family: '.tk-ingra', ingra;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5em;
   text-decoration: none;
 }
@@ -106,7 +106,7 @@ nav li:first-of-type a {
 /* line 65, ../sass/_type.scss */
 .intro .colTwo {
   font-family: '.tk-ingra', ingra;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
@@ -135,7 +135,7 @@ nav li:first-of-type a {
 /* line 84, ../sass/_type.scss */
 .process .colTwo {
   font-family: '.tk-ingra', ingra;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
@@ -156,7 +156,7 @@ nav li:first-of-type a {
 /* line 100, ../sass/_type.scss */
 .resume h2 {
   font-family: '.tk-ingra', ingra;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5em;
   margin-top: 1em;
 }
@@ -167,7 +167,7 @@ nav li:first-of-type a {
 /* line 109, ../sass/_type.scss */
 .resume p {
   font-family: '.tk-ingra', ingra;
-  font-size: 12pt;
+  font-size: 10pt;
   line-height: 1.5em;
   opacity: .5;
 }
