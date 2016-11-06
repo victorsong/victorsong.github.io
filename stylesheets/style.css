@@ -58,14 +58,14 @@ table {
 
 /* line 31, ../sass/_type.scss */
 p {
-  font-family: '.tk-source-sans-pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12pt;
   line-height: 1.5em;
 }
 
 /* line 35, ../sass/_type.scss */
 a {
-  font-family: '.tk-source-sans-pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12pt;
   line-height: 1.5em;
   text-decoration: none;
@@ -87,7 +87,7 @@ nav li:first-of-type {
 }
 /* line 54, ../sass/_type.scss */
 nav li:first-of-type a {
-  font-family: '.tk-futura-pt';
+  font-family: 'futura-pt', sans-serif;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -96,7 +96,7 @@ nav li:first-of-type a {
 
 /* line 61, ../sass/_type.scss */
 .intro .colOne {
-  font-family: '.tk-futura-pt';
+  font-family: 'futura-pt', sans-serif;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -105,7 +105,7 @@ nav li:first-of-type a {
 }
 /* line 65, ../sass/_type.scss */
 .intro .colTwo {
-  font-family: '.tk-source-sans-pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12pt;
   line-height: 1.5em;
   margin-bottom: 1em;
@@ -113,7 +113,7 @@ nav li:first-of-type a {
 
 /* line 71, ../sass/_type.scss */
 .portfolio a {
-  font-family: '.tk-futura-pt';
+  font-family: 'futura-pt', sans-serif;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -124,7 +124,7 @@ nav li:first-of-type a {
 
 /* line 78, ../sass/_type.scss */
 .process .colOne {
-  font-family: '.tk-futura-pt';
+  font-family: 'futura-pt', sans-serif;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -134,7 +134,7 @@ nav li:first-of-type a {
 }
 /* line 84, ../sass/_type.scss */
 .process .colTwo {
-  font-family: '.tk-source-sans-pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12pt;
   line-height: 1.5em;
   margin-bottom: 1em;
@@ -146,7 +146,7 @@ nav li:first-of-type a {
 
 /* line 95, ../sass/_type.scss */
 .resume h1 {
-  font-family: '.tk-futura-pt';
+  font-family: 'futura-pt', sans-serif;
   font-size: 12pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -155,7 +155,7 @@ nav li:first-of-type a {
 }
 /* line 100, ../sass/_type.scss */
 .resume h2 {
-  font-family: '.tk-source-sans-pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12pt;
   line-height: 1.5em;
   margin-top: 1em;
@@ -166,7 +166,7 @@ nav li:first-of-type a {
 }
 /* line 109, ../sass/_type.scss */
 .resume p {
-  font-family: '.tk-source-sans-pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12pt;
   line-height: 1.5em;
   opacity: .5;
