@@ -257,27 +257,28 @@ nav ul li:first-of-type {
 
 /* line 98, ../sass/_grid.scss */
 .intro {
-  padding: 8rem 3.33333%;
+  padding: 6rem 3.33333%;
   padding-top: 11rem;
   overflow: auto;
 }
 @media (min-width: 50em) {
   /* line 98, ../sass/_grid.scss */
   .intro {
-    padding: 10rem 0;
-    padding-top: 13rem;
+    padding: 8rem 0;
+    padding-top: 15rem;
   }
 }
 @media (min-width: 80em) {
   /* line 98, ../sass/_grid.scss */
   .intro {
-    padding: 15rem 0;
-    padding-top: 18rem;
+    padding: 13rem 0;
+    padding-top: 20rem;
   }
 }
 
 /* line 115, ../sass/_grid.scss */
 .portfolio {
+  padding-top: 4em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

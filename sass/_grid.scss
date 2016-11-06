@@ -96,25 +96,25 @@ nav {
 
 
 .intro {
-    padding: 8rem $gutter;
+    padding: 6rem $gutter;
     padding-top: 11rem;
     overflow: auto;
     
     @media (min-width: 50em) {
-        padding: 10rem 0;
-        padding-top: 13rem;
+        padding: 8rem 0;
+        padding-top: 15rem;
     }
     
     @media (min-width: 80em) {
-        padding: 15rem 0;
-        padding-top: 18rem;
+        padding: 13rem 0;
+        padding-top: 20rem;
     }
     
 }
 
 .portfolio {
+    padding-top: 4em;
     article {
-        
         a {
             padding: 3rem $gutter;
             display: block;
@@ -130,7 +130,7 @@ nav {
                 text-align: center;
             }
         }
-        
+
         a:hover {
             padding: 6rem $gutter;
             
