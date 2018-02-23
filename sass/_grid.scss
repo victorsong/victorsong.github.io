@@ -147,12 +147,12 @@ nav {
     }
     
     @include bgCover;
-    .bible {background: url('../bible/cover.jpg') no-repeat center center;}
-    .weather {background: url('../weather/cover.jpg') no-repeat center center;}
-    .love {background: url('../love/cover.jpg') no-repeat center center;}
-    .books {background: url('../books/cover.jpg') no-repeat center center;}
-    .blur {background: url('../blur/cover.jpg') no-repeat center center;}
-    .lg {background: url('../lg/cover.jpg') no-repeat center center;}
+    .bible {background: url('../bible/cover.jpg') no-repeat center center; background-size: cover}
+    .weather {background: url('../weather/cover.jpg') no-repeat center center; background-size: cover}
+    .love {background: url('../love/cover.jpg') no-repeat center center; background-size: cover}
+    .books {background: url('../books/cover.jpg') no-repeat center center; background-size: cover}
+    .blur {background: url('../blur/cover.jpg') no-repeat center center; background-size: cover}
+    .lg {background: url('../lg/cover.jpg') no-repeat center center; background-size: cover}
 }
 
 .resume {

@@ -1,30 +1,31 @@
 @mixin typeBody {
-	font-family: 'source-sans-pro', sans-serif;
-	font-size: 12pt;
+	font-family: 'crete round', serif;
+	font-size: 14pt;
 	line-height: 1.5em;
+	color: #333;
 }
 
 @mixin typeHeader {
-	font-family: 'futura-pt', sans-serif;
-	font-size: 12pt;
+	font-family: 'crete round', serif;
+	font-size: 14pt;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	line-height: 1.5em;
 }
 
 @mixin typeDisplay {
-	font-family: 'futura-pt', sans-serif;
+	font-family: 'crete round', serif;
 	line-height: 1.5em;
-	font-weight: bolder;
-	font-size: 12pt;
+	font-weight: 700;
+	font-size: 14pt;
 	letter-spacing: 0.1em;
 	
 	@media (min-width: 40em) {
-		font-size: 12pt;
+		font-size: 14pt;
 	}
 	
 	@media (min-width: 85em) {
-		font-size: 12pt;
+		font-size: 14pt;
 	}
 }
 
@@ -35,11 +36,17 @@ p {
 a {
 	@include typeBody;
 	text-decoration: none;
+	color: #3e98e8;
+	transition: .3s ease-out;
+}
+
+a:hover {
+	color: #296fad;
 }
 
 nav {
 	a {
-		color: #000;
+		color: #333;
 		transition: .3s ease-out;
 	}
 	
@@ -71,7 +78,7 @@ nav {
 .portfolio a {
 	@include typeHeader;
 	text-transform: uppercase;
-	color: #000;
+	color: #333;
 }
 
 .process {
@@ -108,10 +115,11 @@ nav {
 	
 	p {
 		@include typeBody;
-		opacity: .5;
+		font-style: italic;
+		opacity: 0.7;
 	}
 	
 	a {
-		color: #000;
+		color: #333;
 	}
 }

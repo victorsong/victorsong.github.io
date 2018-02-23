@@ -56,124 +56,138 @@ table {
   border-spacing: 0;
 }
 
-/* line 31, ../sass/_type.scss */
+/* line 32, ../sass/_type.scss */
 p {
-  font-family: 'source-sans-pro', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   line-height: 1.5em;
+  color: #333;
 }
 
-/* line 35, ../sass/_type.scss */
+/* line 36, ../sass/_type.scss */
 a {
-  font-family: 'source-sans-pro', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   line-height: 1.5em;
+  color: #333;
   text-decoration: none;
-}
-
-/* line 41, ../sass/_type.scss */
-nav a {
-  color: #000;
+  color: #3e98e8;
   transition: .3s ease-out;
 }
-/* line 46, ../sass/_type.scss */
+
+/* line 43, ../sass/_type.scss */
+a:hover {
+  color: #296fad;
+}
+
+/* line 48, ../sass/_type.scss */
+nav a {
+  color: #333;
+  transition: .3s ease-out;
+}
+/* line 53, ../sass/_type.scss */
 nav a:hover {
   color: #999;
 }
-/* line 50, ../sass/_type.scss */
+/* line 57, ../sass/_type.scss */
 nav li:first-of-type {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
-/* line 54, ../sass/_type.scss */
-nav li:first-of-type a {
-  font-family: 'futura-pt', sans-serif;
-  font-size: 12pt;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
-}
-
 /* line 61, ../sass/_type.scss */
-.intro .colOne {
-  font-family: 'futura-pt', sans-serif;
-  font-size: 12pt;
+nav li:first-of-type a {
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  margin-bottom: 1em;
-}
-/* line 65, ../sass/_type.scss */
-.intro .colTwo {
-  font-family: 'source-sans-pro', sans-serif;
-  font-size: 12pt;
-  line-height: 1.5em;
-  margin-bottom: 1em;
 }
 
-/* line 71, ../sass/_type.scss */
-.portfolio a {
-  font-family: 'futura-pt', sans-serif;
-  font-size: 12pt;
+/* line 68, ../sass/_type.scss */
+.intro .colOne {
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.5em;
-  text-transform: uppercase;
-  color: #000;
+  margin-bottom: 1em;
+}
+/* line 72, ../sass/_type.scss */
+.intro .colTwo {
+  font-family: 'crete round', serif;
+  font-size: 14pt;
+  line-height: 1.5em;
+  color: #333;
+  margin-bottom: 1em;
 }
 
 /* line 78, ../sass/_type.scss */
+.portfolio a {
+  font-family: 'crete round', serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* line 85, ../sass/_type.scss */
 .process .colOne {
-  font-family: 'futura-pt', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.5em;
   margin-bottom: 1em;
   clear: both;
 }
-/* line 84, ../sass/_type.scss */
+/* line 91, ../sass/_type.scss */
 .process .colTwo {
-  font-family: 'source-sans-pro', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   line-height: 1.5em;
+  color: #333;
   margin-bottom: 1em;
 }
-/* line 89, ../sass/_type.scss */
+/* line 96, ../sass/_type.scss */
 .process .quote {
   font-style: italic;
 }
 
-/* line 95, ../sass/_type.scss */
+/* line 102, ../sass/_type.scss */
 .resume h1 {
-  font-family: 'futura-pt', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
-/* line 100, ../sass/_type.scss */
+/* line 107, ../sass/_type.scss */
 .resume h2 {
-  font-family: 'source-sans-pro', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   line-height: 1.5em;
+  color: #333;
   margin-top: 1em;
 }
-/* line 105, ../sass/_type.scss */
+/* line 112, ../sass/_type.scss */
 .resume h2:first-of-type {
   margin-top: 0;
 }
-/* line 109, ../sass/_type.scss */
+/* line 116, ../sass/_type.scss */
 .resume p {
-  font-family: 'source-sans-pro', sans-serif;
-  font-size: 12pt;
+  font-family: 'crete round', serif;
+  font-size: 14pt;
   line-height: 1.5em;
-  opacity: .5;
+  color: #333;
+  font-style: italic;
+  opacity: 0.7;
 }
-/* line 114, ../sass/_type.scss */
+/* line 122, ../sass/_type.scss */
 .resume a {
-  color: #000;
+  color: #333;
 }
 
 @media (min-width: 120em) {
@@ -324,26 +338,32 @@ nav ul li:first-of-type {
 /* line 150, ../sass/_grid.scss */
 .portfolio .bible {
   background: url("../bible/cover.jpg") no-repeat center center;
+  background-size: cover;
 }
 /* line 151, ../sass/_grid.scss */
 .portfolio .weather {
   background: url("../weather/cover.jpg") no-repeat center center;
+  background-size: cover;
 }
 /* line 152, ../sass/_grid.scss */
 .portfolio .love {
   background: url("../love/cover.jpg") no-repeat center center;
+  background-size: cover;
 }
 /* line 153, ../sass/_grid.scss */
 .portfolio .books {
   background: url("../books/cover.jpg") no-repeat center center;
+  background-size: cover;
 }
 /* line 154, ../sass/_grid.scss */
 .portfolio .blur {
   background: url("../blur/cover.jpg") no-repeat center center;
+  background-size: cover;
 }
 /* line 155, ../sass/_grid.scss */
 .portfolio .lg {
   background: url("../lg/cover.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 /* line 158, ../sass/_grid.scss */
