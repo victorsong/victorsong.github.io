@@ -158,12 +158,8 @@ nav li:first-of-type a {
   color: #333;
   margin-bottom: 1em;
 }
-/* line 106, ../sass/_type.scss */
-.process .quote {
-  font-style: italic;
-}
 
-/* line 112, ../sass/_type.scss */
+/* line 108, ../sass/_type.scss */
 .resume h1 {
   font-family: FuturaPT, sans-serif;
   font-size: 14pt;
@@ -172,7 +168,7 @@ nav li:first-of-type a {
   line-height: 1.5em;
   margin-bottom: 1em;
 }
-/* line 117, ../sass/_type.scss */
+/* line 113, ../sass/_type.scss */
 .resume h2 {
   font-family: SourceSansPro, sans-serif;
   font-size: 14pt;
@@ -180,11 +176,11 @@ nav li:first-of-type a {
   color: #333;
   margin-top: 1em;
 }
-/* line 122, ../sass/_type.scss */
+/* line 118, ../sass/_type.scss */
 .resume h2:first-of-type {
   margin-top: 0;
 }
-/* line 126, ../sass/_type.scss */
+/* line 122, ../sass/_type.scss */
 .resume p {
   font-family: SourceSansPro, sans-serif;
   font-size: 14pt;
@@ -192,7 +188,7 @@ nav li:first-of-type a {
   color: #333;
   opacity: 0.7;
 }
-/* line 131, ../sass/_type.scss */
+/* line 127, ../sass/_type.scss */
 .resume a {
   color: #333;
 }
