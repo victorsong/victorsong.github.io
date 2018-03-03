@@ -365,59 +365,64 @@ nav ul li:first-of-type {
   background: url("../lg/cover.jpg") no-repeat center center;
   background-size: cover;
 }
+/* line 156, ../sass/_grid.scss */
+.portfolio .pnc {
+  background: url("../pnc/cover.jpg") no-repeat center center;
+  background-size: cover;
+}
 
-/* line 158, ../sass/_grid.scss */
+/* line 159, ../sass/_grid.scss */
 .resume {
   padding: 8rem 3.33333%;
   padding-bottom: 0;
   overflow: auto;
 }
 @media (min-width: 50em) {
-  /* line 158, ../sass/_grid.scss */
+  /* line 159, ../sass/_grid.scss */
   .resume {
     padding: 10rem 0;
   }
 }
 @media (min-width: 80em) {
-  /* line 158, ../sass/_grid.scss */
+  /* line 159, ../sass/_grid.scss */
   .resume {
     padding: 15rem 0;
   }
 }
-/* line 163, ../sass/_grid.scss */
+/* line 164, ../sass/_grid.scss */
 .resume div {
   overflow: auto;
 }
-/* line 167, ../sass/_grid.scss */
+/* line 168, ../sass/_grid.scss */
 .resume .colTwo {
   margin-bottom: 3em;
 }
 @media (min-width: 50em) {
-  /* line 158, ../sass/_grid.scss */
+  /* line 159, ../sass/_grid.scss */
   .resume {
     padding-bottom: 8rem;
   }
 }
 
-/* line 176, ../sass/_grid.scss */
+/* line 177, ../sass/_grid.scss */
 .process {
   padding: 8rem 3.33333%;
 }
 @media (min-width: 50em) {
-  /* line 176, ../sass/_grid.scss */
+  /* line 177, ../sass/_grid.scss */
   .process {
     padding: 10rem 0;
   }
 }
 @media (min-width: 80em) {
-  /* line 176, ../sass/_grid.scss */
+  /* line 177, ../sass/_grid.scss */
   .process {
     padding: 15rem 0;
   }
 }
 
 @media (min-width: 50em) {
-  /* line 180, ../sass/_grid.scss */
+  /* line 181, ../sass/_grid.scss */
   .colOne {
     width: 28.88889%;
     float: left;
@@ -429,7 +434,7 @@ nav ul li:first-of-type {
 }
 
 @media (min-width: 50em) {
-  /* line 191, ../sass/_grid.scss */
+  /* line 192, ../sass/_grid.scss */
   .colTwo {
     width: 43.33333%;
     margin-right: 21.11111%;
@@ -439,12 +444,12 @@ nav ul li:first-of-type {
   }
 }
 
-/* line 201, ../sass/_grid.scss */
+/* line 202, ../sass/_grid.scss */
 .gallery {
   padding-top: 3em;
   clear: both;
 }
-/* line 204, ../sass/_grid.scss */
+/* line 205, ../sass/_grid.scss */
 .gallery img {
   width: 100%;
   max-width: 100%;
@@ -452,57 +457,57 @@ nav ul li:first-of-type {
   margin-bottom: 3.33333%;
 }
 @media (min-width: 30em) {
-  /* line 204, ../sass/_grid.scss */
+  /* line 205, ../sass/_grid.scss */
   .gallery img {
     width: 93.33333%;
     margin-left: 3.33333%;
   }
 }
 @media (min-width: 40em) {
-  /* line 204, ../sass/_grid.scss */
+  /* line 205, ../sass/_grid.scss */
   .gallery img {
     width: 42.5%;
     margin-left: 5%;
   }
 }
 @media (min-width: 50em) {
-  /* line 204, ../sass/_grid.scss */
+  /* line 205, ../sass/_grid.scss */
   .gallery img {
     width: 28.88889%;
     margin-left: 3.33333%;
   }
 }
-/* line 225, ../sass/_grid.scss */
+/* line 226, ../sass/_grid.scss */
 .gallery a {
   transition: .3s ease-out;
 }
-/* line 229, ../sass/_grid.scss */
+/* line 230, ../sass/_grid.scss */
 .gallery a:hover {
   opacity: .5;
 }
 
-/* line 235, ../sass/_grid.scss */
+/* line 236, ../sass/_grid.scss */
 .hero img, .hero video {
   width: 100%;
   max-width: 100%;
   margin-bottom: 3.33333%;
 }
 @media (min-width: 30em) {
-  /* line 235, ../sass/_grid.scss */
+  /* line 236, ../sass/_grid.scss */
   .hero img, .hero video {
     width: 93.33333%;
     margin-left: 3.33333%;
   }
 }
 @media (min-width: 40em) {
-  /* line 235, ../sass/_grid.scss */
+  /* line 236, ../sass/_grid.scss */
   .hero img, .hero video {
     width: 28.88889%;
     margin-left: 35.55556%;
   }
 }
 
-/* line 252, ../sass/_grid.scss */
+/* line 253, ../sass/_grid.scss */
 .outline {
   border: 1px solid #ddd;
   box-shadow: 0 4px 6px #ddd;
