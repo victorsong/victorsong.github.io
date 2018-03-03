@@ -208,7 +208,7 @@ nav {
 }
 /* line 47, ../sass/_grid.scss */
 nav ul li {
-  margin-right: 6.66667%;
+  margin-right: 5%;
   display: none;
 }
 @media (min-width: 50em) {
