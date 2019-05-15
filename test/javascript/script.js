@@ -1,3 +1,5 @@
+var verified = true;
+
 // Grid variables
 var colCount = 3;
     gutterCount = colCount + 1;
@@ -62,10 +64,13 @@ var firstLinkPosition = function (idName) {
 
 var hamburgerPosition = function() {
 	$('#menuIcon').css({
-		"padding": ($(window).width()/20),
+		"padding": ($(window).width()/40),
+	})
+	$('header').css({
+		"margin": ($(window).width()/40),
 	})
 	$('#menuClose').css({
-		"padding": ($(window).width()/20),
+		"padding": ($(window).width()/40),
 	})
 }
 
@@ -224,8 +229,6 @@ var scrollColorChange = function(idName, order, backgroundColor, textColor, acce
 	}
 }
 
-var verified = false;
-
 var passwordProtection = function(idName, order, backgroundColor, textColor, accentColor){
 	var threshold = $(window).height() / 2;
 	    bottomPosition = $(window).height() - ((8 - order) * ($(window).height() / baseline));
@@ -240,7 +243,7 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 				"opacity": "1",
 			});
 			$(idName).css({
-				"opacity": ".04",
+				"opacity": ".03",
 			})
 		} else {
 			$('#passwordModal').css({
@@ -373,11 +376,11 @@ $(document).ready(function (){
 })
 
 $(window).scroll(function (){
-	passwordProtection('#pnc', 2, '#eeebe1', '#333333', '#3b504f');
+	passwordProtection('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
 	scrollColorChange('#intro', 1, '#eeebe1', '#333333', '#3b504f');
-	scrollColorChange('#pnc', 2, '#eeebe1', '#333333', '#3b504f');
+	scrollColorChange('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
 	scrollColorChange('#vestige', 3, '#222222', '#ffffff', '#ffd800');
-	scrollColorChange('#animation', 4, '#9dc1c0', '#333333', '#361524');
+	scrollColorChange('#animation', 4, '#293c5c', '#ffffff', '#ff6f5b');
 	scrollColorChange('#ballroom', 5, '#32343b', '#ffffff', '#dbb5c6');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 

@@ -78,7 +78,11 @@ a {
   padding-right: .2em;
 }
 
-/* line 63, ../sass/_type.scss */
+/* line 62, ../sass/_type.scss */
+header {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+/* line 64, ../sass/_type.scss */
 header a {
   font-family: Cousine, sans-serif;
   font-size: 12pt;
@@ -87,12 +91,12 @@ header a {
   white-space: nowrap;
 }
 
-/* line 70, ../sass/_type.scss */
+/* line 71, ../sass/_type.scss */
 .nav {
   color: #000000;
 }
 
-/* line 75, ../sass/_type.scss */
+/* line 76, ../sass/_type.scss */
 .contentWrapper h1 {
   font-family: FuturaPT, sans-serif;
   font-size: 14pt;
@@ -101,7 +105,7 @@ header a {
   line-height: 1.5em;
   padding-bottom: .5em;
 }
-/* line 79, ../sass/_type.scss */
+/* line 80, ../sass/_type.scss */
 .contentWrapper h2 {
   font-family: FuturaPT, sans-serif;
   font-size: 14pt;
@@ -109,28 +113,28 @@ header a {
   letter-spacing: 0.1em;
   line-height: 1.5em;
 }
-/* line 82, ../sass/_type.scss */
+/* line 83, ../sass/_type.scss */
 .contentWrapper p {
   font-family: SourceSansPro, sans-serif;
   font-size: 14pt;
   line-height: 1.5em;
   margin-bottom: 1em;
 }
-/* line 86, ../sass/_type.scss */
+/* line 87, ../sass/_type.scss */
 .contentWrapper a {
   text-decoration: none;
 }
 
-/* line 92, ../sass/_type.scss */
+/* line 93, ../sass/_type.scss */
 .resume div {
   padding-bottom: 1.5em;
 }
-/* line 95, ../sass/_type.scss */
+/* line 96, ../sass/_type.scss */
 .resume p {
   padding-left: 4em;
   margin-bottom: 0;
 }
-/* line 99, ../sass/_type.scss */
+/* line 100, ../sass/_type.scss */
 .resume h2 {
   font-family: SourceSansPro, sans-serif;
   font-size: 14pt;
@@ -139,49 +143,10 @@ header a {
   text-transform: none;
 }
 
-/* line 106, ../sass/_type.scss */
+/* line 107, ../sass/_type.scss */
 #pnc {
   opacity: .03;
   transition: opacity .5s;
-}
-
-/* line 111, ../sass/_type.scss */
-#passwordModal {
-  z-index: 998;
-  opacity: 0;
-  display: none;
-  width: 36rem;
-  padding: 3rem;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  margin-top: 0;
-  transition: opacity 1s;
-}
-/* line 122, ../sass/_type.scss */
-#passwordModal h3 {
-  font-family: Cousine, sans-serif;
-  font-size: 12pt;
-  line-height: 1.5em;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-/* line 128, ../sass/_type.scss */
-#passwordModal input {
-  width: 80%;
-  margin: 0 10%;
-  padding: .5rem .3rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-/* line 136, ../sass/_type.scss */
-#passwordModal #pwButton {
-  width: 20%;
-  margin: 0 40%;
-  margin-bottom: 0;
-  font-family: Cousine, sans-serif;
-  font-size: 12pt;
-  line-height: 1.5em;
-  border: 2px solid;
 }
 
 /* line 10, ../sass/_grid.scss */
@@ -199,7 +164,7 @@ header a {
   header a {
     position: relative;
     right: inherit;
-    padding: 5%;
+    padding: 2.5% 0;
   }
 }
 @media (max-width: 48rem) {
@@ -211,7 +176,7 @@ header a {
   }
   /* line 29, ../sass/_grid.scss */
   header li {
-    padding: 5%;
+    padding: 2.5%;
   }
 }
 
@@ -286,6 +251,62 @@ video {
     max-width: 40%;
     padding: 3.5%;
   }
+}
+
+/* line 94, ../sass/_grid.scss */
+#passwordModal {
+  z-index: 998;
+  opacity: 0;
+  display: none;
+  width: 43.33333%;
+  padding: 3rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  margin-top: 0;
+  transition: opacity 1s;
+}
+@media (max-width: 48rem) {
+  /* line 94, ../sass/_grid.scss */
+  #passwordModal {
+    width: 80%;
+    padding: 5%;
+  }
+}
+@media (min-width: 96rem) {
+  /* line 94, ../sass/_grid.scss */
+  #passwordModal {
+    width: 42rem;
+  }
+}
+/* line 114, ../sass/_grid.scss */
+#passwordModal h3 {
+  font-family: Cousine, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* line 120, ../sass/_grid.scss */
+#passwordModal input {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+  padding: .5rem .3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+/* line 131, ../sass/_grid.scss */
+#passwordModal #pwButton {
+  width: 6rem;
+  margin: 0 auto;
+  margin-bottom: 0;
+  font-family: Cousine, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+  border: 2px solid;
+  box-shadow: none;
 }
 
 /**

@@ -17,7 +17,7 @@ header {
         @media (max-width: 48rem) {
             position: relative;
             right: inherit;
-            padding: 5%;
+            padding: 2.5% 0;
         }
     }
 
@@ -27,7 +27,7 @@ header {
         z-index: 999;
 
         li {
-            padding: 5%;
+            padding: 2.5%;
         }
     }
 }
@@ -88,5 +88,52 @@ video {
     @media (max-width: 70rem) {
         max-width: 40%;
         padding: 3.5%;
+    }
+}
+
+#passwordModal {
+    z-index: 998;
+    opacity: 0;
+    display: none;
+    width: $col * 1.5;
+    padding: 3rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    position: fixed;
+    margin-top: 0;
+    transition: opacity 1s;
+
+    @media (max-width: 48rem) {
+        width: 80%;
+        padding: 5%;
+    }
+
+    @media (min-width: 96rem) {
+        width: 42rem;
+    }
+
+    h3 {
+        @include typeNav;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        padding: .5rem .3rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        box-shadow: 0 5px 5px rgba(0,0,0,.2);
+        border: none;
+    }
+
+    #pwButton {
+        width: 6rem;
+        margin: 0 auto;
+        margin-bottom: 0;
+        @include typeNav;
+        border: 2px solid;
+        box-shadow: none;
     }
 }
