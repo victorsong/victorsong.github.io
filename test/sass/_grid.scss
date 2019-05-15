@@ -1,0 +1,96 @@
+$colCount:          3;
+$gutterCount:       $colCount + 1;
+$noGutterCol:       100% / $colCount;
+$gutter:            $noGutterCol / 10; 
+$col:               $noGutterCol - $gutter - ($gutter / $colCount);
+$baseline:          1.5rem;
+$doubleColGutter:   (100% / 2) / 10;
+$doubleCol:         (100% / 2) - $doubleColGutter - ($doubleColGutter / 2);
+
+header {
+    text-align: right;
+    a {
+        position: fixed;
+        right: 3 * $gutter + 2 * $col;
+        transition: top .5s ease-in-out;
+
+        @media (max-width: 48rem) {
+            position: relative;
+            right: inherit;
+            padding: 5%;
+        }
+    }
+
+    @media (max-width: 48rem) {
+        text-align: left;
+        position: fixed;
+        z-index: 999;
+
+        li {
+            padding: 5%;
+        }
+    }
+}
+
+nav {
+    @media (max-width: 48rem) {
+        width: 30rem;
+        display: none;
+        padding-bottom: 1rem;
+    }
+}
+
+#menuIcon {
+    width: 2rem;
+
+    @media(min-width: 48rem) {
+        display: none;
+    }
+}
+
+#menuClose {
+    width: 2rem;
+    display: none;
+}
+
+.contentWrapper {
+    width: $col * 1.5;
+    float: right;
+    padding-right: .5 * $col + 2 * $gutter;
+
+    @media (max-width: 48rem) {
+        width: 90%;
+        float: none;
+        position: relative;
+        padding: 5%;
+    }
+}
+
+body {
+    background-color: #eeebe1;
+    transition: background-color .5s ease-in-out;
+}
+
+img {
+    opacity: 0;
+    transition: opacity, .5s ease-in-out;
+}
+
+video {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+#pnc a {
+    background-color: inherit !important;
+}
+
+.badge {
+    max-width: 30%;
+    padding: 9%;
+
+    @media (max-width: 70rem) {
+        max-width: 40%;
+        padding: 4.5%;
+    }
+}

@@ -1,0 +1,489 @@
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 23, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 27, ../sass/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 30, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 36, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 41, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: SourceSansPro;
+  src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+@font-face {
+  font-family: FuturaPT;
+  src: url(../fonts/FuturaPT-Book.otf);
+}
+@font-face {
+  font-family: Cousine;
+  src: url(../fonts/Cousine-Regular.ttf);
+}
+@font-face {
+  font-family: Cousine-Bold;
+  src: url(../fonts/Cousine-Bold.tff);
+}
+/* line 57, ../sass/_type.scss */
+a {
+  padding-left: .2em;
+  padding-right: .2em;
+}
+
+/* line 63, ../sass/_type.scss */
+header a {
+  font-family: Cousine, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* line 70, ../sass/_type.scss */
+.nav {
+  color: #000000;
+}
+
+/* line 75, ../sass/_type.scss */
+.contentWrapper h1 {
+  font-family: FuturaPT, sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  padding-bottom: .5em;
+}
+/* line 79, ../sass/_type.scss */
+.contentWrapper h2 {
+  font-family: FuturaPT, sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+/* line 82, ../sass/_type.scss */
+.contentWrapper p {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 14pt;
+  line-height: 1.5em;
+  margin-bottom: 1em;
+}
+/* line 86, ../sass/_type.scss */
+.contentWrapper a {
+  text-decoration: none;
+}
+
+/* line 92, ../sass/_type.scss */
+.resume div {
+  padding-bottom: 1.5em;
+}
+/* line 95, ../sass/_type.scss */
+.resume p {
+  padding-left: 4em;
+  margin-bottom: 0;
+}
+/* line 99, ../sass/_type.scss */
+.resume h2 {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 14pt;
+  line-height: 1.5em;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+/* line 10, ../sass/_grid.scss */
+header {
+  text-align: right;
+}
+/* line 12, ../sass/_grid.scss */
+header a {
+  position: fixed;
+  right: 67.77778%;
+  transition: top .5s ease-in-out;
+}
+@media (max-width: 48rem) {
+  /* line 12, ../sass/_grid.scss */
+  header a {
+    position: relative;
+    right: inherit;
+    padding: 5%;
+  }
+}
+@media (max-width: 48rem) {
+  /* line 10, ../sass/_grid.scss */
+  header {
+    text-align: left;
+    position: fixed;
+    z-index: 999;
+  }
+  /* line 29, ../sass/_grid.scss */
+  header li {
+    padding: 5%;
+  }
+}
+
+@media (max-width: 48rem) {
+  /* line 35, ../sass/_grid.scss */
+  nav {
+    width: 30rem;
+    display: none;
+    padding-bottom: 1rem;
+  }
+}
+
+/* line 43, ../sass/_grid.scss */
+#menuIcon {
+  width: 2rem;
+}
+@media (min-width: 48rem) {
+  /* line 43, ../sass/_grid.scss */
+  #menuIcon {
+    display: none;
+  }
+}
+
+/* line 51, ../sass/_grid.scss */
+#menuClose {
+  width: 2rem;
+  display: none;
+}
+
+/* line 56, ../sass/_grid.scss */
+.contentWrapper {
+  width: 43.33333%;
+  float: right;
+  padding-right: 21.11111%;
+}
+@media (max-width: 48rem) {
+  /* line 56, ../sass/_grid.scss */
+  .contentWrapper {
+    width: 90%;
+    float: none;
+    position: relative;
+    padding: 5%;
+  }
+}
+
+/* line 69, ../sass/_grid.scss */
+body {
+  background-color: #eeebe1;
+  transition: background-color .5s ease-in-out;
+}
+
+/* line 74, ../sass/_grid.scss */
+img {
+  opacity: 0;
+  transition: opacity, .5s ease-in-out;
+}
+
+/* line 79, ../sass/_grid.scss */
+video {
+  max-width: 100%;
+  margin-bottom: 1em;
+}
+
+/* line 84, ../sass/_grid.scss */
+#pnc a {
+  background-color: inherit !important;
+}
+
+/* line 88, ../sass/_grid.scss */
+.badge {
+  max-width: 30%;
+  padding: 9%;
+}
+@media (max-width: 70rem) {
+  /* line 88, ../sass/_grid.scss */
+  .badge {
+    max-width: 40%;
+    padding: 4.5%;
+  }
+}
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel, .owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+  touch-action: manipulation;
+  -moz-backface-visibility: hidden;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+  display: none;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+  display: block;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+  background: 0 0;
+  color: inherit;
+  border: none;
+  padding: 0 !important;
+  font: inherit;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-refresh .owl-item {
+  visibility: hidden;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-drag .owl-item {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: grab;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-height {
+  transition: height .5s ease-in-out;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-item .owl-lazy:not([src]), .owl-carousel .owl-item .owl-lazy[src^=""] {
+  max-height: 0;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-item img.owl-lazy {
+  transform-style: preserve-3d;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url(owl.video.play.png) no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform .1s ease;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-video-playing .owl-video-play-icon, .owl-carousel .owl-video-playing .owl-video-tn {
+  display: none;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity .4s ease;
+}
+
+/* line 6, ../sass/_owlCarousel.scss */
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
