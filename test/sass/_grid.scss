@@ -81,16 +81,12 @@ video {
     margin-bottom: 1em;
 }
 
-#pnc a {
-    background-color: inherit !important;
-}
-
 .badge {
     max-width: 30%;
     padding: 9%;
 
     @media (max-width: 70rem) {
         max-width: 40%;
-        padding: 4.5%;
+        padding: 3.5%;
     }
 }

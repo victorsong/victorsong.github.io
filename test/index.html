@@ -43,16 +43,48 @@
 			</nav>
 		</header>
 		<div class="contentWrapper">
+			<div id="passwordModal">
+				<h3 id=passwordText>Input password for access to this section.</h3>
+				<input id="userEnteredPW" type="password" name="pw">
+				<input id="pwButton" type="submit" value="Submit" onclick="passwordEntry('#pnc')">
+			</div>
 			<section class="intro" id="intro">
 				<p>I am currently working for PNC as a senior experience designer on the PNC Mobile team.</p>
 				<p>Right now I'm focused on how animations bring an experience to life and developing PNC's Style Guide.</p>
 			</section>
 			<section class="portfolio" id="pnc">
 				<h1>The PNC App</h1>
-				<p>You can find the PNC Mobile App in Google Play and the Apple App Store. Due to contractual obligations, I'm not able to share process work regarding my time at PNC, but I am more than happy to talk about my experiences working here.</p>
-				<a target="blank" href="https://itunes.apple.com/us/app/pnc-mobile-banking/id303113127?mt=8"><img class="badge" src=./pnc/images/apple.png /></a>
-				<a target="blank" href="https://play.google.com/store/apps/details?id=com.pnc.ecommerce.mobile&hl=en_US"><img class="badge" src=./pnc/images/google.png /></a>
-			</section>
+				<p>While at PNC, I've been working on the mobile app as my main priority. The main goals that I established were to keep the app accessible, make it intuitive to navigate, and give the user a sense of security while using the app.</p>
+				<p>You can download the <a href="https://itunes.apple.com/us/app/pnc-mobile-banking/id303113127?mt=8" target="blank">iOS app here </a>and the <a href="https://play.google.com/store/apps/details?id=com.pnc.ecommerce.mobile&hl=en" target="blank">Android app here.</a></p>
+				<h2>Initial Ideas</h2>
+				<p>Luckily for me, I joined the PNC Mobile team when the design for the app was still in its infant state. I was able to start fresh and design the app fully from the ground up. Initially I had wanted the designs to be colorful, friendly, and interesting to interact with. This gave way to a 3D space concept that the current designs still carry.</p>
+				<p>The app was designed to let the user plunge into a space "behind" the screen. Tiles of relevant information would weave in and out of the scope of the screen and let the user navigate through space in that way. This manifested in a lot of motion research and design. The goal was to make an intuitive experience for users, and let them be able to track where tiles were moving.</p>
+				<div class="owl-carousel">
+					<img src="./pnc/header.gif" />
+					<img src="./pnc/bottomload.gif" />
+					<img src="./pnc/sideload.gif" />
+				</div>
+				<p>Because there are so many things that a user can do with money, we tried to organize the app into things that the user would want to do rather than list the features in a side menu. Our navigation drawer became four individual tasks: view your money and transactions, pay someone, transfer money between accounts, and deposit money into your accounts. Using these four sections, we were able to organize features under them for a simpler, easier experience. Each bucket would have a different color accent, so the user would intuitively know which section of the app that they were in.</p>
+				<div class="owl-carousel">
+					<img src="./pnc/colorviewmenu.png" />
+					<img src="./pnc/colorview.png" />
+					<img src="./pnc/colortransfer.png" />
+					<img src="./pnc/colorpaymenu.png" />
+					<img src="./pnc/colorpay.png" />
+					<img src="./pnc/colordeposit.png" />
+				</div>
+				<h2>Color and Contrast</h2>
+				<p>We soon realized that the colors that I had chosen weren't accessible for visually impaired users. In my excitement at making a new design language, I had completely forgotten to account for them. Most of my colors and type sizes didn't meet WCAG 2.0 compliance. We ended up having to throw out almost all of the colors I had chosen in favor of higher contrast designs. In their place, dark oranges and blues were used as indicators of where users could go.</p>
+				<div class="owl-carousel">
+					<img src="./pnc/signin.png" />
+					<img src="./pnc/accounts.png" />
+					<img src="./pnc/menu.png" />
+					<img src="./pnc/transfer.png" />
+					<img src="./pnc/worksheet.png" />
+				</div>
+				<h2>Improvements for the Future</h2>
+				<p>The way that the animations behave within the app are significantly different than what I had originally mocked up. I am trying to figure out a better way of explaining to our developers how I want certain things to behave; motioning with hand gestures and sound effects only takes a person so far.</p>
+				<p>Craft of the actual code is a little bit off as well. Because I had to design using percentages, certain elements are slightly off from what I had mocked up resulting in a slightly different feel when using the app. Certain drop shadows aren't represented the way that I had anticipated as well. There are a significant number of small changes that I would like to make, but must move past to constantly pump out new features.</p>
 			</section>
 			<section class="portfolio" id="vestige">
 				<h1>Lunar Gala | Vestige</h1>

@@ -102,3 +102,42 @@ header {
 		text-transform: none;
 	}
 }
+
+#pnc {
+	opacity: .03;
+	transition: opacity .5s;
+}
+
+#passwordModal {
+	z-index: 998;
+	opacity: 0;
+	display: none;
+	width: 36rem;
+	padding: 3rem;
+	box-shadow: 0 10px 10px rgba(0,0,0,.2);
+	position: fixed;
+	margin-top: 0;
+	transition: opacity 1s;
+
+	h3 {
+		@include typeNav;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+
+	input {
+		width: 80%;
+		margin: 0 10%;
+		padding: .5rem .3rem;
+		margin-bottom: 1.5rem;
+		text-align: center;
+	}
+
+	#pwButton {
+		width: 20%;
+		margin: 0 40%;
+		margin-bottom: 0;
+		@include typeNav;
+		border: 2px solid;
+	}
+}

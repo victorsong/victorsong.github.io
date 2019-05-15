@@ -139,6 +139,51 @@ header a {
   text-transform: none;
 }
 
+/* line 106, ../sass/_type.scss */
+#pnc {
+  opacity: .03;
+  transition: opacity .5s;
+}
+
+/* line 111, ../sass/_type.scss */
+#passwordModal {
+  z-index: 998;
+  opacity: 0;
+  display: none;
+  width: 36rem;
+  padding: 3rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  margin-top: 0;
+  transition: opacity 1s;
+}
+/* line 122, ../sass/_type.scss */
+#passwordModal h3 {
+  font-family: Cousine, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* line 128, ../sass/_type.scss */
+#passwordModal input {
+  width: 80%;
+  margin: 0 10%;
+  padding: .5rem .3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+/* line 136, ../sass/_type.scss */
+#passwordModal #pwButton {
+  width: 20%;
+  margin: 0 40%;
+  margin-bottom: 0;
+  font-family: Cousine, sans-serif;
+  font-size: 12pt;
+  line-height: 1.5em;
+  border: 2px solid;
+}
+
 /* line 10, ../sass/_grid.scss */
 header {
   text-align: right;
@@ -231,20 +276,15 @@ video {
 }
 
 /* line 84, ../sass/_grid.scss */
-#pnc a {
-  background-color: inherit !important;
-}
-
-/* line 88, ../sass/_grid.scss */
 .badge {
   max-width: 30%;
   padding: 9%;
 }
 @media (max-width: 70rem) {
-  /* line 88, ../sass/_grid.scss */
+  /* line 84, ../sass/_grid.scss */
   .badge {
     max-width: 40%;
-    padding: 4.5%;
+    padding: 3.5%;
   }
 }
 

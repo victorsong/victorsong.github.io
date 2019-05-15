@@ -224,6 +224,101 @@ var scrollColorChange = function(idName, order, backgroundColor, textColor, acce
 	}
 }
 
+var verified = false;
+
+var passwordProtection = function(idName, order, backgroundColor, textColor, accentColor){
+	var threshold = $(window).height() / 2;
+	    bottomPosition = $(window).height() - ((8 - order) * ($(window).height() / baseline));
+	    sectionHeight = $(window).height();
+	    topPosition = $(window).height() - ((baseline - order)) * ($(window).height() / baseline);
+	    offsetTop = $(idName).offset().top - threshold
+	    offsetBot = $(idName).offset().top + $(idName).outerHeight() - threshold;
+	    scrollTop = $(window).scrollTop();
+	    if (scrollTop > offsetTop && scrollTop < offsetBot && verified == false) {
+			$('#passwordModal').css({
+				"display": "block",
+				"opacity": "1",
+			});
+			$(idName).css({
+				"opacity": ".04",
+			})
+		} else {
+			$('#passwordModal').css({
+					"display": "none",
+					"opacity": "0",
+				});
+			$(idName).css({
+				"opacity": "1",
+			})
+		}
+	$('#passwordModal').css({
+		"background-color": accentColor,
+		"color": backgroundColor,
+		"margin-top": $(window).height()*0.35,
+	})
+	$('#pwButton').css({
+		"background-color": accentColor,
+		"color": backgroundColor,
+		"border-color": backgroundColor,
+	})
+	$('#pwButton').mouseover(function() {
+		$(this).css({
+			"background-color": backgroundColor,
+			"color": accentColor,
+			"border-color": accentColor,
+		})
+	}).mouseout(function() {
+		$(this).css({
+			"background-color": accentColor,
+			"color": backgroundColor,
+			"border-color": backgroundColor,
+		})
+	})
+}
+
+var passwordEntry = function(idName) {
+	var userPW = document.getElementById("userEnteredPW").value;
+	if (userPW == '2019') {
+		verified = true;
+		$('#passwordModal').css({
+			"display": "none",
+			"opacity": "0",
+		});
+		$(idName).css({
+			"opacity": "1",
+		})
+	} else {
+		document.getElementById("passwordText").innerHTML = "Wrong password, please try again."
+	}
+}
+
+$('#menuIcon').mouseover(function() {
+		$('.buns').css({
+			"stroke": accentColor,
+		})
+		$('.bacon').css({
+			"stroke": accentColor,
+		})
+		$('header').css({
+			"background-color": backgroundColor,
+		})
+		$(this).css({
+			"cursor": "pointer",
+		})
+	}).mouseout(function() {
+		$('.buns').css({
+			"stroke": backgroundColor,
+		})
+		$('.bacon').css({
+			"stroke": backgroundColor,
+		})
+		$('header').css({
+			"background-color": accentColor,
+		})
+	})
+
+
+
 // Lazyload function
 var lazyload = function(threshold, image) {
 	var imageOffset = $(image).offset().top;
@@ -278,7 +373,7 @@ $(document).ready(function (){
 })
 
 $(window).scroll(function (){
-
+	passwordProtection('#pnc', 2, '#eeebe1', '#333333', '#3b504f');
 	scrollColorChange('#intro', 1, '#eeebe1', '#333333', '#3b504f');
 	scrollColorChange('#pnc', 2, '#eeebe1', '#333333', '#3b504f');
 	scrollColorChange('#vestige', 3, '#222222', '#ffffff', '#ffd800');
