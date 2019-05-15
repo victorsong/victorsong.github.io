@@ -1,4 +1,4 @@
-var verified = true;
+var verified = false;
 
 // Grid variables
 var colCount = 3;

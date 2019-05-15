@@ -296,8 +296,9 @@ video {
   text-align: center;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   border: none;
+  border-radius: 0;
 }
-/* line 131, ../sass/_grid.scss */
+/* line 132, ../sass/_grid.scss */
 #passwordModal #pwButton {
   width: 6rem;
   margin: 0 auto;
