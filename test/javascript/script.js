@@ -158,6 +158,17 @@ var dropdown = function() {
 			"display": "block",
 		})
 	})
+	$('nav a').click(function(){
+		$('nav').css({
+			"display": "none",
+		})
+		$('#menuIcon').css({
+			"display": "block",
+		})
+		$('#menuClose').css({
+			"display": "none",
+		})
+	})
 	$('#menuClose').click(function(){
 		$('nav').css({
 			"display": "none",
@@ -238,7 +249,7 @@ $(document).ready(function (){
 		autoplay: true,
 		autoplayTimeout: 2500,
 		autoplayHoverPause: true,
-		autoplaySpeed: 1000,
+		autoplaySpeed: 2000,
 		responsive: {
 			0: {
 				items: 1
