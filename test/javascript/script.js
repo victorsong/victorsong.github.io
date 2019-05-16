@@ -71,10 +71,7 @@ var hamburgerPosition = function() {
 
 // Color nav based on scroll
 var navColors = function(backgroundColor, textColor, accentColor){
-	$('.nav').css({
-		"color": accentColor,
-	})
-	$('nav a').css({
+	$('.nav, nav a').css({
 		"color": backgroundColor,
 	})
 	$('nav a').css({
@@ -91,18 +88,10 @@ var navColors = function(backgroundColor, textColor, accentColor){
 			"color": backgroundColor,
 		})
 	})
-	$('.buns').css({
+	$('.buns, .bacon').css({
 		"stroke": backgroundColor,
 	})
-	$('.bacon').css({
-		"stroke": backgroundColor,
-	})
-	$('#menuIcon').hover(function() {
-		$(this).css({
-			"cursor": "pointer",
-		})
-	})
-	$('#menuClose').hover(function() {
+	$('#menuIcon, #menuClose').hover(function() {
 		$(this).css({
 			"cursor": "pointer",
 		})
@@ -117,59 +106,19 @@ var navColors = function(backgroundColor, textColor, accentColor){
 // Mobile dropdown menu
 var dropdown = function() {
 	$('#menuIcon').click(function(){
-		$('nav').css({
+		$('nav, #menuClose, #menuBackground').css({
 			"display": "block",
 		})
 		$('#menuIcon').css({
 			"display": "none",
-		})
-		$('#menuClose').css({
-			"display": "block",
-		})
-		$('#menuBackground').css({
-			"display": "block"
 		})
 	})
-	$('nav a').click(function(){
-		$('nav').css({
+	$('nav a, #menuClose, #menuBackground').click(function(){
+		$('nav, #menuClose, #menuBackground').css({
 			"display": "none",
 		})
 		$('#menuIcon').css({
 			"display": "block",
-		})
-		$('#menuClose').css({
-			"display": "none",
-		})
-		$('#menuBackground').css({
-			"display": "none"
-		})
-	})
-	$('#menuClose').click(function(){
-		$('nav').css({
-			"display": "none",
-		})
-		$('#menuIcon').css({
-			"display": "block",
-		})
-		$('#menuClose').css({
-			"display": "none",
-		})
-		$('#menuBackground').css({
-			"display": "none"
-		})
-	})
-	$('#menuBackground').click(function(){
-		$('nav').css({
-			"display": "none",
-		})
-		$('#menuIcon').css({
-			"display": "block",
-		})
-		$('#menuClose').css({
-			"display": "none",
-		})
-		$('#menuBackground').css({
-			"display": "none"
 		})
 	})
 }
@@ -246,28 +195,8 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 			})
 		}
 	$('#passwordModal').css({
-		"background-color": accentColor,
-		"color": backgroundColor,
 		"margin-top": $(window).height()*0.35,
 	})
-	$('#pwButton').css({
-		"background-color": accentColor,
-		"color": backgroundColor,
-		"border-color": backgroundColor,
-	})
-	$('#pwButton').hover(function() {
-		$(this).css({
-			"background-color": backgroundColor,
-			"color": accentColor,
-			"border-color": accentColor,
-		})
-	}, (function() {
-		$(this).css({
-			"background-color": accentColor,
-			"color": backgroundColor,
-			"border-color": backgroundColor,
-		})
-	}))
 }
 
 var passwordEntry = function(idName) {

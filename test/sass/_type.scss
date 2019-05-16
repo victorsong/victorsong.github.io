@@ -231,3 +231,20 @@ header {
 		text-transform: none;
 	}
 }
+
+#passwordModal {
+	background-color: $pncAccent;
+	color: $pncBackground;
+
+	#pwButton {
+		background-color: $pncAccent;
+		color: $pncBackground;
+		border-color: $pncBackground;
+	}
+
+	#pwbutton:hover {
+		background-color: $pncBackground;
+		color: $pncAccent;
+		border-color: $pncAccent;
+	}
+}

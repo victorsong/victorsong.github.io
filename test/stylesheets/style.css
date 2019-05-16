@@ -281,6 +281,24 @@ header a {
   text-transform: none;
 }
 
+/* line 235, ../sass/_type.scss */
+#passwordModal {
+  background-color: #67e19b;
+  color: #201e1a;
+}
+/* line 239, ../sass/_type.scss */
+#passwordModal #pwButton {
+  background-color: #67e19b;
+  color: #201e1a;
+  border-color: #201e1a;
+}
+/* line 245, ../sass/_type.scss */
+#passwordModal #pwbutton:hover {
+  background-color: #201e1a;
+  color: #67e19b;
+  border-color: #67e19b;
+}
+
 /* line 10, ../sass/_grid.scss */
 html, body {
   height: 100%;
