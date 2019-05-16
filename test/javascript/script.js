@@ -382,7 +382,7 @@ $(window).scroll(function (){
 	scrollColorChange('#ballroom', 5, '#32343b', '#ffffff', '#dbb5c6');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 
-	$('.owl-carousel img').each(function() {
+	$('.lazyload img').each(function() {
 		lazyloadTimer(300, this);
 	});
 	idleTime = 0;

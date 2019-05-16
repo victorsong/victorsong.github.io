@@ -102,8 +102,8 @@ body {
     transition: background-color .5s ease-in-out;
 }
 
-.owl-carousel img{
-    opacity: 0;
+.lazyload img{
+    opacity: .2;
     transition: opacity, .5s ease-in-out;
 }
 

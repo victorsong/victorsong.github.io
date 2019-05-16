@@ -262,8 +262,8 @@ body {
 }
 
 /* line 105, ../sass/_grid.scss */
-.owl-carousel img {
-  opacity: 0;
+.lazyload img {
+  opacity: .2;
   transition: opacity, .5s ease-in-out;
 }
 
