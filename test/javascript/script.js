@@ -88,15 +88,15 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 	$('a').css({
 		"background-color": accentColor,
 	})
-	$('a').mouseover(function() {
+	$('a').hover(function() {
 		$(this).css({
 			"background-color": backgroundColor,
 			"color": accentColor,
-		}).mouseout(function() {
-			$(this).css({
-				"background-color": accentColor,
-				"color": backgroundColor,
-			})
+		})
+	}, function() {
+		$(this).css({
+			"background-color": accentColor,
+			"color": backgroundColor,
 		})
 	})
 	$('p').css({
@@ -114,7 +114,7 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 	$('.bacon').css({
 		"stroke": backgroundColor,
 	})
-	$('#menuIcon').mouseover(function() {
+	$('#menuIcon').hover(function() {
 		$('.buns').css({
 			"stroke": accentColor,
 		})
@@ -127,7 +127,7 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 		$(this).css({
 			"cursor": "pointer",
 		})
-	}).mouseout(function() {
+	}, function() {
 		$('.buns').css({
 			"stroke": backgroundColor,
 		})
@@ -138,7 +138,7 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 			"background-color": accentColor,
 		})
 	})
-	$('#menuClose').mouseover(function() {
+	$('#menuClose').hover(function() {
 		$(this).css({
 			"cursor": "pointer",
 		})
@@ -264,19 +264,19 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 		"color": backgroundColor,
 		"border-color": backgroundColor,
 	})
-	$('#pwButton').mouseover(function() {
+	$('#pwButton').hover(function() {
 		$(this).css({
 			"background-color": backgroundColor,
 			"color": accentColor,
 			"border-color": accentColor,
 		})
-	}).mouseout(function() {
+	}, (function() {
 		$(this).css({
 			"background-color": accentColor,
 			"color": backgroundColor,
 			"border-color": backgroundColor,
 		})
-	})
+	}))
 }
 
 var passwordEntry = function(idName) {
@@ -295,7 +295,7 @@ var passwordEntry = function(idName) {
 	}
 }
 
-$('#menuIcon').mouseover(function() {
+$('#menuIcon').hover(function() {
 		$('.buns').css({
 			"stroke": accentColor,
 		})
@@ -308,7 +308,7 @@ $('#menuIcon').mouseover(function() {
 		$(this).css({
 			"cursor": "pointer",
 		})
-	}).mouseout(function() {
+	}, (function() {
 		$('.buns').css({
 			"stroke": backgroundColor,
 		})
@@ -318,7 +318,7 @@ $('#menuIcon').mouseover(function() {
 		$('header').css({
 			"background-color": accentColor,
 		})
-	})
+	}))
 
 
 
