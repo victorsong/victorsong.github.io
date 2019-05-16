@@ -201,19 +201,38 @@ header a {
 }
 
 /* line 51, ../sass/_grid.scss */
+#menuIcon:hover, #menuClose:hover {
+  animation: wiggle 0.5s;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(12deg);
+  }
+  75% {
+    transform: rotate(-12deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* line 70, ../sass/_grid.scss */
 #menuClose {
   width: 2rem;
   display: none;
 }
 
-/* line 56, ../sass/_grid.scss */
+/* line 75, ../sass/_grid.scss */
 .contentWrapper {
   width: 43.33333%;
   float: right;
   padding-right: 21.11111%;
 }
 @media (max-width: 48rem) {
-  /* line 56, ../sass/_grid.scss */
+  /* line 75, ../sass/_grid.scss */
   .contentWrapper {
     width: 90%;
     float: none;
@@ -222,38 +241,38 @@ header a {
   }
 }
 
-/* line 69, ../sass/_grid.scss */
+/* line 88, ../sass/_grid.scss */
 body {
   background-color: #eeebe1;
   transition: background-color .5s ease-in-out;
 }
 
-/* line 74, ../sass/_grid.scss */
+/* line 93, ../sass/_grid.scss */
 img {
   opacity: 0;
   transition: opacity, .5s ease-in-out;
 }
 
-/* line 79, ../sass/_grid.scss */
+/* line 98, ../sass/_grid.scss */
 video {
   max-width: 100%;
   margin-bottom: 1em;
 }
 
-/* line 84, ../sass/_grid.scss */
+/* line 103, ../sass/_grid.scss */
 .badge {
   max-width: 30%;
   padding: 9%;
 }
 @media (max-width: 70rem) {
-  /* line 84, ../sass/_grid.scss */
+  /* line 103, ../sass/_grid.scss */
   .badge {
     max-width: 40%;
     padding: 3.5%;
   }
 }
 
-/* line 94, ../sass/_grid.scss */
+/* line 113, ../sass/_grid.scss */
 #passwordModal {
   z-index: 998;
   opacity: 0;
@@ -266,19 +285,19 @@ video {
   transition: opacity 1s;
 }
 @media (max-width: 48rem) {
-  /* line 94, ../sass/_grid.scss */
+  /* line 113, ../sass/_grid.scss */
   #passwordModal {
     width: 80%;
     padding: 5%;
   }
 }
 @media (min-width: 96rem) {
-  /* line 94, ../sass/_grid.scss */
+  /* line 113, ../sass/_grid.scss */
   #passwordModal {
     width: 42rem;
   }
 }
-/* line 114, ../sass/_grid.scss */
+/* line 133, ../sass/_grid.scss */
 #passwordModal h3 {
   font-family: Cousine, sans-serif;
   font-size: 12pt;
@@ -286,7 +305,7 @@ video {
   text-align: center;
   margin-bottom: 1rem;
 }
-/* line 120, ../sass/_grid.scss */
+/* line 139, ../sass/_grid.scss */
 #passwordModal input {
   display: block;
   width: 60%;
@@ -298,7 +317,7 @@ video {
   border: none;
   border-radius: 0;
 }
-/* line 132, ../sass/_grid.scss */
+/* line 151, ../sass/_grid.scss */
 #passwordModal #pwButton {
   width: 6rem;
   margin: 0 auto;

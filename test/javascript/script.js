@@ -115,6 +115,11 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 		"stroke": backgroundColor,
 	})
 	$('#menuIcon').hover(function() {
+		$(this).css({
+			"cursor": "pointer",
+		})
+	})
+/*	$('#menuIcon').hover(function() {
 		$('.buns').css({
 			"stroke": accentColor,
 		})
@@ -137,7 +142,7 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 		$('header').css({
 			"background-color": accentColor,
 		})
-	})
+	})*/
 	$('#menuClose').hover(function() {
 		$(this).css({
 			"cursor": "pointer",
@@ -294,7 +299,7 @@ var passwordEntry = function(idName) {
 		document.getElementById("passwordText").innerHTML = "Wrong password, please try again."
 	}
 }
-
+/*
 $('#menuIcon').hover(function() {
 		$('.buns').css({
 			"stroke": accentColor,
@@ -319,7 +324,7 @@ $('#menuIcon').hover(function() {
 			"background-color": accentColor,
 		})
 	}))
-
+*/
 
 
 // Lazyload function

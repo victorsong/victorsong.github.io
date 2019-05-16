@@ -48,6 +48,25 @@ nav {
     }
 }
 
+#menuIcon:hover, #menuClose:hover {
+    animation: wiggle 0.5s;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(12deg);
+    }
+    75% {
+        transform: rotate(-12deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 #menuClose {
     width: 2rem;
     display: none;
