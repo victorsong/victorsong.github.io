@@ -14,7 +14,7 @@ var colCount = 3;
 
 // Link Variables
     currentLinkPosition = $(window).height() * 0.35;
-    baseline = 40;
+    baseline = 30;
 
 // Get height of browser and add to sections
 var browserHeightSections = function() {
