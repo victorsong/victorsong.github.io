@@ -33,11 +33,6 @@ var browserHeightSections = function() {
 	}
 }
 
-// Get progress of page in percentage
-var percentProgress = function() {
-	return $(window).scrollTop() / Math.max(($(document).height() - $(window).height()), 1);
-}
-
 // Scroll smoothly to sections
 var scrollToIDs = function() {
 	$('a[href*="#"]').on('click', function(e) {
@@ -74,21 +69,18 @@ var hamburgerPosition = function() {
 	})
 }
 
-// Color sections based on scroll
-var sectionColors = function(backgroundColor, textColor, accentColor){
-	$('body').css({
-		"background-color": backgroundColor,
-	})
+// Color nav based on scroll
+var navColors = function(backgroundColor, textColor, accentColor){
 	$('.nav').css({
 		"color": accentColor,
 	})
-	$('a').css({
+	$('nav a').css({
 		"color": backgroundColor,
 	})
-	$('a').css({
+	$('nav a').css({
 		"background-color": accentColor,
 	})
-	$('a').hover(function() {
+	$('nav a').hover(function() {
 		$(this).css({
 			"background-color": backgroundColor,
 			"color": accentColor,
@@ -98,15 +90,6 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 			"background-color": accentColor,
 			"color": backgroundColor,
 		})
-	})
-	$('p').css({
-		"color": textColor,
-	})
-	$('h1').css({
-		"color": accentColor,
-	})
-	$('h2').css({
-		"color": accentColor,
 	})
 	$('.buns').css({
 		"stroke": backgroundColor,
@@ -229,7 +212,7 @@ var scrollColorChange = function(idName, order, backgroundColor, textColor, acce
 	    offsetBot = $(idName).offset().top + $(idName).outerHeight() - threshold;
 	    scrollTop = $(window).scrollTop();
 	    if (scrollTop > offsetTop && scrollTop < offsetBot) {
-			sectionColors(backgroundColor, textColor, accentColor);
+			navColors(backgroundColor, textColor, accentColor);
 	}
 }
 
@@ -258,8 +241,8 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 				});
 			$(idName).css({
 				"opacity": "1",
-				"filter": "blur(0)",
-				"-webkit-filter": "blur(0)",
+				"filter": "none",
+				"-webkit-filter": "none",
 			})
 		}
 	$('#passwordModal').css({
@@ -311,6 +294,7 @@ var lazyload = function(threshold, image) {
 	    topThreshold = imageOffset - threshold - $(window).height();
 	    bottomThreshold = imageOffset + $(image).outerHeight() + threshold;
 	if ($(window).scrollTop() > topThreshold && $(window).scrollTop() < bottomThreshold) {
+		$(image).removeClass("unloaded").addClass("loaded");
 		$(image).attr('src', $(image).attr('data-src'));
 		$(image).css({
 			"opacity": "1",
@@ -323,7 +307,7 @@ var idleTime = 0;
 
 var lazyloadTimer = function(threshold, image) {
 	setInterval(function() {
-		if (idleTime > 1) {
+		if (idleTime > 1 && $(image).attr("class") == "unloaded") {
 			lazyload(threshold, image);
 		}
 	}, 100)
@@ -374,7 +358,9 @@ $(document).ready(function (){
 })
 
 $(window).scroll(function (){
-	passwordProtection('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
+	if (verified == false) {
+		passwordProtection('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
+	}
 	scrollColorChange('#intro', 1, '#eeebe1', '#333333', '#3b504f');
 	scrollColorChange('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
 	scrollColorChange('#vestige', 3, '#222222', '#ffffff', '#ffd800');

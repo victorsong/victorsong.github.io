@@ -1,3 +1,23 @@
+$introText: #333333;
+$introBackground: #eeebe1;
+$introAccent: #3b504f;
+
+$pncText: #ffffff;
+$pncBackground: #201e1a;
+$pncAccent: #67e19b;
+
+$vestigeText: #ffffff;
+$vestigeBackground: #222222;
+$vestigeAccent: #ffd800;
+
+$animationText: #ffffff;
+$animationBackground: #293c5c;
+$animationAccent: #ff6f5b;
+
+$ballroomText: #ffffff;
+$ballroomBackground: #32343b;
+$ballroomAccent: #dbb5c6;
+
 @font-face {
 	font-family: SourceSansPro;
 	src: url(../fonts/SourceSansPro-Regular.ttf);
@@ -89,7 +109,115 @@ header {
 	}
 }
 
+#intro {
+	background-color: $introBackground;
+	a {
+		color: $introBackground;
+		background-color: $introAccent;
+	}
+	a:hover {
+		color: $introAccent;
+		background-color: $introBackground;
+	}
+	p {
+		color: $introText;
+	}
+	h1, h2 {
+		color: $introAccent;
+	}
+}
+
+#pnc {
+	background-color: $pncBackground;
+	a {
+		color: $pncBackground;
+		background-color: $pncAccent;
+	}
+	a:hover {
+		color: $pncAccent;
+		background-color: $pncBackground;
+	}
+	p {
+		color: $pncText;
+	}
+	h1, h2 {
+		color: $pncAccent;
+	}
+	
+	transition: opacity .5s;
+}
+
+#vestige {
+	background-color: $vestigeBackground;
+	a {
+		color: $vestigeBackground;
+		background-color: $vestigeAccent;
+	}
+	a:hover {
+		color: $vestigeAccent;
+		background-color: $vestigeBackground;
+	}
+	p {
+		color: $vestigeText;
+	}
+	h1, h2 {
+		color: $vestigeAccent;
+	}
+}
+
+#animation {
+	background-color: $animationBackground;
+	a {
+		color: $animationBackground;
+		background-color: $animationAccent;
+	}
+	a:hover {
+		color: $animationAccent;
+		background-color: $animationBackground;
+	}
+	p {
+		color: $animationText;
+	}
+	h1, h2 {
+		color: $animationAccent;
+	}
+}
+
+#ballroom {
+	background-color: $ballroomBackground;
+	a {
+		color: $ballroomBackground;
+		background-color: $ballroomAccent;
+	}
+	a:hover {
+		color: $ballroomAccent;
+		background-color: $ballroomBackground;
+	}
+	p {
+		color: $ballroomText;
+	}
+	h1, h2 {
+		color: $ballroomAccent;
+	}
+}
+
 .resume {
+	background-color: $introBackground;
+	a {
+		color: $introBackground;
+		background-color: $introAccent;
+	}
+	a:hover {
+		color: $introAccent;
+		background-color: $introBackground;
+	}
+	p {
+		color: $introText;
+	}
+	h1, h2 {
+		color: $introAccent;
+	}
+
 	div {
 		padding-bottom: 1.5em;
 	}
@@ -102,9 +230,4 @@ header {
 		letter-spacing: 0;
 		text-transform: none;
 	}
-}
-
-#pnc {
-	opacity: .03;
-	transition: opacity .5s;
 }

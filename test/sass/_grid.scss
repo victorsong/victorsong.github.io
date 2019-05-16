@@ -13,6 +13,7 @@ html, body {
 
 header {
     text-align: right;
+    z-index: 999;
     a {
         position: fixed;
         right: 3 * $gutter + 2 * $col;
@@ -28,7 +29,6 @@ header {
     @media (max-width: 48rem) {
         text-align: left;
         position: fixed;
-        z-index: 999;
 
         li {
             padding: 2.5% 0;
@@ -84,10 +84,11 @@ nav {
     z-index: 997;
 }
 
-.contentWrapper {
+section {
     width: $col * 1.5;
     float: right;
     padding-right: .5 * $col + 2 * $gutter;
+    padding-left: 100% - $col * 1.5 - .5 * $col + 2 * $gutter;
 
     @media (max-width: 48rem) {
         width: 90%;
