@@ -7,6 +7,10 @@ $baseline:          1.5rem;
 $doubleColGutter:   (100% / 2) / 10;
 $doubleCol:         (100% / 2) - $doubleColGutter - ($doubleColGutter / 2);
 
+html, body {
+    height: 100%;
+}
+
 header {
     text-align: right;
     a {
@@ -27,16 +31,16 @@ header {
         z-index: 999;
 
         li {
-            padding: 2.5%;
+            padding: 2.5% 0;
         }
     }
 }
 
 nav {
     @media (max-width: 48rem) {
-        width: 30rem;
+        width: 18rem;
         display: none;
-        padding-bottom: 1rem;
+        padding: 2.5% 1rem;
     }
 }
 
@@ -70,6 +74,14 @@ nav {
 #menuClose {
     width: 2rem;
     display: none;
+}
+
+#menuBackground {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 997;
 }
 
 .contentWrapper {

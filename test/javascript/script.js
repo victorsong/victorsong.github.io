@@ -167,6 +167,9 @@ var dropdown = function() {
 		$('#menuClose').css({
 			"display": "block",
 		})
+		$('#menuBackground').css({
+			"display": "block"
+		})
 	})
 	$('nav a').click(function(){
 		$('nav').css({
@@ -178,6 +181,9 @@ var dropdown = function() {
 		$('#menuClose').css({
 			"display": "none",
 		})
+		$('#menuBackground').css({
+			"display": "none"
+		})
 	})
 	$('#menuClose').click(function(){
 		$('nav').css({
@@ -188,6 +194,23 @@ var dropdown = function() {
 		})
 		$('#menuClose').css({
 			"display": "none",
+		})
+		$('#menuBackground').css({
+			"display": "none"
+		})
+	})
+	$('#menuBackground').click(function(){
+		$('nav').css({
+			"display": "none",
+		})
+		$('#menuIcon').css({
+			"display": "block",
+		})
+		$('#menuClose').css({
+			"display": "none",
+		})
+		$('#menuBackground').css({
+			"display": "none"
 		})
 	})
 }
