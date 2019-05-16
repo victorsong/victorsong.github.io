@@ -1,4 +1,4 @@
-var verified = false;
+var verified = true;
 
 // Grid variables
 var colCount = 3;
@@ -119,30 +119,6 @@ var sectionColors = function(backgroundColor, textColor, accentColor){
 			"cursor": "pointer",
 		})
 	})
-/*	$('#menuIcon').hover(function() {
-		$('.buns').css({
-			"stroke": accentColor,
-		})
-		$('.bacon').css({
-			"stroke": accentColor,
-		})
-		$('header').css({
-			"background-color": backgroundColor,
-		})
-		$(this).css({
-			"cursor": "pointer",
-		})
-	}, function() {
-		$('.buns').css({
-			"stroke": backgroundColor,
-		})
-		$('.bacon').css({
-			"stroke": backgroundColor,
-		})
-		$('header').css({
-			"background-color": accentColor,
-		})
-	})*/
 	$('#menuClose').hover(function() {
 		$(this).css({
 			"cursor": "pointer",
@@ -271,7 +247,9 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 				"opacity": "1",
 			});
 			$(idName).css({
-				"opacity": ".03",
+				"opacity": ".2",
+				"filter": "blur(2rem)",
+				"-webkit-filter": "blur(2rem)"
 			})
 		} else {
 			$('#passwordModal').css({
@@ -280,6 +258,8 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 				});
 			$(idName).css({
 				"opacity": "1",
+				"filter": "blur(0)",
+				"-webkit-filter": "blur(0)",
 			})
 		}
 	$('#passwordModal').css({
@@ -317,38 +297,13 @@ var passwordEntry = function(idName) {
 		});
 		$(idName).css({
 			"opacity": "1",
+			"filter": "blur(0)",
+			"-webkit-filter": "blur(0)",
 		})
 	} else {
 		document.getElementById("passwordText").innerHTML = "Wrong password, please try again."
 	}
 }
-/*
-$('#menuIcon').hover(function() {
-		$('.buns').css({
-			"stroke": accentColor,
-		})
-		$('.bacon').css({
-			"stroke": accentColor,
-		})
-		$('header').css({
-			"background-color": backgroundColor,
-		})
-		$(this).css({
-			"cursor": "pointer",
-		})
-	}, (function() {
-		$('.buns').css({
-			"stroke": backgroundColor,
-		})
-		$('.bacon').css({
-			"stroke": backgroundColor,
-		})
-		$('header').css({
-			"background-color": accentColor,
-		})
-	}))
-*/
-
 
 // Lazyload function
 var lazyload = function(threshold, image) {
@@ -359,9 +314,24 @@ var lazyload = function(threshold, image) {
 		$(image).attr('src', $(image).attr('data-src'));
 		$(image).css({
 			"opacity": "1",
-		});
+		})
 	}
 }
+
+// Timer function
+var idleTime = 0;
+
+var lazyloadTimer = function(threshold, image) {
+	setInterval(function() {
+		if (idleTime > 1) {
+			lazyload(threshold, image);
+		}
+	}, 100)
+}
+
+var idleInterval = setInterval(function() {
+	idleTime = idleTime + 1;
+}, 50) //.1s
 
 // Call functions
 $(document).ready(function (){
@@ -394,12 +364,12 @@ $(document).ready(function (){
 		dropdown();
 	} else {
 		firstLinkPosition('#introLink');
+		linkAnimation('#intro', '#introLink', 1);
 		linkPosition('#pnc', '#pncLink', 2);
 		linkPosition('#vestige', '#vestigeLink', 3);
 		linkPosition('#animation', '#animationLink', 4);
 		linkPosition('#ballroom', '#ballroomLink', 5);
 		linkPosition('#resume', '#resumeLink', 6);
-		linkAnimation('#intro', '#introLink', 1);
 	}
 })
 
@@ -412,9 +382,10 @@ $(window).scroll(function (){
 	scrollColorChange('#ballroom', 5, '#32343b', '#ffffff', '#dbb5c6');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 
-	$('img').each(function() {
-		lazyload(50, this);
+	$('.owl-carousel img').each(function() {
+		lazyloadTimer(300, this);
 	});
+	idleTime = 0;
 
 	if (mobile.matches) {
 
