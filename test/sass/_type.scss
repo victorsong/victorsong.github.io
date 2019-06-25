@@ -10,9 +10,9 @@ $vestigeText: #ffffff;
 $vestigeBackground: #222222;
 $vestigeAccent: #ffd800;
 
-$animationText: #ffffff;
-$animationBackground: #293c5c;
-$animationAccent: #ff6f5b;
+$blurText: #ffffff;
+$blurBackground: #111111;
+$blurAccent: #dddddd;
 
 $ballroomText: #ffffff;
 $ballroomBackground: #32343b;
@@ -165,21 +165,21 @@ header {
 	}
 }
 
-#animation {
-	background-color: $animationBackground;
+#blur {
+	background-color: $blurBackground;
 	a {
-		color: $animationBackground;
-		background-color: $animationAccent;
+		color: $blurBackground;
+		background-color: $blurAccent;
 	}
 	a:hover {
-		color: $animationAccent;
-		background-color: $animationBackground;
+		color: $blurAccent;
+		background-color: $blurBackground;
 	}
 	p {
-		color: $animationText;
+		color: $blurText;
 	}
 	h1, h2 {
-		color: $animationAccent;
+		color: $blurAccent;
 	}
 }
 
@@ -211,7 +211,7 @@ header {
 		color: $introAccent;
 		background-color: $introBackground;
 	}
-	p {
+	p, li {
 		color: $introText;
 	}
 	h1, h2 {
@@ -221,7 +221,8 @@ header {
 	div {
 		padding-bottom: 1.5em;
 	}
-	p {
+	p, li {
+		@include typeBody;
 		padding-left: 4em;
 		margin-bottom: 0;
 	}
@@ -229,6 +230,18 @@ header {
 		@include typeBody;
 		letter-spacing: 0;
 		text-transform: none;
+	}
+	li {
+		padding-left: 4em;
+		text-indent: -1.2em;
+	}
+	li:before {
+		content: "\25BA \0020 \0020";
+		font-size: 8pt;
+		padding-right: 1em;
+	}
+	ul {
+		list-style: none outside none;
 	}
 }
 

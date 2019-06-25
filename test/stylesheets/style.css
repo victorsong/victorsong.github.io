@@ -196,26 +196,26 @@ header a {
 }
 
 /* line 168, ../sass/_type.scss */
-#animation {
-  background-color: #293c5c;
+#blur {
+  background-color: #111111;
 }
 /* line 170, ../sass/_type.scss */
-#animation a {
-  color: #293c5c;
-  background-color: #ff6f5b;
+#blur a {
+  color: #111111;
+  background-color: #dddddd;
 }
 /* line 174, ../sass/_type.scss */
-#animation a:hover {
-  color: #ff6f5b;
-  background-color: #293c5c;
+#blur a:hover {
+  color: #dddddd;
+  background-color: #111111;
 }
 /* line 178, ../sass/_type.scss */
-#animation p {
+#blur p {
   color: #ffffff;
 }
 /* line 181, ../sass/_type.scss */
-#animation h1, #animation h2 {
-  color: #ff6f5b;
+#blur h1, #blur h2 {
+  color: #dddddd;
 }
 
 /* line 186, ../sass/_type.scss */
@@ -256,7 +256,7 @@ header a {
   background-color: #eeebe1;
 }
 /* line 214, ../sass/_type.scss */
-.resume p {
+.resume p, .resume li {
   color: #333333;
 }
 /* line 217, ../sass/_type.scss */
@@ -268,11 +268,14 @@ header a {
   padding-bottom: 1.5em;
 }
 /* line 224, ../sass/_type.scss */
-.resume p {
+.resume p, .resume li {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 14pt;
+  line-height: 1.5em;
   padding-left: 4em;
   margin-bottom: 0;
 }
-/* line 228, ../sass/_type.scss */
+/* line 229, ../sass/_type.scss */
 .resume h2 {
   font-family: SourceSansPro, sans-serif;
   font-size: 14pt;
@@ -280,19 +283,34 @@ header a {
   letter-spacing: 0;
   text-transform: none;
 }
+/* line 234, ../sass/_type.scss */
+.resume li {
+  padding-left: 4em;
+  text-indent: -1.2em;
+}
+/* line 238, ../sass/_type.scss */
+.resume li:before {
+  content: "\25BA \0020 \0020";
+  font-size: 8pt;
+  padding-right: 1em;
+}
+/* line 243, ../sass/_type.scss */
+.resume ul {
+  list-style: none outside none;
+}
 
-/* line 235, ../sass/_type.scss */
+/* line 248, ../sass/_type.scss */
 #passwordModal {
   background-color: #67e19b;
   color: #201e1a;
 }
-/* line 239, ../sass/_type.scss */
+/* line 252, ../sass/_type.scss */
 #passwordModal #pwButton {
   background-color: #67e19b;
   color: #201e1a;
   border-color: #201e1a;
 }
-/* line 245, ../sass/_type.scss */
+/* line 258, ../sass/_type.scss */
 #passwordModal #pwbutton:hover {
   background-color: #201e1a;
   color: #67e19b;
@@ -492,6 +510,13 @@ video {
   line-height: 1.5em;
   border: 2px solid;
   box-shadow: none;
+}
+
+/* line 174, ../sass/_grid.scss */
+.album img {
+  width: 48%;
+  margin-right: 1%;
+  margin-bottom: 1%;
 }
 
 /**
