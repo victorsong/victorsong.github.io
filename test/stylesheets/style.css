@@ -174,17 +174,17 @@ header a {
 
 /* line 150, ../sass/_type.scss */
 #vestige {
-  background-color: #222222;
+  background-color: #111111;
 }
 /* line 152, ../sass/_type.scss */
 #vestige a {
-  color: #222222;
-  background-color: #ffd800;
+  color: #111111;
+  background-color: #dddddd;
 }
 /* line 156, ../sass/_type.scss */
 #vestige a:hover {
-  color: #ffd800;
-  background-color: #222222;
+  color: #dddddd;
+  background-color: #111111;
 }
 /* line 160, ../sass/_type.scss */
 #vestige p {
@@ -192,30 +192,30 @@ header a {
 }
 /* line 163, ../sass/_type.scss */
 #vestige h1, #vestige h2 {
-  color: #ffd800;
+  color: #dddddd;
 }
 
 /* line 168, ../sass/_type.scss */
 #blur {
-  background-color: #111111;
+  background-color: #eeeeee;
 }
 /* line 170, ../sass/_type.scss */
 #blur a {
-  color: #111111;
-  background-color: #dddddd;
+  color: #eeeeee;
+  background-color: #333333;
 }
 /* line 174, ../sass/_type.scss */
 #blur a:hover {
-  color: #dddddd;
-  background-color: #111111;
+  color: #333333;
+  background-color: #eeeeee;
 }
 /* line 178, ../sass/_type.scss */
 #blur p {
-  color: #ffffff;
+  color: #111111;
 }
 /* line 181, ../sass/_type.scss */
 #blur h1, #blur h2 {
-  color: #dddddd;
+  color: #333333;
 }
 
 /* line 186, ../sass/_type.scss */
@@ -515,8 +515,22 @@ video {
 /* line 174, ../sass/_grid.scss */
 .album img {
   width: 48%;
-  margin-right: 1%;
-  margin-bottom: 1%;
+  margin-right: 1.7%;
+  margin-bottom: 1.7%;
+}
+@media (max-width: 66rem) {
+  /* line 174, ../sass/_grid.scss */
+  .album img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 5%;
+  }
+}
+
+/* line 186, ../sass/_grid.scss */
+.owl-carousel {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 /**

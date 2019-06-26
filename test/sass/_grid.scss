@@ -173,6 +173,17 @@ video {
 
 .album img {
     width: 48%;
-    margin-right: 1%;
-    margin-bottom: 1%;
+    margin-right: 1.7%;
+    margin-bottom: 1.7%;
+
+    @media (max-width: 66rem) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5%;
+    }
+}
+
+.owl-carousel {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }

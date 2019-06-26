@@ -288,8 +288,8 @@ $(document).ready(function (){
 		linkAnimation('#intro', '#introLink', 1);
 		linkPosition('#pnc', '#pncLink', 2);
 		linkPosition('#vestige', '#vestigeLink', 3);
-		linkPosition('#blur', '#blurLink', 4);
-		linkPosition('#ballroom', '#ballroomLink', 5);
+		linkPosition('#ballroom', '#ballroomLink', 4);
+		linkPosition('#blur', '#blurLink', 5);
 		linkPosition('#resume', '#resumeLink', 6);
 	}
 })
@@ -300,9 +300,9 @@ $(window).scroll(function (){
 	}
 	scrollColorChange('#intro', 1, '#eeebe1', '#333333', '#3b504f');
 	scrollColorChange('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
-	scrollColorChange('#vestige', 3, '#222222', '#ffffff', '#ffd800');
-	scrollColorChange('#blur', 4, '#111111', '#ffffff', '#dddddd');
-	scrollColorChange('#ballroom', 5, '#32343b', '#ffffff', '#dbb5c6');
+	scrollColorChange('#vestige', 3, '#111111', '#ffffff', '#dddddd');
+	scrollColorChange('#ballroom', 4, '#32343b', '#ffffff', '#dbb5c6');
+	scrollColorChange('#blur', 5, '#eeeeee', '#111111', '#333333');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 
 	$('.lazyload img, video').each(function() {
@@ -316,8 +316,8 @@ $(window).scroll(function (){
 		linkAnimation('#intro', '#introLink', 1);
 		linkAnimation('#pnc', '#pncLink', 2);
 		linkAnimation('#vestige', '#vestigeLink', 3);
-		linkAnimation('#blur', '#blurLink', 4);
-		linkAnimation('#ballroom', '#ballroomLink', 5);
+		linkAnimation('#ballroom', '#ballroomLink', 4);
+		linkAnimation('#blur', '#blurLink', 5);
 		linkAnimation('#resume', '#resumeLink', 6);
 	}
 })
