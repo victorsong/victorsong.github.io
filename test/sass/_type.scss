@@ -1,22 +1,26 @@
-$introText: #333333;
-$introBackground: #eeebe1;
-$introAccent: #3b504f;
+$introBackground: #3b504f;
+$introText: #eeebe1;
+$introAccent: #eeebe1;
 
-$pncText: #ffffff;
-$pncBackground: #201e1a;
-$pncAccent: #67e19b;
+$pncBackground: #f7f8f9;
+$pncText: #333333;
+$pncAccent: #2a6296;
 
-$vestigeText: #ffffff;
-$vestigeBackground: #111111;
-$vestigeAccent: #dddddd;
+$vestigeBackground: #ffffff;
+$vestigeText: #333333;
+$vestigeAccent: #111111;
 
-$ballroomText: #ffffff;
 $ballroomBackground: #32343b;
+$ballroomText: #ffffff;
 $ballroomAccent: #dbb5c6;
 
-$blurText: #111111;
-$blurBackground: #eeeeee;
+$blurBackground: #111111;
+$blurText: #ffffff;
 $blurAccent: #333333;
+
+$resumeBackground: #eeebe1;
+$resumeText: #333333;
+$resumeAccent: #3b504f;
 
 @font-face {
 	font-family: SourceSansPro;
@@ -202,20 +206,20 @@ header {
 }
 
 .resume {
-	background-color: $introBackground;
+	background-color: $resumeBackground;
 	a {
-		color: $introBackground;
-		background-color: $introAccent;
+		color: $resumeBackground;
+		background-color: $resumeAccent;
 	}
 	a:hover {
-		color: $introAccent;
-		background-color: $introBackground;
+		color: $resumeAccent;
+		background-color: $resumeBackground;
 	}
 	p, li {
-		color: $introText;
+		color: $resumeText;
 	}
 	h1, h2 {
-		color: $introAccent;
+		color: $resumeAccent;
 	}
 
 	div {

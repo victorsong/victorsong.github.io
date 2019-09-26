@@ -1,4 +1,4 @@
-var verified = true;
+var verified = false;
 
 // Grid variables
 var colCount = 3;
@@ -173,25 +173,33 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 	    offsetTop = $(idName).offset().top - threshold
 	    offsetBot = $(idName).offset().top + $(idName).outerHeight() - threshold;
 	    scrollTop = $(window).scrollTop();
+	    $('#pwButton').hover(function() {
+	    	$(this).css({
+				"cursor": "pointer",
+				"background-color": backgroundColor,
+				"color": accentColor,
+				"border-color": accentColor,
+			})
+	    }, function() {
+	    	$(this).css({
+	    		"background-color": accentColor,
+				"color": backgroundColor,
+				"border-color": backgroundColor,
+	    	})
+	    })
 	    if (scrollTop > offsetTop && scrollTop < offsetBot && verified == false) {
 			$('#passwordModal').css({
 				"display": "block",
-				"opacity": "1",
 			});
 			$(idName).css({
-				"opacity": ".2",
-				"filter": "blur(2rem)",
-				"-webkit-filter": "blur(2rem)"
+				"filter": "brightness(150%) contrast(2%)"
 			})
 		} else {
 			$('#passwordModal').css({
 					"display": "none",
-					"opacity": "0",
 				});
 			$(idName).css({
-				"opacity": "1",
 				"filter": "none",
-				"-webkit-filter": "none",
 			})
 		}
 	$('#passwordModal').css({
@@ -205,12 +213,9 @@ var passwordEntry = function(idName) {
 		verified = true;
 		$('#passwordModal').css({
 			"display": "none",
-			"opacity": "0",
 		});
 		$(idName).css({
-			"opacity": "1",
-			"filter": "blur(0)",
-			"-webkit-filter": "blur(0)",
+			"filter": "none"
 		})
 	} else {
 		document.getElementById("passwordText").innerHTML = "Wrong password, please try again."
@@ -259,7 +264,7 @@ $('.owl-carousel').on("click tap", function() {
 $(document).ready(function (){
 	browserHeightSections();
 	scrollToIDs();
-	scrollColorChange('#intro', 1, '#eeebe1', '#333333', '#3b504f');
+	scrollColorChange('#intro', 1, '#3b504f', '#333333', '#eeebe1');
 	$(".owl-carousel").owlCarousel({
 		loop: true,
 		margin: 10,
@@ -296,13 +301,13 @@ $(document).ready(function (){
 
 $(window).scroll(function (){
 	if (verified == false) {
-		passwordProtection('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
+		passwordProtection('#pnc', 2, '#f7f8f9', '#333333', '#296aac');
 	}
-	scrollColorChange('#intro', 1, '#eeebe1', '#333333', '#3b504f');
-	scrollColorChange('#pnc', 2, '#201e1a', '#ffffff', '#67e19b');
-	scrollColorChange('#vestige', 3, '#111111', '#ffffff', '#dddddd');
+	scrollColorChange('#intro', 1, '#3b504f', '#eeebe1', '#eeebe1');
+	scrollColorChange('#pnc', 2, '#f7f8f9', '#333333', '#296aac');
+	scrollColorChange('#vestige', 3, '#ffffff', '#333333', '#111111');
 	scrollColorChange('#ballroom', 4, '#32343b', '#ffffff', '#dbb5c6');
-	scrollColorChange('#blur', 5, '#eeeeee', '#111111', '#333333');
+	scrollColorChange('#blur', 5, '#111111', '#ffffff', '#dddddd');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 
 	$('.lazyload img, video').each(function() {

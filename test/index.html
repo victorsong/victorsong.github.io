@@ -9,49 +9,18 @@
 		<script src="./javascript/owlcarousel.js"></script>
 		<script src="./javascript/script.js"></script>
 	</head>
+	<!-- Header tag has to go at the bottom because of opacity and filter changes on password protection -->
 	<body>
-		<header>
-			<svg id="menuIcon" data-name="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 37">
-				<defs>
-					<style>.buns,.bacon{fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px;}.cls-2{stroke-linecap:round;}
-					</style>
-				</defs>
-				<title>Open Menu</title>
-				<path class="buns" d="M953.51,481.62c0-6.94-6.66-12.62-14.8-12.62h-5.92c-8.13,0-14.79,5.68-14.79,12.62v.54h35.51Z" transform="translate(-917 -468)"/>
-				<path class="buns" d="M918.49,496.25a7.85,7.85,0,0,0,7.89,7.75h19.73a7.85,7.85,0,0,0,7.89-7.75v-1.94H918.49Z" transform="translate(-917 -468)"/>
-				<path class="bacon" d="M918,491c3,0,3-5,6-5s3,5,6,5,3-5,6-5,3,5,6,5,3-5,6-5,3,5,6,5" transform="translate(-917 -468)"/>
-			</svg>
-			<svg id="menuClose" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.09 36.97">
-				<defs>
-					<style>.buns,.bacon{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px;}.cls-1{stroke-linecap:round;}
-					</style>
-				</defs>
-				<title>Close Menu</title>
-				<path class="bacon" d="M181,653c3,0,3-5,6-5s3,5,6,5,3-5,6-5,3,5,6,5" transform="translate(-180 -630.03)"/>
-				<path class="buns" d="M195.2,631c-7.86.27-14.2,5.82-14.2,12.59v.54h14.66A29.43,29.43,0,0,1,195.2,631Z" transform="translate(-180 -630.03)"/>
-				<path class="buns" d="M202.28,656.31H181.49v1.94a7.85,7.85,0,0,0,7.89,7.75h19.73a7.82,7.82,0,0,0,5-1.75A29.48,29.48,0,0,1,202.28,656.31Z" transform="translate(-180 -630.03)"/>
-			</svg>
-			<nav>
-				<ul>
-					<li><a href="#intro" id="introLink" class="nav">Victor Song</a></li>
-					<li><a href="#pnc" id="pncLink" class="nav">The PNC App &#9666;</a></li>
-					<li><a href="#vestige" id="vestigeLink" class="nav">Vestige | Web Design &#9666;</a></li>
-					<li><a href="#ballroom" id="ballroomLink" class="nav">Ballroom | Mobile App &#9666;</a></li>
-					<li><a href="#blur" id="blurLink" class="nav">Blur | Photography &#9666;</a></li>
-					<li><a href="#resume" id="resumeLink" class="nav">Resum&#233;</a></li>
-				</ul>
-			</nav>
-		</header>
 		<div id="menuBackground"></div>
 		<div class="contentWrapper">
 			<div id="passwordModal">
-				<h3 id=passwordText>Input password for access to the PNC Mobile section.</h3>
-				<input id="userEnteredPW" type="password" name="pw">
+				<h3 id=passwordText>Input password for access to the PNC App section.</h3>
+				<input id="userEnteredPW" type="text" name="pw">
 				<input id="pwButton" type="submit" value="Submit" onclick="passwordEntry('#pnc')">
 			</div>
 			<section class="intro" id="intro">
-				<p>I am currently working for PNC as a senior experience designer on the PNC Mobile team.</p>
-				<p>Right now I'm focused on how animations bring an experience to life and developing PNC's Style Guide.</p>
+				<p>I'm currently working for PNC as a Senior Experience Designer on the Mobile Team.</p>
+				<p>Right now I'm focused on developing PNC's Internal Style Guide and designing new features for the PNC App.</p>
 			</section>
 			<section class="portfolio" id="pnc">
 				<h1>The PNC App</h1>
@@ -92,7 +61,7 @@
 				<p>Lunar Gala is a student-run fashion that is hosted annually by Carnegie Mellon University. I worked with <a href="http://antonioono.com">Nio Ono</a>, <a href="http://zainab.co/">Zai Aliyu</a> and <a href="http://danhyo.com">Daniel Kim</a> as designers and <a href="http://salem.io">Salem Hilal</a> as developer.</p>
 				<h2>Developing the concept</h2>
 				<p>Initial brainstorming was all about the relationship between the fashion show as an entity and the audience as a participant. We wanted to play with the idea that the show was an experience that people would come to in order to be cleansed from the struggles of school and daily life.</p>
-				<video class="unloaded" src="./lg/vidLazy.mp4" data-src="./lg/website.mp4" controls="controls"></video>
+				<video controls autoplay class="unloaded" src="./lg/vidLazy.mp4" data-src="./lg/website.mp4" controls="controls"></video>
 				<div class="owl-carousel lazyload">
 					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster1.jpg" />
 					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster2.jpg" />
@@ -154,9 +123,9 @@
 					<h1>Experience</h1>
 					<h2>PNC Bank | Digital Experience Designer | June 2015 - Ongoing</h2>
 					<ul>
-						<li>Redesigned the mass market mobile app</li>
+						<li>Redesigned PNC Mobile for Android and iOS from the ground up</li>
 						<li>Brought Apple app store rating from 1.9 stars to 4.8 stars</li>
-						<li>Currently developing and maintaining PNC Mobile Style Guide</li>
+						<li>Currently develop and maintain the PNC Mobile Style Guide</li>
 					</ul>
 					<h2>Automoblox | Web Designer | Summer 2014</h2>
 					<ul>
@@ -198,4 +167,36 @@
 			</section>
 		</div>
 	</body>
+	<header>
+			<svg id="menuIcon" data-name="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 37">
+				<defs>
+					<style>.buns,.bacon{fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px;}.cls-2{stroke-linecap:round;}
+					</style>
+				</defs>
+				<title>Open Menu</title>
+				<path class="buns" d="M953.51,481.62c0-6.94-6.66-12.62-14.8-12.62h-5.92c-8.13,0-14.79,5.68-14.79,12.62v.54h35.51Z" transform="translate(-917 -468)"/>
+				<path class="buns" d="M918.49,496.25a7.85,7.85,0,0,0,7.89,7.75h19.73a7.85,7.85,0,0,0,7.89-7.75v-1.94H918.49Z" transform="translate(-917 -468)"/>
+				<path class="bacon" d="M918,491c3,0,3-5,6-5s3,5,6,5,3-5,6-5,3,5,6,5,3-5,6-5,3,5,6,5" transform="translate(-917 -468)"/>
+			</svg>
+			<svg id="menuClose" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.09 36.97">
+				<defs>
+					<style>.buns,.bacon{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px;}.cls-1{stroke-linecap:round;}
+					</style>
+				</defs>
+				<title>Close Menu</title>
+				<path class="bacon" d="M181,653c3,0,3-5,6-5s3,5,6,5,3-5,6-5,3,5,6,5" transform="translate(-180 -630.03)"/>
+				<path class="buns" d="M195.2,631c-7.86.27-14.2,5.82-14.2,12.59v.54h14.66A29.43,29.43,0,0,1,195.2,631Z" transform="translate(-180 -630.03)"/>
+				<path class="buns" d="M202.28,656.31H181.49v1.94a7.85,7.85,0,0,0,7.89,7.75h19.73a7.82,7.82,0,0,0,5-1.75A29.48,29.48,0,0,1,202.28,656.31Z" transform="translate(-180 -630.03)"/>
+			</svg>
+			<nav>
+				<ul>
+					<li><a href="#intro" id="introLink" class="nav">Victor Song</a></li>
+					<li><a href="#pnc" id="pncLink" class="nav">The PNC App &#9666;</a></li>
+					<li><a href="#vestige" id="vestigeLink" class="nav">Vestige | Web Design &#9666;</a></li>
+					<li><a href="#ballroom" id="ballroomLink" class="nav">Ballroom | Mobile App &#9666;</a></li>
+					<li><a href="#blur" id="blurLink" class="nav">Blur | Photography &#9666;</a></li>
+					<li><a href="#resume" id="resumeLink" class="nav">Resum&#233;</a></li>
+				</ul>
+			</nav>
+		</header>
 </html>
