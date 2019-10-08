@@ -1,0 +1,128 @@
+/* Constants */
+
+$sections: 119;              // The number of scrolling sections
+$scroll-ratio: 8;            // How many full screen heights to scroll to advance a single slide
+
+
+body {
+    height: $sections * $scroll-ratio * 10vh;            /* To allow scrolling */
+    display: none;                                        /* Hide until loaded */
+
+    /*************************
+    
+     * Scroll control code
+    
+     *************************/
+    
+    .content { 
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 100vh;
+    
+        /*************************
+    
+         * General section layout
+    
+         *************************/
+    
+         section {
+            overflow: hidden;
+            position: absolute;
+            box-sizing: border-box;
+            width: 100%;
+            text-align: justify;
+            text-transform: lowercase;
+
+
+            .inside {
+                display: none;
+            }
+
+            &.divider img, &.design img, &.designers img {
+                position: absolute;
+                top: 0;
+            }
+
+            &.design img {
+                left: -50%;
+                @include background-size(200% 100%);
+                width: 200%;
+                height: 100%;
+            }
+
+            &.designers img {
+                left: -50%;
+                top: -50%;
+                @include background-size(200% 200%);
+                width: 200%;
+                height: 200%;
+            }
+            
+            &.divider img {
+                left: -175%;
+                @include background-size(400% 100%);
+                width: 400%;
+                height: 100%;
+            }
+            
+            @include transform(translate3d(0, 0, 0)); /* force hardware acceleration */
+            @include backface-visibility(hidden); /* other hacky speed-up tricks */
+            @include perspective(1000);
+    
+
+            /*************************
+    
+            * Specific section layout
+    
+            *************************/
+    
+            &.intro {
+                .inside {
+                    color: black;
+                }
+            }
+        
+            /*************************
+    
+            * Section sizing
+    
+            *************************/    
+    
+            &.active {
+    
+                .inside {
+                    display: block;
+                    @include transform(scale3d(1.0, 1.0, 1.0));         /* 75 / 75 */
+                }
+            }   
+    
+            &.second-class {
+                @include transition-delay(0.1);
+    
+                .inside {
+                    display: block;
+                    @include transform(scale3d(1.0, 0.06, 1.0));        /* 4.5 / 75 */
+                }
+            }
+    
+    
+            /*************************
+    
+             * Edge case layouts
+             * (only one first-child, etc.)
+    
+             *************************/
+    
+    
+            .inside {
+                -webkit-transform-origin: 0 0; /* Keep text aligned properly */
+                        transform-origin: 0 0;
+                -webkit-transition: -webkit-transform $transitionDuration $transitionCurve;
+                        transition: transform $transitionDuration -webkit-transform $transitionDuration $transitionCurve;
+                // @include transition(transform $transitionDuration -webkit-transform $transitionDuration);
+                @include transform(scaleY(0.001824561)); /* .136742195 / 75 */
+            }
+        }
+    }
+}

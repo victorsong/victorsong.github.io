@@ -1,0 +1,16 @@
+@-webkit-keyframes sectionPulse {
+    0% {
+        // -webkit-filter: brightness(1);
+        opacity: .5;
+    }
+    
+    50% {
+        opacity: 1;
+        // -webkit-filter: brightness(5.0);
+    }
+    
+    100% {
+        // -webkit-filter: brightness(1);
+        opacity: .5;
+    }
+}

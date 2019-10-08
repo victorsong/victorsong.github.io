@@ -1,0 +1,325 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "_globals.scss";
+@import "_type.scss";
+@import "_animation.scss";
+@import "_scrolling.scss";
+@import "_static.scss";
+@import "_teaser.scss";
+@import "_humans.scss";
+@import "_collections.scss";
+
+$defaultBrightness: 1.1;
+
+@mixin sectionFlicker {
+    -webkit-animation: sectionPulse .001s linear infinite;
+       -moz-animation: sectionPulse .001s linear infinite;
+            animation: sectionPulse .001s linear infinite;
+}
+
+body {
+    text-rendering:         optimizeLegibility;
+    -webkit-touch-callout:  none;
+    
+    ::selection {
+        background: #ff00ff;
+    }
+    
+    .content {
+        
+        section {
+            cursor: pointer;
+            @include transition(all $transitionDuration $transitionCurve);
+            
+            &.active {
+                cursor: default;
+            }
+            
+            &.header, &.text {
+                @include background-size(100% 100%);
+                background-repeat: no-repeat;
+                
+                .inside {
+                    text-indent: -99999em;
+                }
+            }
+
+            &.tickets, &.blog {
+    
+                    &.active:hover {
+                        @include sectionFlicker;
+                    }
+                    
+                    a {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+            }
+            
+            &.video {
+                .video-cover {
+                    background-image: url('graphics/video.jpg');
+                    @include background-size(100% 100%);
+                    position: absolute;
+                    top: 0;
+                    bottom: 0; 
+                    left: 0; 
+                    cursor: pointer;
+                    right: 0;
+                    
+                    &:hover {
+                        @include sectionFlicker;
+                    }
+                }
+    
+                iframe {
+                    display: none;
+                }
+            }
+            
+            &.header {
+                
+                &:hover {
+                    @include sectionFlicker;
+                    
+                    &.active {
+                        -webkit-animation: none;
+                           -moz-animation: none;
+                                animation: none;
+                    }
+                }
+                        
+                &.title {
+                    background-image: url('graphics/vestige.png');
+                }
+
+                &.tickets {
+                    background-image: url('graphics/tickets.png');
+                }
+                
+                &.people {
+                    background-image: url('graphics/people.png');
+                }
+
+                &.about {
+                    background-image: url('graphics/about.png');
+                }
+
+                &.designs { 
+                    background-image: url('graphics/collections.png');
+                }
+            }
+            
+            &.text { // like header, but doesn't stay visible when you scroll away
+                
+                text-indent: -9999em;
+                
+                &.about {
+                    background-image: url('graphics/aboutText.png');
+                }
+                
+                &.tagline {
+                    background-image: url('graphics/tagline.png');
+                }
+                
+                &.sponsors {
+                    background-image: url('graphics/sponsors/allSponsors.jpg');
+                }
+                
+                &.logistics {
+                    background-image: url('graphics/logistics.png');
+                }
+
+                &.logo {
+                    background-image: url('graphics/lg.png');
+                }
+
+                &.blog {
+                    background-image: url('graphics/blog.png');
+                }
+                
+                &.sponsors {
+                    background-image: url('graphics/sponsors.png');
+                }
+                
+                &.names {
+                    
+                    &.beora {
+                        background-image: url('graphics/lines/beora/name.png');
+                    }
+                    
+                    &.bound {
+                        background-image: url('graphics/lines/bound/name.png');
+                    }
+                    
+                    &.cakery {
+                        background-image: url('graphics/lines/cakery/name.png');
+                    }
+                    
+                    &.cleen {
+                        background-image: url('graphics/lines/cleen/name.png');
+                    }
+                    
+                    &.dressedToKill {
+                        background-image: url('graphics/lines/dressedToKill/name.png');
+                    }
+                    
+                    &.exoskeleton {
+                        background-image: url('graphics/lines/exoskeleton/name.png');
+                    }
+                    
+                    &.intension {
+                        background-image: url('graphics/lines/intension/name.png');
+                    }
+                    
+                    &.letsPlay {
+                        background-image: url('graphics/lines/letsplay/name.png');
+                    }
+                    
+                    &.lustre {
+                        background-image: url('graphics/lines/lustre/name.png');
+                    }
+                    
+                    &.mas-querade {
+                        background-image: url('graphics/lines/mas-querade/name.png');
+                    }
+                    
+                    &.mashinka {
+                        background-image: url('graphics/lines/mashinka/name.png');
+                    }
+                    
+                    &.menagerie {
+                        background-image: url('graphics/lines/menagerie/name.png');
+                    }
+                    
+                    &.morph {
+                        background-image: url('graphics/lines/morph/name.png');
+                    }
+                    
+                    &.revive {
+                        background-image: url('graphics/lines/revive/name.png');
+                    }
+                    
+                    &.rift {
+                        background-image: url('graphics/lines/rift/name.png');
+                    }
+                    
+                    &.sinew {
+                        background-image: url('graphics/lines/sinew/name.png');
+                    }
+                    
+                    &.tact {
+                        background-image: url('graphics/lines/tact/name.png');
+                    }
+                    
+                    &.theWealthySlums {
+                        background-image: url('graphics/lines/theWealthySlums/name.png');
+                    }
+                    
+                    &.till {
+                        background-image: url('graphics/lines/till/name.png');
+                    }
+                    
+                    &.totsiens {
+                        background-image: url('graphics/lines/totsiens/name.png');
+                    }
+                    
+                    &.uncover {
+                        background-image: url('graphics/lines/uncover/name.png');
+                    }
+                }
+                
+                &.description {
+                    
+                    &.beora {
+                        background-image: url('graphics/lines/beora/description.png');
+                    }
+                    
+                    &.bound {
+                        background-image: url('graphics/lines/bound/description.png');
+                    }
+                    
+                    &.cakery {
+                        background-image: url('graphics/lines/cakery/description.png');
+                    }
+                    
+                    &.cleen {
+                        background-image: url('graphics/lines/cleen/description.png');
+                    }
+                    
+                    &.dressedToKill {
+                        background-image: url('graphics/lines/dressedToKill/description.png');
+                    }
+                    
+                    &.exoskeleton {
+                        background-image: url('graphics/lines/exoskeleton/description.png');
+                    }
+                    
+                    &.intension {
+                        background-image: url('graphics/lines/intension/description.png');
+                    }
+                    
+                    &.letsPlay {
+                        background-image: url('graphics/lines/letsplay/description.png');
+                    }
+                    
+                    &.lustre {
+                        background-image: url('graphics/lines/lustre/description.png');
+                    }
+                    
+                    &.mas-querade {
+                        background-image: url('graphics/lines/mas-querade/description.png');
+                    }
+                    
+                    &.mashinka {
+                        background-image: url('graphics/lines/mashinka/description.png');
+                    }
+                    
+                    &.menagerie {
+                        background-image: url('graphics/lines/menagerie/description.png');
+                    }
+                    
+                    &.morph {
+                        background-image: url('graphics/lines/morph/description.png');
+                    }
+                    
+                    &.revive {
+                        background-image: url('graphics/lines/revive/description.png');
+                    }
+                    
+                    &.rift {
+                        background-image: url('graphics/lines/rift/description.png');
+                    }
+                    
+                    &.sinew {
+                        background-image: url('graphics/lines/sinew/description.png');
+                    }
+                    
+                    &.tact {
+                        background-image: url('graphics/lines/tact/description.png');
+                    }
+                    
+                    &.theWealthySlums {
+                        background-image: url('graphics/lines/theWealthySlums/description.png');
+                    }
+                    
+                    &.till {
+                        background-image: url('graphics/lines/till/description.png');
+                    }
+                    
+                    &.totsiens {
+                        background-image: url('graphics/lines/totsiens/description.png');
+                    }
+                    
+                    &.uncover {
+                        background-image: url('graphics/lines/uncover/description.png');
+                    }
+                }
+            }
+        }
+    }
+}

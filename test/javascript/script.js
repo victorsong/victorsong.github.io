@@ -192,7 +192,7 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 				"display": "block",
 			});
 			$(idName).css({
-				"filter": "brightness(150%) contrast(2%)"
+				"filter": "contrast(0%)"
 			})
 		} else {
 			$('#passwordModal').css({
@@ -301,10 +301,10 @@ $(document).ready(function (){
 
 $(window).scroll(function (){
 	if (verified == false) {
-		passwordProtection('#pnc', 2, '#f7f8f9', '#333333', '#296aac');
+		passwordProtection('#pnc', 2, '#f7f8f9', '#333333', '#2a6296');
 	}
 	scrollColorChange('#intro', 1, '#3b504f', '#eeebe1', '#eeebe1');
-	scrollColorChange('#pnc', 2, '#f7f8f9', '#333333', '#296aac');
+	scrollColorChange('#pnc', 2, '#f7f8f9', '#333333', '#2a6296');
 	scrollColorChange('#vestige', 3, '#ffffff', '#333333', '#111111');
 	scrollColorChange('#ballroom', 4, '#32343b', '#ffffff', '#dbb5c6');
 	scrollColorChange('#blur', 5, '#111111', '#ffffff', '#dddddd');
