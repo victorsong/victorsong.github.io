@@ -36,6 +36,22 @@ header {
     }
 }
 
+.desktop {
+    display: block;
+    
+    @media (max-width: 48rem) {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @media (max-width: 48rem) {
+        display: block;
+    }
+}
+
 nav {
     @media (max-width: 48rem) {
         width: 18rem;
@@ -137,6 +153,7 @@ video {
     @media (max-width: 48rem) {
         width: 80%;
         padding: 5%;
+        margin-left: 5%;
     }
 
     @media (min-width: 96rem) {

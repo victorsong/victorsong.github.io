@@ -294,6 +294,24 @@ header a {
   }
 }
 
+.desktop {
+  display: block;
+}
+@media (max-width: 48rem) {
+  .desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  display: none;
+}
+@media (max-width: 48rem) {
+  .mobile {
+    display: block;
+  }
+}
+
 @media (max-width: 48rem) {
   nav {
     width: 18rem;
@@ -398,6 +416,7 @@ video {
   #passwordModal {
     width: 80%;
     padding: 5%;
+    margin-left: 5%;
   }
 }
 @media (min-width: 96rem) {

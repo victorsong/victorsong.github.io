@@ -191,15 +191,9 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 			$('#passwordModal').css({
 				"display": "block",
 			});
-			$(idName).css({
-				"filter": "contrast(0%)"
-			})
 		} else {
 			$('#passwordModal').css({
-					"display": "none",
-				});
-			$(idName).css({
-				"filter": "none",
+				"display": "none",
 			})
 		}
 	$('#passwordModal').css({
@@ -284,6 +278,12 @@ $(document).ready(function (){
 			}
 		}
 	});
+
+	if (verified==false) {
+		$('#pnc').css({
+			"filter": "contrast(0%)"
+		})
+	}
 
 	if (mobile.matches) {
 		hamburgerPosition();
