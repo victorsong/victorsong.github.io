@@ -456,8 +456,8 @@ video {
 
 .album img {
   width: 48%;
-  margin-right: 1.6%;
-  margin-bottom: 1.6%;
+  margin-right: 1%;
+  margin-bottom: 1%;
 }
 @media (max-width: 66rem) {
   .album img {
