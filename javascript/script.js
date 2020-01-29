@@ -243,7 +243,7 @@ var lazyloadTimer = function(threshold, image) {
 
 var idleInterval = setInterval(function() {
 	idleTime = idleTime + 1;
-}, 50) //.1s
+}, 1) //.01s
 
 // Owl Carousel 
 $('.owl-carousel').on("click tap", function() {
