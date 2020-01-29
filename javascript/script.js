@@ -238,7 +238,7 @@ var lazyloadTimer = function(threshold, image) {
 		if (idleTime > 1 && $(image).attr("class") == "unloaded") {
 			lazyload(threshold, image);
 		}
-	}, 100)
+	}, 1)
 }
 
 var idleInterval = setInterval(function() {
