@@ -7,252 +7,208 @@ $baseline:          1.5rem;
 $doubleColGutter:   (100% / 2) / 10;
 $doubleCol:         (100% / 2) - $doubleColGutter - ($doubleColGutter / 2);
 
-
-@mixin sectionPadding {
-    padding: 8rem $gutter;
-    
-    @media (min-width: 50em) {
-        padding: 10rem 0;
-    }
-    
-    @media (min-width: 80em) {
-        padding: 15rem 0;
-    }
+html, body {
+    height: 100%;
 }
 
-@mixin bgCover {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-}
+header {
+    text-align: right;
+    z-index: 999;
+    a {
+        position: fixed;
+        right: 3 * $gutter + 2 * $col;
+        transition: top .5s ease-in-out;
 
-body {
-    @media (min-width: 120em) {
-        .centerWrapper {
-            width: 110em;
-            margin: 0 auto;
+        @media (max-width: 48rem) {
+            position: relative;
+            right: inherit;
+            padding: 2.5% 0;
         }
+    }
+
+    @media (max-width: 48rem) {
+        text-align: left;
+        position: fixed;
+
+        li {
+            padding: 2.5% 0;
+        }
+    }
+}
+
+.desktop {
+    display: block;
+    
+    @media (max-width: 48rem) {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @media (max-width: 48rem) {
+        display: block;
     }
 }
 
 nav {
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.9);
-    //border-bottom: 1px solid #ccc;
+    @media (max-width: 48rem) {
+        width: 18rem;
+        display: none;
+        padding: 2.5% 1rem;
+    }
+}
+
+#menuIcon {
+    width: 2rem;
+
+    @media(min-width: 48rem) {
+        display: none;
+    }
+}
+
+#menuIcon:hover, #menuClose:hover {
+    animation: wiggle 0.5s;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(12deg);
+    }
+    75% {
+        transform: rotate(-12deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#menuClose {
+    width: 2rem;
+    display: none;
+}
+
+#menuBackground {
+    height: 100%;
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    
-    ul {
-        li {
-            margin-right: 1.5 * $gutter;
-            display: none;
-            
-            @media (min-width: 50em) {
-                display: inline;
-            }
-            
-            @media (min-width: 120em) {
-                float: right;
-                margin-right: $gutter;
-                margin-left: gutter;
-            }
-            
-            a {
-                padding-top: 3em;
-            }
-        }
-        
-        li:first-of-type {
-            margin-right: 4 * $gutter;
-            display: inline;
-            margin-left: $gutter;
-            
-            @media (min-width: 50em) {
-                margin-left: 0;
-            }
-            
-            @media (min-width: 120em) {
-                float: left;
-                margin-left: $gutter;
-                margin-right: 0;
-            }
-        }
-        
-        @media (min-width: 50em) {
-            margin-left: (2 * $gutter) + $col;
-        }
-        
-        @media (min-width: 120em) {
-            margin-left: 0;
-        }
-    }
-    
-    @media (min-width: 50em) {
-        margin-bottom: 3em;
-        position: fixed;
+    display: none;
+    position: fixed;
+    z-index: 997;
+}
+
+section {
+    width: $col * 1.5;
+    float: right;
+    padding-right: .5 * $col + 2 * $gutter;
+    padding-left: 100% - $col * 1.5 - .5 * $col + 2 * $gutter;
+    transition: filter .2s;
+
+    @media (max-width: 48rem) {
+        width: 90%;
+        float: none;
+        position: relative;
+        padding: 5%;
     }
 }
 
-
-.intro {
-    padding: 6rem $gutter;
-    padding-top: 11rem;
-    overflow: auto;
-    
-    @media (min-width: 50em) {
-        padding: 8rem 0;
-        padding-top: 15rem;
-    }
-    
-    @media (min-width: 80em) {
-        padding: 13rem 0;
-        padding-top: 20rem;
-    }
-    
+body {
+    background-color: #eeebe1;
+    transition: background-color .5s ease-in-out;
 }
 
-.portfolio {
-    padding-top: 4em;
-    article {
-        a {
-            padding: 3rem $gutter;
-            display: block;
-            transition: .3s ease-out;
-            
-            @media (min-width: 50em) {
-                padding: 6em 0;
-                padding-left: (2 * $gutter) + $col;
-            }
-            
-            @media (min-width: 120em) {
-                padding-left: 0;
-                text-align: center;
-            }
-        }
-
-        a:hover {
-            padding: 6rem $gutter;
-            
-            @media (min-width: 50em) {
-                padding: 9em 0;
-                padding-left: (2 * $gutter) + $col;
-            }
-            
-            @media (min-width: 120em) {
-                padding-left: 0;
-                text-align: center;
-            }
-        }
-    }
-    
-    @include bgCover;
-    .bible {background: url('../bible/cover.jpg') no-repeat center center; background-size: cover}
-    .weather {background: url('../weather/cover.jpg') no-repeat center center; background-size: cover}
-    .love {background: url('../love/cover.jpg') no-repeat center center; background-size: cover}
-    .books {background: url('../books/cover.jpg') no-repeat center center; background-size: cover}
-    .blur {background: url('../blur/cover.jpg') no-repeat center center; background-size: cover}
-    .lg {background: url('../lg/cover.jpg') no-repeat center center; background-size: cover}
-    .pnc {background: url('../pnc/cover.jpg') no-repeat center center; background-size: cover}
-    .lift {background: url('../lift/cover.jpg') no-repeat center center; background-size: cover}
-    .ballroom {background: url('../ballroom/cover.jpg') no-repeat center center; background-size: cover}
+.lazyload img{
+    opacity: .2;
+    transition: opacity, .5s ease-in-out;
 }
 
-.resume {
-    @include sectionPadding;
-    padding-bottom: 0;
-    overflow: auto;
-    
-    div {
-        overflow: auto;
-    }
-    
-    .colTwo {
-        margin-bottom: 3em;
-    }
-    
-    @media (min-width: 50em) {
-        padding-bottom: 8rem;
+video {
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+.badge {
+    max-width: 30%;
+    padding: 9%;
+
+    @media (max-width: 70rem) {
+        max-width: 40%;
+        padding: 3.5%;
     }
 }
 
-.process {
-    @include sectionPadding;
-}
+#passwordModal {
+    z-index: 998;
+    display: none;
+    width: $col * 1.5;
+    padding: 3rem;
+    box-shadow: 0 10px 10px rgba(0,0,0,.2);
+    position: fixed;
+    margin-top: 0;
+    margin-left: $col + $gutter + $gutter;
 
-.colOne {
-    @media (min-width: 50em) {
-        width: $col;
-        float: left;
-        overflow: auto;
-        clear: left;
-        text-align: right;
-        margin-left: $gutter;
+    @media (max-width: 48rem) {
+        width: 80%;
+        padding: 5%;
+        margin-left: 5%;
+    }
+
+    @media (min-width: 96rem) {
+        width: 42rem;
+    }
+
+    h3 {
+        @include typeNav;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    input {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+        padding: .5rem .3rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        box-shadow: 0 5px 5px rgba(0,0,0,.2);
+        border: none;
+        border-radius: 0;
+    }
+
+    #pwButton {
+        width: 6rem;
+        margin: 0 auto;
+        margin-bottom: 0;
+        margin-top: 2rem;
+        @include typeNav;
+        border: 2px solid;
+        box-shadow: none;
     }
 }
-    
-.colTwo {
-    @media (min-width: 50em) {
-        width: (1.5 * $col);
-        margin-right: (0.5 * $col) + ($gutter * 2);
-        float: right;
-        overflow: auto;
-        clear: right;
-    }
-}
 
-.gallery {
-    padding-top: 3em;
-    clear: both;
-    img {
+.album img {
+    width: 48%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+
+    @media (max-width: 66rem) {
         width: 100%;
-        max-width: 100%;
-        display: inline-block;
-        margin-bottom: $gutter;
-        
-        @media (min-width: 30em) {
-            width: 100% - $gutter - $gutter;
-            margin-left: $gutter;
-        }
-        
-        @media (min-width: 40em) {
-            width: $doubleCol;
-            margin-left: $doubleColGutter;
-        }
-        
-        @media (min-width: 50em) {
-            width: $col;
-            margin-left: $gutter;
-        }
-    }
-    a {
-        transition: .3s ease-out; 
-    }
-    
-    a:hover {
-        opacity: .5;
+        margin-right: 0;
+        margin-bottom: 5%;
     }
 }
 
-.hero {
-    img, video {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: $gutter;
-        
-        @media (min-width: 30em) {
-            width: 100% - $gutter - $gutter;
-            margin-left: $gutter;
-        }
-        
-        @media (min-width: 40em) {
-            width: $col;
-            margin-left: ($gutter * 2) + $col;
-        }
-    }
+.owl-carousel, {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
-.outline {
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 6px #ddd;
+.gallery img {
+    width: 32%;
+    margin-right: 1%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }

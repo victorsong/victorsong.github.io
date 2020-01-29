@@ -1,3 +1,27 @@
+$introBackground: #3b504f;
+$introText: #eeebe1;
+$introAccent: #eeebe1;
+
+$pncBackground: #f7f8f9;
+$pncText: #333333;
+$pncAccent: #2a6296;
+
+$vestigeBackground: #ffffff;
+$vestigeText: #333333;
+$vestigeAccent: #111111;
+
+$ballroomBackground: #044661;
+$ballroomText: #ffffff;
+$ballroomAccent: #ff9b9b;
+
+$blurBackground: #111111;
+$blurText: #ffffff;
+$blurAccent: #333333;
+
+$resumeBackground: #eeebe1;
+$resumeText: #333333;
+$resumeAccent: #3b504f;
+
 @font-face {
 	font-family: SourceSansPro;
 	src: url(../fonts/SourceSansPro-Regular.ttf);
@@ -8,11 +32,26 @@
 	src: url(../fonts/FuturaPT-Book.otf);
 }
 
+@font-face {
+	font-family: Cousine;
+	src: url(../fonts/Cousine-Regular.ttf);
+}
+
+@font-face {
+	font-family: Cousine-Bold;
+	src: url(../fonts/Cousine-Bold.tff);
+}
+
 @mixin typeBody {
 	font-family: SourceSansPro, sans-serif;
 	font-size: 14pt;
 	line-height: 1.5em;
-	color: #333;
+}
+
+@mixin typeNav {
+	font-family: Cousine, sans-serif;
+	font-size: 12pt;
+	line-height: 1.5em;
 }
 
 @mixin typeHeader {
@@ -24,7 +63,7 @@
 }
 
 @mixin typeDisplay {
-	font-family: FuturaPT, sans-serif;
+	font-family: Cousine, sans-serif;
 	line-height: 1.5em;
 	font-weight: 700;
 	font-size: 14pt;
@@ -39,92 +78,190 @@
 	}
 }
 
-p {
-	@include typeBody;
-}
-
 a {
-	@include typeBody;
-	text-decoration: none;
-	color: #3e98e8;
-	transition: .3s ease-out;
+	padding-left: .2em;
+	padding-right: .2em;
 }
 
-a:hover {
-	color: #296fad;
-}
-
-nav {
+header {
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
 	a {
-		color: #333;
-		transition: .3s ease-out;
+		@include typeNav;
+		text-decoration: none;
+		white-space: nowrap;
 	}
-	
+}
+
+.nav {
+	color: #000000;
+}
+
+.contentWrapper {
+	h1 {
+		@include typeHeader;
+		padding-bottom: .5em;
+	}
+	h2 {
+		@include typeHeader;
+	}
+	p {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+#intro {
+	background-color: $introBackground;
+	a {
+		color: $introBackground;
+		background-color: $introAccent;
+	}
 	a:hover {
-		color: #999;
+		color: $introAccent;
+		background-color: $introBackground;
+	}
+	p {
+		color: $introText;
+	}
+	h1, h2 {
+		color: $introAccent;
+	}
+}
+
+#pnc {
+	background-color: $pncBackground;
+	a {
+		color: $pncBackground;
+		background-color: $pncAccent;
+	}
+	a:hover {
+		color: $pncAccent;
+		background-color: $pncBackground;
+	}
+	p {
+		color: $pncText;
+	}
+	h1, h2 {
+		color: $pncAccent;
 	}
 	
-	li:first-of-type {
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		
-		a {
-			@include typeHeader;
-		}
+	transition: opacity .5s;
+}
+
+#vestige {
+	background-color: $vestigeBackground;
+	a {
+		color: $vestigeBackground;
+		background-color: $vestigeAccent;
+	}
+	a:hover {
+		color: $vestigeAccent;
+		background-color: $vestigeBackground;
+	}
+	p {
+		color: $vestigeText;
+	}
+	h1, h2 {
+		color: $vestigeAccent;
 	}
 }
 
-.intro {
-	.colOne {
-		@include typeHeader;
-		margin-bottom: 1em;
+#blur {
+	background-color: $blurBackground;
+	a {
+		color: $blurBackground;
+		background-color: $blurAccent;
 	}
-	.colTwo {
-		@include typeBody;
-		margin-bottom: 1em;
+	a:hover {
+		color: $blurAccent;
+		background-color: $blurBackground;
+	}
+	p {
+		color: $blurText;
+	}
+	h1, h2 {
+		color: $blurAccent;
 	}
 }
 
-.portfolio a {
-	@include typeHeader;
-	text-transform: uppercase;
-	color: #333;
-}
-
-.process {
-	.colOne {
-		@include typeHeader;
-		margin-bottom: 1em;
-		clear: both;
+#ballroom {
+	background-color: $ballroomBackground;
+	a {
+		color: $ballroomBackground;
+		background-color: $ballroomAccent;
 	}
-	
-	.colTwo {
-		@include typeBody;
-		margin-bottom: 1em;
+	a:hover {
+		color: $ballroomAccent;
+		background-color: $ballroomBackground;
+	}
+	p {
+		color: $ballroomText;
+	}
+	h1, h2 {
+		color: $ballroomAccent;
 	}
 }
 
 .resume {
-	h1 {
-		@include typeHeader;
-		margin-bottom: 1em;
+	background-color: $resumeBackground;
+	a {
+		color: $resumeBackground;
+		background-color: $resumeAccent;
 	}
-	
+	a:hover {
+		color: $resumeAccent;
+		background-color: $resumeBackground;
+	}
+	p, li {
+		color: $resumeText;
+	}
+	h1, h2 {
+		color: $resumeAccent;
+	}
+
+	div {
+		padding-bottom: 1.5em;
+	}
+	p, li {
+		@include typeBody;
+		padding-left: 4em;
+		margin-bottom: 0;
+	}
 	h2 {
 		@include typeBody;
-		margin-top: 1em;
+		letter-spacing: 0;
+		text-transform: none;
 	}
-	
-	h2:first-of-type {
-		margin-top: 0;
+	li {
+		padding-left: 4em;
+		text-indent: -1.2em;
 	}
-	
-	p {
-		@include typeBody;
-		opacity: 0.7;
+	li:before {
+		content: "\25BA \0020 \0020";
+		font-size: 8pt;
+		padding-right: 1em;
 	}
-	
-	a {
-		color: #333;
+	ul {
+		list-style: none outside none;
+	}
+}
+
+#passwordModal {
+	background-color: $pncAccent;
+	color: $pncBackground;
+
+	#pwButton {
+		background-color: $pncAccent;
+		color: $pncBackground;
+		border-color: $pncBackground;
+	}
+
+	#pwbutton:hover {
+		background-color: $pncBackground;
+		color: $pncAccent;
+		border-color: $pncAccent;
 	}
 }

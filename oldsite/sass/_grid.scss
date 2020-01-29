@@ -1,0 +1,258 @@
+$colCount:          3;
+$gutterCount:       $colCount + 1;
+$noGutterCol:       100% / $colCount;
+$gutter:            $noGutterCol / 10; 
+$col:               $noGutterCol - $gutter - ($gutter / $colCount);
+$baseline:          1.5rem;
+$doubleColGutter:   (100% / 2) / 10;
+$doubleCol:         (100% / 2) - $doubleColGutter - ($doubleColGutter / 2);
+
+
+@mixin sectionPadding {
+    padding: 8rem $gutter;
+    
+    @media (min-width: 50em) {
+        padding: 10rem 0;
+    }
+    
+    @media (min-width: 80em) {
+        padding: 15rem 0;
+    }
+}
+
+@mixin bgCover {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    @media (min-width: 120em) {
+        .centerWrapper {
+            width: 110em;
+            margin: 0 auto;
+        }
+    }
+}
+
+nav {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    //border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+    ul {
+        li {
+            margin-right: 1.5 * $gutter;
+            display: none;
+            
+            @media (min-width: 50em) {
+                display: inline;
+            }
+            
+            @media (min-width: 120em) {
+                float: right;
+                margin-right: $gutter;
+                margin-left: gutter;
+            }
+            
+            a {
+                padding-top: 3em;
+            }
+        }
+        
+        li:first-of-type {
+            margin-right: 4 * $gutter;
+            display: inline;
+            margin-left: $gutter;
+            
+            @media (min-width: 50em) {
+                margin-left: 0;
+            }
+            
+            @media (min-width: 120em) {
+                float: left;
+                margin-left: $gutter;
+                margin-right: 0;
+            }
+        }
+        
+        @media (min-width: 50em) {
+            margin-left: (2 * $gutter) + $col;
+        }
+        
+        @media (min-width: 120em) {
+            margin-left: 0;
+        }
+    }
+    
+    @media (min-width: 50em) {
+        margin-bottom: 3em;
+        position: fixed;
+    }
+}
+
+
+.intro {
+    padding: 6rem $gutter;
+    padding-top: 11rem;
+    overflow: auto;
+    
+    @media (min-width: 50em) {
+        padding: 8rem 0;
+        padding-top: 15rem;
+    }
+    
+    @media (min-width: 80em) {
+        padding: 13rem 0;
+        padding-top: 20rem;
+    }
+    
+}
+
+.portfolio {
+    padding-top: 4em;
+    article {
+        a {
+            padding: 3rem $gutter;
+            display: block;
+            transition: .3s ease-out;
+            
+            @media (min-width: 50em) {
+                padding: 6em 0;
+                padding-left: (2 * $gutter) + $col;
+            }
+            
+            @media (min-width: 120em) {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+
+        a:hover {
+            padding: 6rem $gutter;
+            
+            @media (min-width: 50em) {
+                padding: 9em 0;
+                padding-left: (2 * $gutter) + $col;
+            }
+            
+            @media (min-width: 120em) {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    }
+    
+    @include bgCover;
+    .bible {background: url('../bible/cover.jpg') no-repeat center center; background-size: cover}
+    .weather {background: url('../weather/cover.jpg') no-repeat center center; background-size: cover}
+    .love {background: url('../love/cover.jpg') no-repeat center center; background-size: cover}
+    .books {background: url('../books/cover.jpg') no-repeat center center; background-size: cover}
+    .blur {background: url('../blur/cover.jpg') no-repeat center center; background-size: cover}
+    .lg {background: url('../lg/cover.jpg') no-repeat center center; background-size: cover}
+    .pnc {background: url('../pnc/cover.jpg') no-repeat center center; background-size: cover}
+    .lift {background: url('../lift/cover.jpg') no-repeat center center; background-size: cover}
+    .ballroom {background: url('../ballroom/cover.jpg') no-repeat center center; background-size: cover}
+}
+
+.resume {
+    @include sectionPadding;
+    padding-bottom: 0;
+    overflow: auto;
+    
+    div {
+        overflow: auto;
+    }
+    
+    .colTwo {
+        margin-bottom: 3em;
+    }
+    
+    @media (min-width: 50em) {
+        padding-bottom: 8rem;
+    }
+}
+
+.process {
+    @include sectionPadding;
+}
+
+.colOne {
+    @media (min-width: 50em) {
+        width: $col;
+        float: left;
+        overflow: auto;
+        clear: left;
+        text-align: right;
+        margin-left: $gutter;
+    }
+}
+    
+.colTwo {
+    @media (min-width: 50em) {
+        width: (1.5 * $col);
+        margin-right: (0.5 * $col) + ($gutter * 2);
+        float: right;
+        overflow: auto;
+        clear: right;
+    }
+}
+
+.gallery {
+    padding-top: 3em;
+    clear: both;
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: inline-block;
+        margin-bottom: $gutter;
+        
+        @media (min-width: 30em) {
+            width: 100% - $gutter - $gutter;
+            margin-left: $gutter;
+        }
+        
+        @media (min-width: 40em) {
+            width: $doubleCol;
+            margin-left: $doubleColGutter;
+        }
+        
+        @media (min-width: 50em) {
+            width: $col;
+            margin-left: $gutter;
+        }
+    }
+    a {
+        transition: .3s ease-out; 
+    }
+    
+    a:hover {
+        opacity: .5;
+    }
+}
+
+.hero {
+    img, video {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: $gutter;
+        
+        @media (min-width: 30em) {
+            width: 100% - $gutter - $gutter;
+            margin-left: $gutter;
+        }
+        
+        @media (min-width: 40em) {
+            width: $col;
+            margin-left: ($gutter * 2) + $col;
+        }
+    }
+}
+
+.outline {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px #ddd;
+}

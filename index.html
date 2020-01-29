@@ -5,109 +5,259 @@
 		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
 		<link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		  ga('create', 'UA-58525276-1', 'auto');
-		  ga('send', 'pageview');
-		</script>
+		<script src="./javascript/jquery.js"></script>
+		<script src="./javascript/owlcarousel.js"></script>
+		<script src="./javascript/script.js"></script>
 	</head>
+	<header class="mobile">
+		<svg id="menuIcon" data-name="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 37">
+			<defs>
+				<style>.buns,.bacon{fill:none;stroke:#fff;stroke-linejoin:round;stroke-width:2px;}.cls-2{stroke-linecap:round;}
+				</style>
+			</defs>
+			<title>Open Menu</title>
+			<path class="buns" d="M953.51,481.62c0-6.94-6.66-12.62-14.8-12.62h-5.92c-8.13,0-14.79,5.68-14.79,12.62v.54h35.51Z" transform="translate(-917 -468)"/>
+			<path class="buns" d="M918.49,496.25a7.85,7.85,0,0,0,7.89,7.75h19.73a7.85,7.85,0,0,0,7.89-7.75v-1.94H918.49Z" transform="translate(-917 -468)"/>
+			<path class="bacon" d="M918,491c3,0,3-5,6-5s3,5,6,5,3-5,6-5,3,5,6,5,3-5,6-5,3,5,6,5" transform="translate(-917 -468)"/>
+		</svg>
+		<svg id="menuClose" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.09 36.97">
+			<defs>
+				<style>.buns,.bacon{fill:none;stroke:#000;stroke-linejoin:round;stroke-width:2px;}.cls-1{stroke-linecap:round;}
+				</style>
+			</defs>
+			<title>Close Menu</title>
+			<path class="bacon" d="M181,653c3,0,3-5,6-5s3,5,6,5,3-5,6-5,3,5,6,5" transform="translate(-180 -630.03)"/>
+			<path class="buns" d="M195.2,631c-7.86.27-14.2,5.82-14.2,12.59v.54h14.66A29.43,29.43,0,0,1,195.2,631Z" transform="translate(-180 -630.03)"/>
+			<path class="buns" d="M202.28,656.31H181.49v1.94a7.85,7.85,0,0,0,7.89,7.75h19.73a7.82,7.82,0,0,0,5-1.75A29.48,29.48,0,0,1,202.28,656.31Z" transform="translate(-180 -630.03)"/>
+		</svg>
+		<nav>
+			<ul>
+				<li><a href="#intro" class="nav">Victor Song</a></li>
+				<li><a href="#pnc" class="nav">PNC | Experience Design &#9666;</a></li>
+				<li><a href="#vestige" class="nav">Vestige | Web Design &#9666;</a></li>
+				<li><a href="#ballroom" class="nav">Ballroom | Mobile Design &#9666;</a></li>
+				<li><a href="#blur" class="nav">Blur | Photography &#9666;</a></li>
+				<li><a href="#resume" class="nav">Resum&#233;</a></li>
+			</ul>
+		</nav>
+	</header>
 	<body>
-		<header>
-			<nav>
-				<ul>
-					<li><a href="http://victorsong.me/">Victor Song</a></li>
-					<li><a href="http://victorsong.me/#intro">About</a></li>
-					<li><a href="http://victorsong.me/#portfolio">Portfolio</a></li>
-					<li><a href="http://victorsong.me/#resume">Resum&#233;</a></li>
-				</ul>
-			</nav>
-		</header>
-		<section class="intro centerWrapper" id="intro">
-			<p class="colTwo">I am currently working for PNC as a senior experience designer in their mobile app redesign.</p>
-			<p class="colTwo">Right now I'm focused on developing and maintaining their Style Guide.</p>
-		</section>
-		<section class="portfolio" id="portfolio">
-			<!--<article class="pnc">
-				<a href="./pnc/">PNC | Mobile App</a> -->
-			</article>
-			<article class="ballroom">
-				<a href="./ballroom/">Ballroom | Mobile App</a>
-			</article>
-			<article class="lift">
-				<a href="./lift/">Lift | Mobile App</a>
-			</article>
-			<article class="lg">
-				<a href="./lg/">Lunar Gala: VESTIGE | Website and Branding</a>
-			</article>
-			<article class="blur">
-				<a href="./blur/">Blur | Photography</a>
-			</article>
-			<article class="bible">
-				<a href="./bible/">Bible | Mobile App</a>
-			</article>
-			<article class="weather">
-				<a href="./weather/">Weather | Mobile App</a>
-			</article>
-			<article class="love">
-				<a href="./love/">Love Stories | Platform Agnostic Design</a>
-			</article>
-			<article class="books">
-				<a href="./books/">Book Covers | Print Design</a>
-			</article>
-		</section>
-		<section class="resume centerWrapper" id="resume">
-			<div>
-				<h1 class="colOne">Contact</h1>
-				<div class="colTwo">
-					<a href="mailto:hi@victorsong.me"><h2>hi@ victorsong.me</h2></a>
+		<div id="menuBackground"></div>
+		<div class="contentWrapper">
+			<div id="passwordModal">
+				<h3 id=passwordText>Input password for access to the PNC section.</h3>
+				<input id="userEnteredPW" type="text" name="pw">
+				<input id="pwButton" type="submit" value="Submit" onclick="passwordEntry('#pnc')">
+			</div>
+			<section class="intro" id="intro">
+				<p>I'm currently working for PNC as a Senior Experience Designer on the Mobile Team. Right now I'm focused on developing PNC's Internal Style Guide and designing new features for the PNC App.</p>
+				<p>Scroll down or click on the links in the menu to take a look at my portfolio.</p>
+			</section>
+			<section class="portfolio" id="pnc">
+				<h1>PNC</h1>
+				<p>While at PNC, I've been working on the mobile app as my main priority. The main goals that I established were to keep the app accessible, make it intuitive to navigate, and give the user a sense of security while using the app.</p>
+				<p>You can download the <a href="https://itunes.apple.com/us/app/pnc-mobile-banking/id303113127?mt=8" target="blank">iOS app here </a>and the <a href="https://play.google.com/store/apps/details?id=com.pnc.ecommerce.mobile&hl=en" target="blank">Android app here.</a></p>
+				<h2>Initial Ideas</h2>
+				<p>Luckily for me, I joined the PNC Mobile team when the design for the app was still in its infant state. I was able to start fresh and design the app fully from the ground up. Initially I had wanted the designs to be colorful, friendly, and interesting to interact with. This gave way to a 3D space concept that the current designs still carry.</p>
+				<p>The app was designed to let the user plunge into a space "behind" the screen. Tiles of relevant information would weave in and out of the scope of the screen and let the user navigate through space in that way. This manifested in a lot of motion research and design. The goal was to make an intuitive experience for users, and let them be able to track where tiles were moving.</p>
+				<div class="owl-carousel lazyload">
+					<img class="unloaded" src="./pnc/pncAnimationLazy.gif" data-src="./pnc/header.gif" />
+					<img class="unloaded" src="./pnc/pncAnimationLazy.gif" data-src="./pnc/bottomload.gif" />
+					<img class="unloaded" src="./pnc/pncAnimationLazy.gif" data-src="./pnc/sideload.gif" />
+				</div>
+				<p>Because there are so many things that a user can do with money, we tried to organize the app into things that the user would want to do rather than list the features in a side menu. Our navigation drawer became four individual tasks: view your money and transactions, pay someone, transfer money between accounts, and deposit money into your accounts. Using these four sections, we were able to organize features under them for a simpler, easier experience. Each bucket would have a different color accent, so the user would intuitively know which section of the app that they were in.</p>
+				<div class="owl-carousel lazyload">
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/colorviewmenu.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/colorview.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/colortransfer.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/colorpaymenu.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/colorpay.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/colordeposit.png" />
+				</div>
+				<h2>Color and Contrast</h2>
+				<p>We soon realized that the colors that I had chosen weren't accessible for visually impaired users. In my excitement at making a new design language, I had completely forgotten to account for them. Most of my colors and type sizes didn't meet WCAG 2.0 compliance. We ended up having to throw out almost all of the colors I had chosen in favor of higher contrast designs. In their place, dark oranges and blues were used as indicators of where users could go.</p>
+				<div class="owl-carousel lazyload">
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/signin.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/accounts.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/menu.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/transfer.png" />
+					<img class="unloaded" src="./pnc/pncLazy.gif" data-src="./pnc/worksheet.png" />
+				</div>
+				<h2>Improvements for the Future</h2>
+				<p>The way that the animations behave within the app are significantly different than what I had originally mocked up. I am trying to figure out a better way of explaining to our developers how I want certain things to behave; motioning with hand gestures and sound effects only takes a person so far.</p>
+				<p>Craft of the actual code is a little bit off as well. Because I had to design using percentages, certain elements are slightly off from what I had mocked up resulting in a slightly different feel when using the app. Certain drop shadows aren't represented the way that I had anticipated as well. There are a significant number of small changes that I would like to make, but must move past to constantly pump out new features.</p>
+			</section>
+			<section class="portfolio" id="vestige">
+				<h1>Lunar Gala | Vestige</h1>
+				<p>Lunar Gala is a student-run fashion that is hosted annually by Carnegie Mellon University. I worked with Nio Ono, <a href="http://zainab.co/" target="_blank">Zai Aliyu</a> and <a href="http://danhyo.com" target="_blank">Daniel Kim</a> as designers and <a href="http://salem.io" target="_blank">Salem Hilal</a> as developer.</p>
+				<p><a href="./lg/website/index.html" target="_blank">Check out the website here</a> or you can watch the quick demo below. I'd recommend fullscreening it for the full experience.</p>
+				<video controls autoplay loop class="unloaded" src="./lg/vidLazy.mp4" data-src="./lg/website.mp4"></video>
+				<h2>Developing the concept</h2>
+				<p>Initial brainstorming was all about the relationship between the fashion show as an entity and the audience as a participant. We wanted to play with the idea that the show was an experience that people would come to in order to be cleansed from the struggles of school and daily life.</p>
+				<p>The idea of screaming into a pillow or throwing a tantrum came up several times. Because the culture at Carnegie Mellon is extremely stress based, we hypothesized that having an event to let it all out would be refreshing for the students. A sense of visual and data overload has a similar effect where the brain basically shuts off and becomes numb. We strove to achieve this with a variety of different design techniques.</p>
+				<p>We chose to use extremely bright graphics and animations to really overload viewers. They were never quite allowed to see what the image fully was; they only received enough information to tease at extremely uncomfortable images. Images were then stretched and pixelated to further frustrate viewers and (hopefully) remind them of their slow-as-mud DSL internet growing up. Negative space was completely abolished within our compositions. The purpose was to instill a sense of claustrophobia; we didn't want our viewers to be able to breathe.</p>
+				<h2>Designing the font</h2>
+				<p>We ran into a challenge with our typography where nothing seemed to fit our distasteful aesthetic. We decided that we would have to design our own font to make things work. The biggest challenge was trying to balance legibility with chaos. We wanted everything to readable, but the viewers would have to put in more brain power than usual to understand it. We went with our pixelated style to add enough noise to disrupt the brain, but kept the letterforms mostly clear so viewers could still read the text. </p>
+				<div class="owl-carousel lazyload">
+					<img class="unloaded" src="./lg/typeLazy.gif" data-src="./lg/typeRegularSpecimen.png" />
+					<img class="unloaded" src="./lg/typeLazy.gif" data-src="./lg/typeCondensedSpecimen.png" />
+					<img class="unloaded" src="./lg/typeLazy.gif" data-src="./lg/typeItalicSpecimen.png" />
+					<img class="unloaded" src="./lg/typeLazy.gif" data-src="./lg/typeBoldSpecimen.png" />
+					<img class="unloaded" src="./lg/typeLazy.gif" data-src="./lg/typeSmallSpecimen.png" />
+				</div>
+				<h2>Designing the website</h2>
+				<p>The website was perhaps the most difficult piece of the branding effort to create. There were so many different animations and interactions that we wanted to incorporate, but ultimately had to choose only a few because of technological limitations. A lot of our visual and interaction styles came from the process of designing the website.</p>
+				<p>We incorporated large horizontal elements stacked on top of each other to create a sort of drowning effect when viewed all at once. We crafted the website so that every section of the entire site was visible at all times. An accordion effect was designed to make this happen. Sections' overall colors were squished until they were mere pixels high and crammed at the vertical edges of the website. This created the effect that viewers would be drowning in information overload.</p>
+				<p>We also had to make sure that the website was still interactable. To make sure users could get to appropriate areas, each section was turned into a link. When clicked, the section would expand fully to show the details that the user was looking for. The make sure that users could find each section, we added logic that would expand each header to a legible size when the user shook their mouse on the website.</p>
+				<p><a href="./lg/website/index.html" target="_blank">Check out the website here to see what we've built.</a></p>
+				<h2>Creating the posters</h2>
+				<p>We created posters to advertise each fashion line. With the posters, we used the same idea of horizontal stacking elements that we had designed the website with. This would hopefully give a small taste of what the full experience at the show would be.</p>
+				<div class="owl-carousel lazyload">
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster1.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster2.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster3.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster4.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster5.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster6.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster7.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster8.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster9.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster10.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster11.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster12.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster13.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster14.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster15.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster16.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster17.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster18.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster19.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster20.jpg" />
+					<img class="unloaded" src="./lg/lgPosterLazy.gif" data-src="./lg/lgPoster21.jpg" />
+				</div>
+				<h2>Closing thoughts</h2>
+				<p>Vestige was an exercise in getting out my established aesthetic style and learning to operate in new design schemas. We worked from the ground up to not necessarily follow tradition UI/UX guidelines and rules, but to break down why each of them were in place to begin with. We could then decide whether or not they matched what we were trying to do achieve with Vestige. Because the point of Vestige wasn't to make the experience easy and effortless for users, we found that we consistently had to break the rules and create new ones specifically for this brand identity. It helped me grow as a designer and have a deeper understanding of tailoring the experience instead of blindly following presets because they were "right".</p>
+			</section>
+			<section class="portfolio" id="ballroom">
+				<h1>Ballroom</h1>
+				<p>Ballroom is an app designed to let beginner dancers learn different dance steps. The app contains a guide for each dance step within the ballroom syllabus, and it lets users practice by following along with the app in-hand.</p>
+				<p>You can play with the <a target="_blank" href="https://invis.io/C2HRCWDDJTA">Invision prototype here.</a></p>
+				<h2>Background</h2>
+				<p>To compete in ballroom, it's necessary to learn several different dance genres. Within these genres, dancers must go through four different levels of proficiency before before he or she can start freely dancing. These levels are: Newcomer, Bronze, Silver, and Gold. Each of these levels has a syllabus with specific figures (or dance moves) to go along with it.</p>
+				<p>The Ballroom App consolidates these figures and puts them in easy-to-digest routines so that a dancer can learn both the figure itself, and how it connects with other figures. These routines are accessed by tapping the medal icons in the home page. Each medal will take the dancer to the corresponding routine.</p>
+				<div class="gallery lazyload">
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/menu.png" />
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/home.png" />
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/figureList.png" />
+				</div>
+				<h2>Practice Makes Perfect</h2>
+				<p>The App shows a visual demonstration of the figure, as well as a written guide under it so dancers can follow along as they read. Once they're comfortable with the way that it looks, they are able to tap the Practice button and be taken to a step by step guide.</p>
+				<p>In the practice screen, dancers are able to see how feet move in each count. If the demo is moving to fast, they can slow it down using the tempo gauge at the bottom. If they'd like to pause and move through it at their own pace, they are free to do that as well. Once they've gotten a hang of it, they can tap the record button and follow along with their own feet.</p>
+				<p>After the dancer has finished recording, the app will grade them on their performance. Using the phone's gyroscope, the app should be able to calculate the dancers rise and fall (height), aligment (rotation), and tempo (speed). In the report card screen, dancers will be able to see how they match up to a professional dancer's form and technique.</p>
+				<div class="gallery lazyload">
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/figureDetail.png" />
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/practice.png" />
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/grading.png" />
+				</div>
+				<h2>Interaction Design</h2>
+				<p>For the Ballroom App, I chose to use a card based design on top of a gradient background. Users are able to flip through information as new cards appear. To go back, a user simply has to tap on the previous card that acts as both a back button and a header. Because the app is relatively lightweight, I was free to do a more simple navigation system relying mostly on visual and animate cues to guide the user.</p>
+				<p>The practice screen was probably the most interaction heavy piece of the app. The main challenge was to figure out how to list the buttons in an easily digestible way without cluttering the app and taking focus from the main point: the feet.</p>
+				<div class="gallery lazyload">
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/risefall.png" />
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/menuDouble.png" />
+					<img class="unloaded" src="./ballroom/ballroomLazy.gif" data-src="./ballroom/search.png" />
+				</div>
+				<h2>Improvements for the Future</h2>
+				<p>Given more time, I'd like to work more on the figure detail card a little more. There's just so many resources that can be distilled into this card. As of right now, it contains the bare basics: a video demo and the written instructions. In the future, tips from more experienced dancers or a way to view your previous recordings could definitely live in this card. I also think that the navigation system might have to be tweaked to allow for more depth within the app. Maybe it's something as simple as an X arrow in the upper right hand corner, but simply tapping to go back will only feasibly work for cards that are three or four layers deep.</p>
+			</section>
+			<section class="portfolio" id="blur">
+				<div class="album lazyload">
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/angelina.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/tej.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/ray.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/sam.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/alex.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/wale.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/suzy.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/jens.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/holly.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/gabe.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/victor.jpg" />
+					<img class="unloaded" src="./blur/blurLazy.gif" data-src="./blur/jenp.jpg" />
+				</div>
+			</section>
+			<section class="resume" id="resume">
+				<div>
+					<h1>Contact</h1>
+					<h2><a href="mailto:hi@victorsong.me">hi@ victorsong.me</a></h2>
 					<h2>484 995 8658</h2>
 				</div>
-			</div>
-			<div>
-				<h1 class="colOne">Education</h1>
-				<div class="colTwo">
+				<div>
+					<h1>Education</h1>
 					<h2>Carnegie Mellon University | May 2015</h2>
-					<p>Bachelor in Fine Arts | Communication Design</p>
-					<p>Minor in Photography</p>
+					<ul>
+						<li>Bachelor in Fine Arts | Communication Design</li>
+						<li>Minor in Photography</li>
+					</ul>
 				</div>
-			</div>
-			<div>
-				<h1 class="colOne">Experience</h1>
-				<div class="colTwo">
+				<div>
+					<h1>Experience</h1>
 					<h2>PNC Bank | Digital Experience Designer | June 2015 - Ongoing</h2>
-					<p>Redesigned the mass market mobile app</p>
-					<p>Brought Apple app store rating from 1.9 to 4.8</p>
-					<p>Developing and maintaining PNC Mobile Style Guide</p>
+					<ul>
+						<li>Redesigned PNC Mobile for Android and iOS from the ground up</li>
+						<li>Brought Apple app store rating from 1.9 stars to 4.8 stars</li>
+						<li>Currently develop and maintain the PNC Mobile Style Guide</li>
+					</ul>
 					<h2>Automoblox | Web Designer | Summer 2014</h2>
-					<p>Redesigned Automoblox&#039;s website (unpublished)</p>
+					<ul>
+						<li>Redesigned Automoblox&#039;s website</li>
+					</ul>
 					<h2>Bearded | Web Design Intern | Summer 2013</h2>
-					<p>Maintained woodtyperevival.org using Ruby on Rails</p>
-					<p>Produced posters using a letterpress</p>
+					<ul>
+						<li>Maintained woodtyperevival.org using Ruby on Rails</li>
+						<li>Produced posters using a letterpress</li>
+					</ul>
 				</div>
-			</div>
-			<div>
-				<h1 class="colOne">Skills</h1>
-				<div class="colTwo">
+				<div>
+					<h1>Skills</h1>
 					<h2>Adobe Creative Suite</h2>
-					<p>Ai, Ps, Dw, Id, Ae, Au</p>
+					<ul>
+						<li>Ai, Ps, Dw, Id, Ae, Au</li>
+					</ul>
 					<h2>Rapid Prototyping</h2>
-					<p>Sketch, Invision, Framer</p>
+					<ul>
+						<li>Sketch, Invision, Framer</li>
+					</ul>
 					<h2>Web Development</h2>
-					<p>HTML, CSS, Javascript</p>
+					<ul>
+						<li>HTML, CSS, Javascript, JQuery</li>
+					</ul>
 					<h2>Programming</h2>
-					<p>Python, Ruby</p>
+					<ul>
+						<li>Python, Ruby</li>
+					</ul>
 					<h2>Photography</h2>
-					<p>Portraits, Products, Weddings</p>
+					<ul>
+						<li>Portraits, Products, Weddings</li>
+					</ul>
 					<h2>English, Chinese</h2>
 				</div>
-			</div>
-			<div class="colTwo">
-				<a target="blank" href="./resume/resume.pdf"><p>Download a pdf of my resum&#233;</p></a>
-			</div>
-		</section>
+				<div class="resumePDF">
+					<h2><a target="blank" href="./resume/resume.pdf">Download a pdf of my resum&#233;</a></h2>
+				</div>
+			</section>
+		</div>
 	</body>
+	<header class="desktop">
+		<nav>
+			<ul>
+				<li><a href="#intro" id="introLink" class="nav">Victor Song</a></li>
+				<li><a href="#pnc" id="pncLink" class="nav">PNC | Experience Design &#9666;</a></li>
+				<li><a href="#vestige" id="vestigeLink" class="nav">Vestige | Web Design &#9666;</a></li>
+				<li><a href="#ballroom" id="ballroomLink" class="nav">Ballroom | Mobile Design &#9666;</a></li>
+				<li><a href="#blur" id="blurLink" class="nav">Blur | Photography &#9666;</a></li>
+				<li><a href="#resume" id="resumeLink" class="nav">Resum&#233;</a></li>
+			</ul>
+		</nav>
+	</header>
 </html>

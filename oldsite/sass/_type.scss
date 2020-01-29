@@ -1,0 +1,130 @@
+@font-face {
+	font-family: SourceSansPro;
+	src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: FuturaPT;
+	src: url(../fonts/FuturaPT-Book.otf);
+}
+
+@mixin typeBody {
+	font-family: SourceSansPro, sans-serif;
+	font-size: 14pt;
+	line-height: 1.5em;
+	color: #333;
+}
+
+@mixin typeHeader {
+	font-family: FuturaPT, sans-serif;
+	font-size: 14pt;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+}
+
+@mixin typeDisplay {
+	font-family: FuturaPT, sans-serif;
+	line-height: 1.5em;
+	font-weight: 700;
+	font-size: 14pt;
+	letter-spacing: 0.1em;
+	
+	@media (min-width: 40em) {
+		font-size: 14pt;
+	}
+	
+	@media (min-width: 85em) {
+		font-size: 14pt;
+	}
+}
+
+p {
+	@include typeBody;
+}
+
+a {
+	@include typeBody;
+	text-decoration: none;
+	color: #3e98e8;
+	transition: .3s ease-out;
+}
+
+a:hover {
+	color: #296fad;
+}
+
+nav {
+	a {
+		color: #333;
+		transition: .3s ease-out;
+	}
+	
+	a:hover {
+		color: #999;
+	}
+	
+	li:first-of-type {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		
+		a {
+			@include typeHeader;
+		}
+	}
+}
+
+.intro {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+	}
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+}
+
+.portfolio a {
+	@include typeHeader;
+	text-transform: uppercase;
+	color: #333;
+}
+
+.process {
+	.colOne {
+		@include typeHeader;
+		margin-bottom: 1em;
+		clear: both;
+	}
+	
+	.colTwo {
+		@include typeBody;
+		margin-bottom: 1em;
+	}
+}
+
+.resume {
+	h1 {
+		@include typeHeader;
+		margin-bottom: 1em;
+	}
+	
+	h2 {
+		@include typeBody;
+		margin-top: 1em;
+	}
+	
+	h2:first-of-type {
+		margin-top: 0;
+	}
+	
+	p {
+		@include typeBody;
+		opacity: 0.7;
+	}
+	
+	a {
+		color: #333;
+	}
+}
