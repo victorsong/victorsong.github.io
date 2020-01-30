@@ -216,6 +216,7 @@ var passwordEntry = function(idName) {
 	}
 }
 
+/*
 // Lazyload function
 var lazyload = function(threshold, image) {
 	var imageOffset = $(image).offset().top;
@@ -244,6 +245,7 @@ var lazyloadTimer = function(threshold, image) {
 var idleInterval = setInterval(function() {
 	idleTime = idleTime + 1;
 }, 1) //.01s
+*/
 
 // Owl Carousel 
 $('.owl-carousel').on("click tap", function() {
@@ -297,6 +299,9 @@ $(document).ready(function (){
 		linkPosition('#blur', '#blurLink', 5);
 		linkPosition('#resume', '#resumeLink', 6);
 	}
+	$(function() {
+        $('.lazy').Lazy();
+    });
 })
 
 $(window).scroll(function (){
@@ -310,10 +315,10 @@ $(window).scroll(function (){
 	scrollColorChange('#blur', 5, '#111111', '#ffffff', '#dddddd');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 
-	$('.lazyload img, video').each(function() {
+	/*$('.lazyload img, video').each(function() {
 		lazyloadTimer(300, this);
 	});
-	idleTime = 0;
+	idleTime = 0;*/
 
 	if (mobile.matches) {
 
