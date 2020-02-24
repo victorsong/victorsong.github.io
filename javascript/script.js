@@ -271,9 +271,6 @@ $(document).ready(function (){
 		lazyLoad:true,
 		responsive: {
 			0: {
-				items: 1
-			},
-			600: {
 				items: 2
 			},
 			1400: {

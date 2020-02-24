@@ -454,13 +454,6 @@ video {
   margin-right: 1%;
   margin-bottom: 1%;
 }
-@media (max-width: 66rem) {
-  .album img {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 5%;
-  }
-}
 
 .owl-carousel {
   margin-bottom: 2rem;
