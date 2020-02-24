@@ -100,6 +100,7 @@ header a {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.5em;
+  margin-top: 2em;
 }
 .contentWrapper p {
   font-family: SourceSansPro, sans-serif;
@@ -218,6 +219,7 @@ header a {
 }
 .resume h1, .resume h2 {
   color: #3b504f;
+  margin: 0;
 }
 .resume div {
   padding-bottom: 1.5em;

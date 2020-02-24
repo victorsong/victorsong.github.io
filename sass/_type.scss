@@ -103,6 +103,7 @@ header {
 	}
 	h2 {
 		@include typeHeader;
+		margin-top: 2em;
 	}
 	p {
 		@include typeBody;
@@ -220,6 +221,7 @@ header {
 	}
 	h1, h2 {
 		color: $resumeAccent;
+		margin: 0;
 	}
 
 	div {
