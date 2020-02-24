@@ -268,6 +268,7 @@ $(document).ready(function (){
 		autoplayTimeout: 2500,
 		autoplayHoverPause: true,
 		autoplaySpeed: 2000,
+		lazyLoad:true,
 		responsive: {
 			0: {
 				items: 1
@@ -310,7 +311,7 @@ $(window).scroll(function (){
 	}
 	scrollColorChange('#intro', 1, '#3b504f', '#eeebe1', '#eeebe1');
 	scrollColorChange('#pnc', 2, '#f7f8f9', '#333333', '#2a6296');
-	scrollColorChange('#vestige', 3, '#ffffff', '#333333', '#111111');
+	scrollColorChange('#vestige', 3, '#111111', '#ffffff', '#dddddd');
 	scrollColorChange('#ballroom', 4, '#044661', '#ffffff', '#ff9b9b');
 	scrollColorChange('#blur', 5, '#111111', '#ffffff', '#dddddd');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');

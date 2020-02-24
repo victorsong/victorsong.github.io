@@ -149,21 +149,21 @@ header a {
 }
 
 #vestige {
-  background-color: #ffffff;
-}
-#vestige a {
-  color: #ffffff;
   background-color: #111111;
 }
-#vestige a:hover {
+#vestige a {
   color: #111111;
-  background-color: #ffffff;
+  background-color: #dddddd;
+}
+#vestige a:hover {
+  color: #dddddd;
+  background-color: #111111;
 }
 #vestige p {
-  color: #333333;
+  color: #ffffff;
 }
 #vestige h1, #vestige h2 {
-  color: #111111;
+  color: #dddddd;
 }
 
 #blur {
@@ -171,17 +171,17 @@ header a {
 }
 #blur a {
   color: #111111;
-  background-color: #333333;
+  background-color: #dddddd;
 }
 #blur a:hover {
-  color: #333333;
+  color: #dddddd;
   background-color: #111111;
 }
 #blur p {
   color: #ffffff;
 }
 #blur h1, #blur h2 {
-  color: #333333;
+  color: #dddddd;
 }
 
 #ballroom {
@@ -466,18 +466,22 @@ video {
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
+.owl-carousel a {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery a {
+  background-color: inherit !important;
+  margin: 0;
+  padding: 0;
+}
 
 .gallery img {
   width: 31%;
   margin-right: 1%;
   margin-bottom: 2rem;
   margin-top: 1rem;
-}
-@media (max-width: 66rem) {
-  .gallery img {
-    width: 100%;
-    margin-right: 0;
-  }
 }
 
 /**
