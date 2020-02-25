@@ -265,7 +265,7 @@ $(document).ready(function (){
 		loop: true,
 		margin: 10,
 		autoplay: true,
-		autoplayTimeout: 2500,
+		autoplayTimeout: 4000,
 		autoplayHoverPause: true,
 		autoplaySpeed: 2000,
 		lazyLoad:true,
