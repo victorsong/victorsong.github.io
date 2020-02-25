@@ -193,6 +193,12 @@ video {
     margin-bottom: 1%;
 }
 
+.album a {
+    padding: 0;
+    background-color: inherit !important;
+    color: inherit;
+}
+
 .owl-carousel, {
     margin-bottom: 2rem;
     margin-top: 1rem;
