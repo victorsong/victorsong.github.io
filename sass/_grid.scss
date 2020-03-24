@@ -223,3 +223,15 @@ video {
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-image {
+    a {
+     background-color: inherit !important;
+    }
+
+    margin-bottom: 1rem;
+}

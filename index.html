@@ -74,14 +74,21 @@
 					<a target="_blank" data-lightbox="pnc" href="./pnc/worksheet.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/worksheet.png" /></a>
 				</div>
 				<h2>Out with the Old</h2>
-				<p>The old PNC app was an out of the box financial app that PNC had purchased from an external vendor. The app had a 1.9 star rating in the Apple App Store and was generally uninspired. There was little hierarchy and almost no thought for the information architecture. You can view the old screens below.</p>
+				<p>The old PNC app was an out of the box financial app that PNC had purchased from an external vendor. This meant that there were several inherent problems with it:</p>
+					<ul>
+						<li>We couldn't create our own features, we were dependent on what they had already built and could provide for us.</li>
+						<li>Any updates that we wanted to make would have to go through them first.</li>
+						<li>We weren't able to fix any bugs. We had to notify the vendor and let them handle it on their own timeline.</li>
+					</ul>
+				<p>There were other issues with the app that we wanted to fix as well. The menu basically had no hierarchy, it was a flat list of all the features. That made it difficult for users to find what they were looking for until they developed muscle memory. But once we added new features, they had to relearn where everything was located. The overall experience of the app was lacking as well. It scored a whopping 1.9 stars in the Apple App Store.</p>
 				<div class="gallery lazyload">
 					<a target="_blank" data-lightbox="pncOld" href="./pnc/oldAccounts.jpeg"><img class="lazy" src="./pnc/oldLazy.gif" data-src="./pnc/oldAccounts.jpeg" /></a>
 					<a target="_blank" data-lightbox="pncOld" href="./pnc/oldRewards.jpeg"><img class="lazy" src="./pnc/oldLazy.gif" data-src="./pnc/oldRewards.jpeg" /></a>
 					<a target="_blank" data-lightbox="pncOld" href="./pnc/oldMenu.jpeg"><img class="lazy" src="./pnc/oldLazy.gif" data-src="./pnc/oldMenu.jpeg" /></a>
 				</div>
-				<h2>In with the New</h2>
+				<h2>Starting from Scratch</h2>
 				<p>Luckily for me, I joined the PNC Mobile team when the design for the app was still in its infant state. I was able to start fresh and design the app fully from the ground up. The idea of distilling the main menu to core items was a big motivator here. The old app had a list of over 10 items on the main menu. It had no hierarchy and was extremely flat. In order to add some depth, we had to restructure the information architecture from the ground up. This gave way to a 3D space concept that the current designs still carry.</p>
+				<p>The first thing that I did was list out all the features on a white board. This list had no hierarchy and actually looked much like the menu of the old app. From there I started to organize each feature into a category. The list of items on the white board slowly became a word tree of items on the white board. From here I was able to start taking these word trees into user testing to see which resonated and made sense with a majority of our users. We went through many rounds of testing and finally came up with something that made sense. With this refined word tree, I was able to create a solid information architecture for the app.</p>
 				<div class="owl-carousel">
 					<a target="_blank" data-lightbox="pncProcess" href="./pnc/process1.jpg"><img class="owl-lazy" src="./pnc/processLazy.png" data-src="./pnc/process1.jpg" /></a>
 					<a target="_blank" data-lightbox="pncProcess" href="./pnc/process2.jpg"><img class="owl-lazy" src="./pnc/processLazy.png" data-src="./pnc/process2.jpg" /></a>
@@ -89,13 +96,29 @@
 					<a target="_blank" data-lightbox="pncProcess" href="./pnc/process3.jpg"><img class="owl-lazy" src="./pnc/processLazy.png" data-src="./pnc/process3.jpg" /></a>
 					<a target="_blank" data-lightbox="pncProcess" href="./pnc/process4.jpg"><img class="owl-lazy" src="./pnc/processLazy.png" data-src="./pnc/process4.jpg" /></a>
 				</div>
-				<p>The app was designed to let the user plunge into a space "behind" the screen. Tiles of relevant information would weave in and out of the scope of the screen and let the user navigate through space in that way. This manifested in a lot of motion research and design. The goal was to make an intuitive experience for users, and let them be able to track where tiles were moving. Here are some quick prototypes of how we envisioned tiles moving.</p>
+				<h2>Building a New Navigation System</h2>
+				<p>With the refined information architecture in hand, I was able to start working on how users would navigate between features and flows. Here I was able to leverage existing data that we had from our website. Using Adobe Analytics, I was able to determine where most users usually went when they either first entered the app or finished a certain flow.</p>
+				<div class="hero-image">
+					<a target="_blank" data-lightbox="pncHeroProcess" href="./pnc/analytics.png"><img class="lazy" src="./pnc/heroProcess.gif" data-src="./pnc/analytics.png" /></a>
+				</div>
+				<p>The one thing I did have to look out for was continuity with our old app. Because we're a bank, our users aren't always the most tech savvy. This means that as a designer, I have to foster a safe environment for users consuming our app. I don't want to scare Grandma Rosa in Pittsburgh because suddenly her app is different and she can't find her money anymore. Keeping this in mind, I had to design the new navigation menu and system in a way that connected with the old app. This was done by utilizing a similar hamburger menu, so that returning users would still have an idea of where to go for their general navigation.</p>
+				<p>The new navigation would be based completely around money movement. Each type of movement would have its own section in the app, and the related features would be bucketed within their sections. This allowed us to fold and organize our features so they weren't statically stacked within the main menu. Users would be able to clearly identify the associated feature and dive in to find their associated tasks.</p>
+				<h2>Prototyping the Experience</h2>
+				<p>At this point is where I had the most fun in the process. I started whiteboarding out what I wanted to convey to the consumer about PNC. We played with different styles of animation, different design philosophies, and different UX languages. Did we want users to feel delight while going through our app? Or was that frivolous and did we need people to efficiently navigate through their finances. In this phase, I developed around fifteen solidly different prototypes to go into user testing. Through the rounds, the prototypes were whittled down, and I began iterating on the more successful prototypes. In the end we went with a modular tile based system.</p>
+				<p>The app was designed to let the user plunge into a space "behind" the screen. Tiles of relevant information would weave in and out of the scope of the screen and let the user navigate through space in that way. This served to do a couple things for us as well:</p>
+				<ul>
+					<li>It let the design be consistent throughout the app via tappable tiles.</li>
+					<li>The design languagee was sparse, so a user would be able to intuitively understand each page faster.</li>
+					<li>Developers were able to create multiple use assets instead of rebuilding every page individually.</li>
+				</ul>
+				<p>Here are some quick prototypes of how we envisioned tiles moving.</p>
 				<div class="gallery lazyload">
 					<a target="_blank" data-lightbox="pncAnimations" href="./pnc/header.gif"><img class="lazy" src="./pnc/pncAnimationLazy.gif" data-src="./pnc/header.gif" /></a>
 					<a target="_blank" data-lightbox="pncAnimations" href="./pnc/bottomload.gif"><img class="lazy" src="./pnc/pncAnimationLazy.gif" data-src="./pnc/bottomload.gif" /></a>
 					<a target="_blank" data-lightbox="pncAnimations" href="./pnc/sideload.gif"><img class="lazy" src="./pnc/pncAnimationLazy.gif" data-src="./pnc/sideload.gif" /></a>
 				</div>
-				<p>Because there are so many things that a user can do with money, we tried to organize the app into things that the user would want to do rather than list the features in a side menu. Our navigation drawer became four individual tasks: view your money and transactions, pay someone, transfer money between accounts, and deposit money into your accounts. Using these four sections, we were able to organize features under them for a simpler, easier experience. Each bucket would have a different color accent, so the user would intuitively know which section of the app that they were in.</p>
+				<h2>Visual Design</h2>
+				<p>Here I tried bringing the designs to life by adding colors to each section. Each color would signify that the user was in a different section associated to a feature. Because the tile based design was so uniform, I wanted color to bring an extra layer of clarity so users would intuitively know where they were.</p>
 				<div class="owl-carousel">
 					<a target="_blank" data-lightbox="pncColor" href="./pnc/colorviewmenu.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/colorviewmenu.png" /></a>
 					<a target="_blank" data-lightbox="pncColor" href="./pnc/colorview.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/colorview.png" /></a>
@@ -104,8 +127,14 @@
 					<a target="_blank" data-lightbox="pncColor" href="./pnc/colorpay.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/colorpay.png" /></a>
 					<a target="_blank" data-lightbox="pncColor" href="./pnc/colordeposit.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/colordeposit.png" /></a>
 				</div>
-				<h2>Color and Contrast</h2>
-				<p>We soon realized that the colors that I had chosen weren't accessible for visually impaired users. In my excitement at making a new design language, I had completely forgotten to account for them. Most of my colors and type sizes didn't meet WCAG 2.0 compliance. We ended up having to throw out almost all of the colors I had chosen in favor of higher contrast designs. In their place, dark oranges and blues were used as indicators of where users could go.</p>
+				<p>We soon realized that the colors that I had chosen weren't accessible for visually impaired users. The colors weren't WCAG 2.0 compliant. We ended up having to throw out almost all of the colors I had chosen in favor of higher contrast designs. In their place, we decided to use the two main brand colors of PNC: orange and blue. This way we could maintain the PNC brand and also let colors act as interactable elements. Orange was loud and used for direct call-to-action buttons. Blue was more subdued and signified that an element was tappable. Tiles would rise and fall on the page to show they could be interacted with. This gave way to the current app design as it is now.</p>
+				<div class="owl-carousel">
+					<a target="_blank" data-lightbox="pnc" href="./pnc/signin.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/signin.png" /></a>
+					<a target="_blank" data-lightbox="pnc" href="./pnc/accounts.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/accounts.png" /></a>
+					<a target="_blank" data-lightbox="pnc" href="./pnc/menu.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/menu.png" /></a>
+					<a target="_blank" data-lightbox="pnc" href="./pnc/transfer.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/transfer.png" /></a>
+					<a target="_blank" data-lightbox="pnc" href="./pnc/worksheet.png"><img class="owl-lazy" src="./pnc/pncLazy.gif" data-src="./pnc/worksheet.png" /></a>
+				</div>
 				<h2>Creating a Design System</h2>
 				<p>Currently, we are working on a way to speed up the design process at PNC using the Invision Design System's Manager. This has taken the form of a design library. The library let's us create components only once, and then be able to use them flexibly in any of our designs. More importantly, it let's developers use an inspect tool to see all the details they need (eg. margins, paddings, text sizes, color codes). Because the design system lives on Invision's server, we can edit it whenever we want, and it will be updated for all of the developers as well. We're not quite finished yet, but it has proven to be invaluable for the team.</p>
 				<div class="owl-carousel">

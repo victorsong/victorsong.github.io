@@ -82,6 +82,18 @@ header a {
   white-space: nowrap;
 }
 
+li {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 14pt;
+  line-height: 1.5em;
+  margin-left: 3rem;
+  list-style-type: disc;
+}
+
+ul {
+  margin-bottom: 1rem;
+}
+
 .nav {
   color: #000000;
 }
@@ -148,6 +160,9 @@ header a {
 #pnc h1, #pnc h2 {
   color: #2a6296;
 }
+#pnc li {
+  color: #333333;
+}
 
 #vestige {
   background-color: #111111;
@@ -165,6 +180,9 @@ header a {
 }
 #vestige h1, #vestige h2 {
   color: #dddddd;
+}
+#vestige li {
+  color: #ffffff;
 }
 
 #blur {
@@ -184,6 +202,9 @@ header a {
 #blur h1, #blur h2 {
   color: #dddddd;
 }
+#blur li {
+  color: #ffffff;
+}
 
 #ballroom {
   background-color: #044661;
@@ -201,6 +222,9 @@ header a {
 }
 #ballroom h1, #ballroom h2 {
   color: #ff9b9b;
+}
+#ballroom li {
+  color: #ffffff;
 }
 
 .resume {
@@ -483,6 +507,17 @@ video {
   margin-right: 1%;
   margin-bottom: 2rem;
   margin-top: 1rem;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.hero-image {
+  margin-bottom: 1rem;
+}
+.hero-image a {
+  background-color: inherit !important;
 }
 
 /**
