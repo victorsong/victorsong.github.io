@@ -104,6 +104,17 @@ ul {
 
 .nav {
 	color: #000000;
+	ul li {
+	    list-style-type: none;
+	}
+}
+
+nav ul li {
+	    list-style-type: none;
+}
+
+nav ul {
+	margin: 0;
 }
 
 .contentWrapper {
