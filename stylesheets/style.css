@@ -266,6 +266,7 @@ nav ul {
   line-height: 1.5em;
   padding-left: 4em;
   margin-bottom: 0;
+  list-style-type: none;
 }
 .resume h2 {
   font-family: SourceSansPro, sans-serif;

@@ -264,6 +264,7 @@ nav ul {
 		@include typeBody;
 		padding-left: 4em;
 		margin-bottom: 0;
+		list-style-type: none;
 	}
 	h2 {
 		@include typeBody;
