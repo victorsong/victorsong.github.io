@@ -55,6 +55,10 @@ table {
   src: url(../fonts/SourceSansPro-Regular.ttf);
 }
 @font-face {
+  font-family: SourceSerif;
+  src: url(../fonts/SourceSerif4-VariableFont_opsz,wght.ttf);
+}
+@font-face {
   font-family: FuturaPT;
   src: url(../fonts/FuturaPT-Book.otf);
 }
@@ -197,25 +201,25 @@ nav ul {
   color: #ffffff;
 }
 
-#blur {
-  background-color: #111111;
+#els {
+  background-color: #f7f4ef;
 }
-#blur a {
-  color: #111111;
-  background-color: #dddddd;
+#els a {
+  color: #f7f4ef;
+  background-color: #ff551d;
 }
-#blur a:hover {
-  color: #dddddd;
-  background-color: #111111;
+#els a:hover {
+  color: #ff551d;
+  background-color: #f7f4ef;
 }
-#blur p {
-  color: #ffffff;
+#els p {
+  color: #1e1e1e;
 }
-#blur h1, #blur h2 {
-  color: #dddddd;
+#els h1, #els h2 {
+  color: #ff551d;
 }
-#blur li {
-  color: #ffffff;
+#els li {
+  color: #1e1e1e;
 }
 
 #ballroom {

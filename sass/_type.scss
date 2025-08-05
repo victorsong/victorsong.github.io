@@ -2,6 +2,10 @@ $introBackground: #3b504f;
 $introText: #eeebe1;
 $introAccent: #eeebe1;
 
+$elsBackground: #f7f4ef;
+$elsText: #1e1e1e;
+$elsAccent: #ff551d;
+
 $pncBackground: #f7f8f9;
 $pncText: #333333;
 $pncAccent: #2a6296;
@@ -14,10 +18,6 @@ $ballroomBackground: #044661;
 $ballroomText: #ffffff;
 $ballroomAccent: #ff9b9b;
 
-$blurBackground: #111111;
-$blurText: #ffffff;
-$blurAccent: #dddddd;
-
 $resumeBackground: #eeebe1;
 $resumeText: #333333;
 $resumeAccent: #3b504f;
@@ -25,6 +25,11 @@ $resumeAccent: #3b504f;
 @font-face {
 	font-family: SourceSansPro;
 	src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+	font-family: SourceSerif;
+	src: url(../fonts/SourceSerif4-VariableFont_opsz,wght.ttf);
 }
 
 @font-face {
@@ -63,7 +68,7 @@ $resumeAccent: #3b504f;
 }
 
 @mixin typeDisplay {
-	font-family: Cousine, sans-serif;
+	font-family: SourceSerif, sans-serif;
 	line-height: 1.5em;
 	font-weight: 700;
 	font-size: 14pt;
@@ -197,24 +202,24 @@ nav ul {
 	}
 }
 
-#blur {
-	background-color: $blurBackground;
+#els {
+	background-color: $elsBackground;
 	a {
-		color: $blurBackground;
-		background-color: $blurAccent;
+		color: $elsBackground;
+		background-color: $elsAccent;
 	}
 	a:hover {
-		color: $blurAccent;
-		background-color: $blurBackground;
+		color: $elsAccent;
+		background-color: $elsBackground;
 	}
 	p {
-		color: $blurText;
+		color: $elsText;
 	}
 	h1, h2 {
-		color: $blurAccent;
+		color: $elsAccent;
 	}
 	li {
-		color: $blurText;
+		color: $elsText;
 	}
 }
 

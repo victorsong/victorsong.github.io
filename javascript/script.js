@@ -201,6 +201,7 @@ var passwordProtection = function(idName, order, backgroundColor, textColor, acc
 	})
 }
 
+/*
 var passwordEntry = function(idName) {
 	var userPW = document.getElementById("userEnteredPW").value;
 	if (userPW == '2019') {
@@ -216,7 +217,6 @@ var passwordEntry = function(idName) {
 	}
 }
 
-/*
 // Lazyload function
 var lazyload = function(threshold, image) {
 	var imageOffset = $(image).offset().top;
@@ -291,10 +291,10 @@ $(document).ready(function (){
 	} else {
 		firstLinkPosition('#introLink');
 		linkAnimation('#intro', '#introLink', 1);
-		linkPosition('#pnc', '#pncLink', 2);
-		linkPosition('#vestige', '#vestigeLink', 3);
-		linkPosition('#ballroom', '#ballroomLink', 4);
-		linkPosition('#blur', '#blurLink', 5);
+		linkPosition('#els', '#elsLink', 2);
+		linkPosition('#pnc', '#pncLink', 3);
+		linkPosition('#vestige', '#vestigeLink', 4);
+		linkPosition('#ballroom', '#ballroomLink', 5);
 		linkPosition('#resume', '#resumeLink', 6);
 	}
 	$(function() {
@@ -303,14 +303,11 @@ $(document).ready(function (){
 })
 
 $(window).scroll(function (){
-	if (verified == false) {
-		passwordProtection('#pnc', 2, '#f7f8f9', '#333333', '#2a6296');
-	}
 	scrollColorChange('#intro', 1, '#3b504f', '#eeebe1', '#eeebe1');
-	scrollColorChange('#pnc', 2, '#f7f8f9', '#333333', '#2a6296');
-	scrollColorChange('#vestige', 3, '#111111', '#ffffff', '#dddddd');
-	scrollColorChange('#ballroom', 4, '#044661', '#ffffff', '#ff9b9b');
-	scrollColorChange('#blur', 5, '#111111', '#ffffff', '#dddddd');
+	scrollColorChange('#els', 2, '#f7f4ef', '#1e1e1e', '#ff551d');
+	scrollColorChange('#pnc', 3, '#f7f8f9', '#333333', '#2a6296');
+	scrollColorChange('#vestige', 4, '#111111', '#ffffff', '#dddddd');
+	scrollColorChange('#ballroom', 5, '#044661', '#ffffff', '#ff9b9b');
 	scrollColorChange('#resume', 6, '#eeebe1', '#333333', '#3b504f');
 
 	/*$('.lazyload img, video').each(function() {
@@ -322,10 +319,10 @@ $(window).scroll(function (){
 
 	} else {
 		linkAnimation('#intro', '#introLink', 1);
-		linkAnimation('#pnc', '#pncLink', 2);
-		linkAnimation('#vestige', '#vestigeLink', 3);
-		linkAnimation('#ballroom', '#ballroomLink', 4);
-		linkAnimation('#blur', '#blurLink', 5);
+		linkAnimation('#els', '#elsLink', 2);
+		linkAnimation('#pnc', '#pncLink', 3);
+		linkAnimation('#vestige', '#vestigeLink', 4);
+		linkAnimation('#ballroom', '#ballroomLink', 5);
 		linkAnimation('#resume', '#resumeLink', 6);
 	}
 })

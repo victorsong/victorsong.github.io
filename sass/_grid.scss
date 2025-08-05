@@ -1,11 +1,13 @@
 $colCount:          3;
 $gutterCount:       $colCount + 1;
-$noGutterCol:       100% / $colCount;
-$gutter:            $noGutterCol / 10; 
-$col:               $noGutterCol - $gutter - ($gutter / $colCount);
+$noGutterCol:       calc(100% / $colCount);
+$gutter:            calc($noGutterCol / 10); 
+$col:               $noGutterCol - $gutter - calc($gutter / $colCount);
 $baseline:          1.5rem;
-$doubleColGutter:   (100% / 2) / 10;
-$doubleCol:         (100% / 2) - $doubleColGutter - ($doubleColGutter / 2);
+$doubleColGutter:   calc((100% / 2) / 10);
+$doubleCol:         calc(100% / 2) - $doubleColGutter - calc($doubleColGutter / 2);
+
+@use "type";
 
 html, body {
     height: 100%;
@@ -159,7 +161,7 @@ video {
     }
 
     h3 {
-        @include typeNav;
+        @include type.typeNav;
         text-align: center;
         margin-bottom: 1rem;
     }
@@ -181,7 +183,7 @@ video {
         margin: 0 auto;
         margin-bottom: 0;
         margin-top: 2rem;
-        @include typeNav;
+        @include type.typeNav;
         border: 2px solid;
         box-shadow: none;
     }
