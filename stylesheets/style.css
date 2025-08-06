@@ -98,6 +98,19 @@ ul {
   margin-bottom: 1rem;
 }
 
+ol {
+  list-style-type: decimal;
+}
+ol li {
+  list-style-type: decimal;
+}
+ol li p {
+  margin-bottom: 0.5em !important;
+}
+ol li:last-of-type {
+  margin-bottom: 1em;
+}
+
 .nav {
   color: #000000;
 }
@@ -112,6 +125,27 @@ nav ul li {
 
 nav ul {
   margin: 0;
+}
+
+.doubleColumnQuote {
+  font-family: SourceSerif;
+  line-height: 1.2em;
+  font-size: 16pt;
+  width: 40%;
+  float: left;
+  display: block;
+  margin: 5%;
+  quotes: "“" "”";
+  text-indent: -2.2em;
+}
+
+blockquote:before {
+  color: #ff551d;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -0.4em;
 }
 
 .contentWrapper h1 {
@@ -130,11 +164,20 @@ nav ul {
   line-height: 1.5em;
   margin-top: 2em;
 }
+.contentWrapper h3 {
+  font-family: FuturaPT, sans-serif;
+  font-size: 14pt;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  margin-top: 2em;
+}
 .contentWrapper p {
   font-family: SourceSansPro, sans-serif;
   font-size: 14pt;
   line-height: 1.5em;
   margin-bottom: 1em;
+  clear: left;
 }
 .contentWrapper a {
   text-decoration: none;

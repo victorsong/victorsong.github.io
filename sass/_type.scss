@@ -107,6 +107,22 @@ ul {
 	margin-bottom: 1rem;
 }
 
+ol {
+	list-style-type: decimal;
+
+	li {
+		list-style-type: decimal;
+
+		p {
+			margin-bottom: .5em !important; 
+		}
+	}
+
+	li:last-of-type {
+		margin-bottom: 1em;
+	}
+}
+
 .nav {
 	color: #000000;
 	ul li {
@@ -123,6 +139,27 @@ nav ul {
 	margin: 0;
 }
 
+.doubleColumnQuote {
+	font-family: SourceSerif;
+	line-height: 1.2em;
+	font-size: 16pt;
+	width: 40%;
+	float: left;
+	display: block;
+	margin: 5%;
+	quotes: "\201C""\201D";
+	text-indent: -2.2em;
+}
+
+blockquote:before {
+  color: $elsAccent;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.2em;
+  vertical-align: -0.4em;
+}
+
 .contentWrapper {
 	h1 {
 		@include typeHeader;
@@ -132,9 +169,14 @@ nav ul {
 		@include typeHeader;
 		margin-top: 2em;
 	}
+	h3 {
+		@include typeHeader;
+		margin-top: 2em;
+	}
 	p {
 		@include typeBody;
 		margin-bottom: 1em;
+		clear: left;
 	}
 	a {
 		text-decoration: none;

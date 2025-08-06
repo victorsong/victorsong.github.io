@@ -1,0 +1,69 @@
+Role: 
+UX Design, UX Research, Visual Design
+
+Overview: 
+Sherpath is an online learning platform for Nursing school produced by Elsevier. Instructors can assign course materials, lessons, and quizzes to students to help them effectively prepare for a Nursing career. 
+
+My Role was to lead the user experience of Sherpath. I made wireframes, conducted user research, and finalized designs so that Sherpath is usable for both instructors and students. I was the only designer on the Sherpath team but worked with designers for other products in order to maintain Elsevier's brand.
+
+Background:
+Elsevier is primarily an academic publishing company that specializes in medical, technical, and scientific content. Sherpath, the product that I worked on, is the online platform that gets paired with Elsevier's nursing textbooks. It contains extra content like lessons, quizzes, and activities that are meant to aide instructors and students in a Nursing School setting. 
+
+Through my time at Elsevier, Sherpath has moved from a version initially designed in 2015 to a next gen version that is currently in production. 
+
+Old designs:
+
+New designs:
+
+Sherpath AI
+- Problem
+	Sherpath AI is an artifical intelligence chatbot that Elsevier offers to students to help them with their studies. The traffic to the bot wasn't quite as heavy as we would have liked, so it fell to me to design a solution that would encourage more usage out of the Sherpath AI tool. At the time, the only access to Sherpath AI was a couple of links within the Sherpath course plan page. The experience felt separate and often forgotten among the other features that Sherpath has to offer. To combat this, I designed several iterations of what Sherpath AI would look like if it were more integrated in the user flow. Rather than simply making the link bigger or flashier, How can we make the user more drawn to use the AI tool. What does AI look like in the process of doing a lesson? How can AI help a user study better?
+
+- Initial Designs
+
+	Here are a couple of the ideas that were produced. I played with the idea of making AI more accessible in the course plan page by giving the space interaction rather than a simple link. I also toyed with the idea of having Sherpath AI help the student understand what they were missing within the lesson. Or having Sherpath AI help students with what to focus on next in their studies. 
+
+- User testing
+	We tested each concept with a couple different methods. For the Course Plan page, we did a live A/B test between the side and top iterations. The metrics showed that users didn't really have a preference between the two versions, only that the versions were better than the current Sherpath AI link in the sidebar. Because of this, we decided to go with the left sidebar version to keep the experience a little more consistent with our other apps and also to be able to use the component on other pages like the Assignment Overview page. 
+
+	For the lesson view, we tested our two concepts of what a portable AI chat would like. The first was more of a classic design that uses our current design library. I felt that users more often gravitate towards designs and patterns that they've already learned and feel comfortable using. The second concept is a more modern approach that feels more like a chat bubble. We found that this was more effective for our younger students who use their mobile phones more often. It introduces concepts from our next-gen design library that hasn't been implemented yet in our current designs. In the end, we found the idea of being able to drip feed the next-gen design library to our users very valuable. Because of that, we moved forward with the second design. 
+
+	The last thing that we looked at was how to introduce Sherpath AI as more than just a chatbot. We toyed with concepts of how Sherpath AI could help students find gaps in their knowledge by using their homework performance data or recommending next steps by looking at their next due assignments and prioritizing them. Through our research we discovered that while students found AI helpful, instructors often didn't trust Sherpath AI to be knowledgeable enough to help. This discovery, paired with the technical difficulty of feeding performance and schedule data into a personalized AI made this concept deprioritized. For now, we decided that the effort simply wasn't worth it. 
+
+- Final Designs
+	In the end, these were the screens that made it through testing. Sherpath AI would be more present on the course plan page by letting users interact with it there instead of having to click a link first. Sherpath AI would also be present in the assignment pages as a portable chat that users could interact with while doing their lessons to cross reference materials. As users get more comfortable with the idea of AI, I believe that the last concept we tested, the "personal assistant" style AI will be the most helpful in the end. But Elsevier, as of now, unfortunately has other things to prioritize. 
+
+
+Assignment Overview:
+- Intro
+	The Assignment Overview page is another feature that I designed to help students prioritize and organize their work more efficiently. 
+
+- Problem
+	Through copious user testing of Sherpath, a couple issues kept coming up in discussion from students and instructors. 
+		1. It's hard to navigate between courses. 
+			Users weren't always able to distinguish between different courses easily within Sherpath. The way that the Learning Management System worked was each course would open in a new tab. This led to many students having a glut of tabs in their browser as they navigated their coursework to study or do homework. 
+		2. Instructors are often unorganized in the way that they structure their Sherpath courses. 
+			The way that Sherpath was initially built was to have instructor and student courses look relatively the same. This way, instructors would be able to look over student courses and compare them to help troubleshoot any issues. We found that many instructors wouldn't put in the effort to organize the course in a way that was easy for students to parse. 
+		3. Students often have four or five courses enrolled each semester. 
+			In many cases, all of these courses are done through Sherpath. This means that each student has a Sherpath course with different instructors that had different styles of assigning work. Some instructors assign homework in a "flipped classroom" style. In this style, students are meant to do reading and homework before the instructor has their lecture, so they're more familiar with the subject matter. Other instructors choose to teach their classes in the more traditional way: lecture and then homework. This leads to confusion for students of which homework is due when and for what class.
+	To combat these issues, we decided to come up with an Assignment Overview. This page shows all of the active courses that a student is currently enrolled in, and all of the assignments with an upcoming due date. Here are some of the initial iterations that were designed:
+- Initial designs
+	The big features of the page were to let students see all of the courses listed, let them filter the individual items, and let them set date ranges. This would allow students to tailor the page to their needs and plan as far out as they would like. We experimented with different methods of showing the passage of time. Calendar views, tile views, list views - we tested them all with students and instructors. The feedback was overwhelmingly positive, users said:
+		"Oh my god, this is exactly what I was looking for. This is going to save me so much time, when does it come out? Can I have it now?"
+		"Is this out right now? When can I have it? This is such a game changer for me!"
+	Though it was positive, there were still improvements to make. Users found the list view more comfortable since that's the way their courses are laid out. The filter section was also redone to match their current courses. Here's what the final designs looked like:
+- Final designs
+- Things to improve
+	- The end goal of this page is to include everything for students, not just assignments. That way, it becomes an alternate dashboard instead of having to go into individual courses
+
+Bulk move/edit, drag and drop, structure:
+- Problem
+- Initial designs
+- User research
+- Final designs
+- Things to improve
+
+Working within the design system of Elsevier:
+
+Future Priorities:
+SUS research, grade sync, beautiful experience includes things WORKING, be minimal in design
