@@ -209,19 +209,40 @@ video {
         margin: 0;
         padding: 0;
     }
+
+    img {
+        border-radius: 4px;
+    }
 }
 
-.gallery {
+.gallery, .galleryDouble, .gallerySingle {
     a {
         background-color: inherit !important;
         margin: 0;
         padding: 0;
+    }
+
+    img {
+        border-radius: 4px;
     }
 }
 
 .gallery img {
     width: 31%;
     margin-right: 1%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.galleryDouble img {
+    width: 48.5%;
+    margin-right: 1%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.gallerySingle img {
+    width: 100%;
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
